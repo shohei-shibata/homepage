@@ -1,0 +1,224 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Globals */
+html {
+   overflow-y: scroll;
+   min-height: 100%;
+}
+body {
+    background-color: #f8e9d9;
+    background: radial-gradient(#f8e9d9, #c6baad);
+    font-family:  "Times New Roman", Times, serif;
+    color: #161616;
+    text-shadow: none;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+}
+h1 {
+  margin: 0;
+}
+a {
+  color: #161616;
+  transition: color 0.2s;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+  color: blue;
+}
+img {
+  max-width: 100%;
+}
+blockquote {
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #888;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+.letterpress {
+  color: #000;
+  opacity: 0.6;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+}
+/* Header Area and Menu */
+
+.blog-header {
+    margin-top: 30px;
+    text-align: center;
+}
+.blog-title {
+  margin: 5px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+.blog-title:hover,
+.blog-title:focus {
+    text-shadow: 1px 1px 1px #333;
+    color: #666;
+    text-decoration: none;
+}
+.blog-description {
+    font-size: 20px;
+    margin: 0;
+}
+.blog-nav-box {
+    animation: 2s fadeIn;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid #161616;
+}
+.blog-nav-link {
+    display: inline-block;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    transition: text-shadow 0.2s;
+}
+.blog-title:hover,
+.blog-title:focus,
+.blog-nav-link:hover,
+.blog-nav-link:focus {
+    text-shadow: 1px 1px 1px #333;
+    color: #666;
+    text-decoration: none;
+}
+/* Contents Area */
+.blog-main {
+    animation: 3s fadeIn;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Archive */
+.blog-post-title-archive {
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+/* Pagination */
+.pager {
+    margin-bottom: 60px;
+    text-align: left;
+}
+.pager > li > a {
+    width: 140px;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+/* Blog posts */
+.blog-post {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.blog-post-title, .blog-archive-title {
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+.blog-post-meta {
+    margin-bottom: 20px;
+    color: #999;
+}
+.blog-tags-container, .blog-categories-container {
+    margin-top: 30px;
+    font-size: 20px;
+}
+.blog-tags-container span.glyphicon, .blog-categories-container span.glyphicon {
+    margin-right: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.contact-name, .contact-email {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 5px;
+  width: 45%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid;
+  line-height: 2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.contact-message {
+  width: 90%;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid;
+  background-color: transparent;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.contact-name:focus,
+.contact-email:focus,
+.contact-message:focus {
+  background-color: white;
+}
+.contact-submit {
+  margin-top: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset, 0 0 6px rgba(0,0,0,.2) inset;
+}
+.contact-submit:hover {
+  box-shadow: 0 0 0 1px rgba(0,0,0,.3) inset, 0 0 6px rgba(0,0,0,.5) inset;
+}
+
+/* Footer */
+footer {
+    animation: 3s fadeIn;
+    text-align: center;
+    border-top: 1px solid #161616;
+}
+.footer-icons {
+  font-size: 2em;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.fa-codepen {
+  font-size: 1.8em;
+}
+
+.fa-envelope {
+  font-size: 1.8em;
+}
