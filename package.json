@@ -1,5 +1,5 @@
 {
-  "name": "bears-20",
+  "name": "shibatas-mern-boilerplate",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,7 +7,6 @@
     "body-parser": "^1.18.2",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
-    "marked": "^0.3.7",
     "mongoose": "^4.13.6",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
