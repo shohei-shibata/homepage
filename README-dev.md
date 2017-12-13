@@ -56,7 +56,7 @@ REACT_APP_APIURL = <API URL for Heroku Deployment>
 This contains all the information needed on the client side in order to talk to the server, and it should be updated continuously to let everyone know if something changed!
 
 **API URL**  
-Heroku:  https://bears-20-dev.herokuapp.com/api
+Heroku:  Add Heroku deployment link here
 Local: http://localhost:3001/api
 
 The app will automatically choose Local if local node server is running, or otherwise switch to the Heroku deployed version.
@@ -122,48 +122,3 @@ Update Post
 >request: PUT to `/posts/:post_id`  
 >send: full Post object  
 >receive: { message: String }
-
-## Backend To-do
-
-**MVP Version**
-
-| User story | Server Tasks |
-|---|---|
-| view a list of help wanted posts on main page | 1, 2  |
-| click on any of the listings to view the details page | 1, 2, 3 |
-| view any user profiles (with limited access) | 4, 5, 6, 7, 8 |
-| login with my email **(GitHub right?)** to access any of the help seeker/helper functionalities | 6, 7, 8 |
-| as an authenticated user, I can create and view my profile with name, image, skillset and contact details | 6, 7, 8, 9 |
-| as an authenticated user, I can create a post to describe my coding project and ask for help to complete it. I can include description, status, repository link and images of the project | 6, 7, 10, 11 |
-| as an authenticated user, I contact help seeker through his/her contact details | 6, 7, 8, 11* |
-*(Optional) If we want to keep track of who contacted about a project, we can include a list of users in Post documents. 
-
-
-Tasks:  
-
-1. Create a Schema for help wanted posts (Post)
-    * id (string), description (string), status (string), repoLink (string), img (arr of strings)
-2. Get list of all Posts
-3. Get Post by ID
-4. Create a Schema for user profile (User)
-    * id (string), username (string), displayName (string), avatar (img url in string), skillset (arr of strings), email (string)
-5. Get User by ID
-6. GitHub auth: Create new User
-7. GitHub auth: Login existing user
-8. Filter functionality access by a "isLoggedIn" fuction
-9. Find and update User by ID
-10. Create new Post
-11. Find and update Post by ID
-
-**Version 2**
-
-| User story | Version |  
-|---|---|
-| I can login with my email: e.g. Google, Facebook | TBD |
-| I can login with other methods: e.g. Google, Facebook | TBD |
-| As an authenticated user, I can leave comments on posts | TBD |
-| As a help seeker, I can reward helpers with points | TBD |
-| As a helper, I can click on a button and commit to help | TBD |
-| I get a notification when someone comments on one of my "help wanted" projects or commits to help | TBD |
-| As an authenticated user, I can bookmark projects | TBD |
-| All the projects where I helped are showed on my profile, along with my reward points | TBD |
