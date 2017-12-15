@@ -10,13 +10,31 @@ body {
     color: #161616;
     text-shadow: none;
     width: 80%;
-    max-width: 700px;
     margin: auto;
 }
 
 header {
     text-align: center;
 }
+
+/* Project Cards */
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background-color: #fff;
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 3px 3px 1px #555;
+}
+.picture {
+  height: 150px;
+}
+
 
 /* Footer */
 footer {
