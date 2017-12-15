@@ -1,0 +1,41 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #f8e9d9;
+    background: radial-gradient(#f8e9d9, #c6baad);
+    font-family: "Times New Roman", Times, serif;
+    color: #161616;
+    text-shadow: none;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    left:25%;
+    width: 50%;
+    text-align: center;
+}
+.footer-icons {
+  font-size: 1.5em;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.fa-codepen {
+  font-size: 1.2em;
+}
+
+.fa-envelope {
+  font-size: 1.2em;
+}
