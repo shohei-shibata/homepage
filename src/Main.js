@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import style from './style';
 
-class PostsList extends Component {
+class Main extends Component {
     constructor(props) {
         super(props);
         this.state = { data: [] };
@@ -20,7 +19,7 @@ class PostsList extends Component {
         console.log(this.state.data);
         return (
             <div>
-                <h1 style={style.title} >Projects List</h1>
+                <h1>Projects List</h1>
                 <div>
                     <p>Projects by Title:</p>
                     {this.state.data.map((item,i) => <li key={i}>{item.title}</li>)}
@@ -30,4 +29,4 @@ class PostsList extends Component {
     }
 }
 
-export default PostsList;
+export default Main;
