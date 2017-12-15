@@ -1,25 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-import PostsList from './PostsList.js';
+import Main from './Main.js';
 
 require('dotenv').load();
 
-let apiUrl = window.location.origin + '/api';
+let apiUrl = process.env.REACT_APP_APIURL;
 
 axios.get(apiUrl)
 .then(res => {
-  console.log('using local server');
-  app(apiUrl);
-})    
+  console.log('api success');
+})
 .catch(err => {
-  console.error('local server not running. using heroku deployment of the server instead.');
-  app(process.env.REACT_APP_APIURL);
+  console.error('server error.');
 });
 
-const app = (apiUrl) => {
-    console.log('apiUrl = ', apiUrl);
-    ReactDOM.render(<PostsList 
-      url={apiUrl + '/posts'}
-      />, document.getElementById('root'));   
-}
+ReactDOM.render(
+  <Main url={apiUrl + '/project'} />, 
+  document.getElementById('root'));   
+
