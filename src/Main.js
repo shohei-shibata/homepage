@@ -15,11 +15,8 @@ class Main extends Component {
     render() {
         console.log(this.state.data);
         return (
-            <div>
-                <h1>Projects List</h1>
-                <div class="wrapper">
-                    {this.state.data.map((item,i) => <Card data={item} key={i} />)}
-                </div>
+            <div className="wrapper">
+                {this.state.data.map((item,i) => <Card data={item} id={i} />)}
             </div>
         );
     }
@@ -28,8 +25,8 @@ class Main extends Component {
 class Card extends Component {
     render() {
         return (
-            <div key={this.props.key} class="card">
-                <div class='picture'>
+            <div key={this.props.id} className="card">
+                <div className='picture'>
                     <img src={this.props.data.img[0]} alt={this.props.data.title} width="120"></img>
                 </div>
                 {this.props.data.title}
