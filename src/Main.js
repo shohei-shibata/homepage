@@ -9,11 +9,11 @@ class Main extends Component {
     componentDidMount() {
         axios.get(this.props.url)
           .then(res => {
+            console.log('api success', this.props.url, res.data);
             this.setState({ data: res.data });
           });
     }
     render() {
-        console.log(this.state.data);
         return (
             <div>
                 <h1>My Projects</h1>
