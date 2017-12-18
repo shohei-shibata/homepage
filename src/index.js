@@ -5,7 +5,7 @@ import Main from './Main.js';
 
 require('dotenv').load();
 
-let apiUrl = process.env.REACT_APP_APIURL;
+let apiUrl = 'https://shibatas-portfolio-server.herokuapp.com';
 
 axios.get(apiUrl)
 .then(res => {
