@@ -3,6 +3,10 @@ html {
     overflow: hidden;
 }
 
+h1 {
+  text-align: center;
+}
+
 body {
     background-color: #f8e9d9;
     background: radial-gradient(#f8e9d9, #c6baad);
@@ -10,13 +14,63 @@ body {
     color: #161616;
     text-shadow: none;
     width: 80%;
-    max-width: 700px;
     margin: auto;
 }
 
 header {
     text-align: center;
 }
+
+/* Project Cards */
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  position: relative;
+  background-color: #fff;
+  height: auto;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 2px 2px 2px #555;
+  color: #fff;
+}
+.image {
+  display: block;
+  width: 240px;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #444;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  opacity: 0.9;
+  transition: .5s ease;
+}
+.card:hover .overlay {
+  height: 100%;
+}
+.card-title {
+  height: 10%;
+  width: 80%;
+  margin: auto;
+}
+.card-description {
+  height: 50%;
+  width: 80%;
+  margin: auto;
+}
+.card-links {
+  height: 10%;
+  width: 80%;
+  margin: auto;
+}
+
 
 /* Footer */
 footer {
