@@ -6,6 +6,7 @@ import Main from './Main.js';
 require('dotenv').load();
 
 let apiUrl = 'https://shibatas-portfolio-server.herokuapp.com';
+console.log('api url', apiUrl);
 
 axios.get(apiUrl)
 .then(res => {
