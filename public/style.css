@@ -1,6 +1,7 @@
-html {
+html, body {
     height: 100%;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -13,18 +14,24 @@ body {
     font-family: "Times New Roman", Times, serif;
     color: #161616;
     text-shadow: none;
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    margin: 0;
+    height:100%;
 }
 
 header {
     text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
 /* Project Cards */
 .wrapper {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
 }
 .card {
   position: relative;
@@ -74,11 +81,11 @@ header {
 
 /* Footer */
 footer {
-    position: absolute;
-    bottom: 0;
-    left:25%;
-    width: 50%;
-    text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 80%;
+  text-align: center;
+  margin: auto;
 }
 .footer-icons {
   font-size: 1.5em;
