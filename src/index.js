@@ -1,22 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import axios from 'axios';
-import Main from './Main.js';
+import './style.css';
 
-require('dotenv').load();
-
-let apiUrl = 'https://shibatas-portfolio-server.herokuapp.com';
-console.log('api url', apiUrl);
-
-axios.get(apiUrl)
-.then(res => {
-  console.log('api success');
-})
-.catch(err => {
-  console.error('server error.');
-});
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <div className='main-container'>Hello World</div>
+        <div className='projects-container'>Projects</div>
+      </div>
+    );
+  }
+}
 
 ReactDOM.render(
-  <Main url={apiUrl + '/project'} />, 
-  document.getElementById('root'));   
+  <App />, 
+  document.getElementById('root')
+);   
 
