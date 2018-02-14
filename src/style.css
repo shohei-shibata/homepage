@@ -19,16 +19,31 @@ body {
 
 .main-container {
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-width: 600px;
     width: calc(100vw - 300px);
     height: 100vh;
     margin: 0;
     padding: 0;
     background: radial-gradient(#ffffff 30%, #eee 90%);
+}
+.main-contents {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(100vw - 300px);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    top: 0;
+    transition: top 0.5s;
+}
+.main-contents.off {
+    top: -1000px;
+    transition: top 0.5s;
 }
 .main-headline {
     padding: 20px;
@@ -50,6 +65,27 @@ body {
     width: 100px;
     line-height: 30px;
     text-align: center;
+}
+
+.alt-contents {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(100vw - 300px);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    top: 0;
+    left: 0;
+    transition: left 0.5s;
+}
+.alt-contents.off {
+    left: -2000px;
+    transition: left 0.5s;
 }
 
 .projects-container {

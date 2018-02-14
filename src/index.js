@@ -18,9 +18,25 @@ class App extends Component {
     axios.get(url)
     .then(res => {
       this.setState({
+        altView: false,
         projects: res.data
       })
     })
+  }
+  toggleView = (newState) => {
+    console.log('toggle view', newState);
+    this.setState({
+      altView: (newState) ? (newState) : (!this.state.altView)
+    });
+  }
+  handleClick = (e) => {
+    switch (e.target.id) {
+      case 'home':
+        this.toggleView(false);
+        break;
+      default:
+        this.toggleView(true);
+    }
   }
   render() {
     console.log(this.state);
@@ -28,29 +44,50 @@ class App extends Component {
     return (
       <div className='page-container'>
         <div className='main-container'>
-          <div className='main-headline'>
-            <h1>Hello, I'm Shohei.</h1>
-            <h1>I enjoy creating<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;Simple<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;Intuitive<br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;Practical<br />
-                Web Apps.</h1>
+          <div className={(this.state.altView) ? ('main-contents off') : ('main-contents')}>
+            <div className='main-headline'>
+              <h1>Hello, I'm Shohei.</h1>
+              <h1>I enjoy creating<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;Simple<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;Intuitive<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;Practical<br />
+                  Web Apps.</h1>
+            </div>
+            <div className='main-filters'>
+              <div className='main-filters-btn'>HTML</div>
+              <div className='main-filters-btn'>CSS</div>
+              <div className='main-filters-btn'>Javascript</div>
+              <div className='main-filters-btn'>React</div>
+              <div className='main-filters-btn'>Node.js</div>
+              <div className='main-filters-btn'>Express.js</div>
+              <div className='main-filters-btn'>MongoDB</div>
+            </div>
           </div>
-          <div className='main-filters'>
-            <div className='main-filters-btn'>HTML</div>
-            <div className='main-filters-btn'>CSS</div>
-            <div className='main-filters-btn'>Javascript</div>
-            <div className='main-filters-btn'>React</div>
-            <div className='main-filters-btn'>Node.js</div>
-            <div className='main-filters-btn'>Express.js</div>
-            <div className='main-filters-btn'>MongoDB</div>
+          <div className={(!this.state.altView) ? ('alt-contents off') : ('alt-contents')}>
+            <div className='main-headline'>
+              <h1>Hello, I'm Shohei.</h1>
+              <h1>I enjoy creating<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;Simple<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;Intuitive<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;Practical<br />
+                  Web Apps.</h1>
+            </div>
+            <div className='main-filters'>
+              <div className='main-filters-btn'>HTML</div>
+              <div className='main-filters-btn'>CSS</div>
+              <div className='main-filters-btn'>Javascript</div>
+              <div className='main-filters-btn'>React</div>
+              <div className='main-filters-btn'>Node.js</div>
+              <div className='main-filters-btn'>Express.js</div>
+              <div className='main-filters-btn'>MongoDB</div>
+            </div>
           </div>
         </div>
         <div className='projects-container'>
           {(projects) ? (
             <div>
               {projects.map((project, i) => {
-                return <Project key={i} project={project}/>;
+                return <Project key={i} project={project} toggleView={this.toggleView} />;
               })}
             </div>
           ) : (
@@ -60,13 +97,13 @@ class App extends Component {
         <div className='footer'>
           <div>
             <ul className='footer-nav'>
-              <li>About</li>
-              <li>Home</li>
-              <li>Contact</li>
+              <li onClick={this.handleClick}>About</li>
+              <li id='home' onClick={this.handleClick}>Home</li>
+              <li onClick={this.handleClick}>Contact</li>
             </ul>
           </div>
           <div className='footer-copyright'>
-            Shohei Shibata 2017 ©
+            Shohei Shibata 2018 ©
           </div>
         </div>
       </div>
