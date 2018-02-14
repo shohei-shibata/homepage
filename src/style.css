@@ -93,6 +93,7 @@ body {
     height: 60%;
     background-color: #eee;
     border-radius: 5px;
+    padding: 50px;
 }
 
 .projects-container {
@@ -168,3 +169,6 @@ body {
     color: #888;
 }
 
+.about {
+    font-size: 1.3em;
+}

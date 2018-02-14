@@ -8,8 +8,11 @@ import './style.css';
 
 import axios from 'axios';
 
+import About from './about';
 import Project from './project';
 import Footer from './footer';
+
+require('dotenv').load();
 
 class App extends Component {
   constructor(props) {
@@ -19,7 +22,7 @@ class App extends Component {
     }
   }
   componentDidMount() {
-    const url = 'https://shibatas-portfolio-server.herokuapp.com/project'
+    const url = process.env.REACT_APP_APIURL + '/project';
     axios.get(url)
     .then(res => {
       this.setState({
@@ -52,7 +55,7 @@ class App extends Component {
               <div className='main-headline'>
                 <h1>Hello, I'm Shohei.</h1>
                 <h1>I enjoy creating<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;Simple<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Minimalist<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;Intuitive<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;Practical<br />
                     Web Apps.</h1>
@@ -73,7 +76,7 @@ class App extends Component {
                   <Route 
                     path="/about"
                     render={(routeProps)=> (
-                      <h1>About me</h1>
+                      <About />
                     )
                   }/>
                   <Route 
