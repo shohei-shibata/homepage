@@ -71,7 +71,7 @@ body {
     position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
     width: calc(100vw - 300px);
@@ -89,11 +89,12 @@ body {
     transition: left 0.5s;
 }
 .alt-contents-card {
-    width: 60%;
-    height: 60%;
+    margin-top: 10vh;
+    width: 60vw;
+    height: 65vh;
     background-color: #eee;
     border-radius: 5px;
-    padding: 50px;
+    padding: 20px 50px;
 }
 
 .projects-container {
@@ -170,5 +171,14 @@ body {
 }
 
 .about {
-    font-size: 1.3em;
+    font-size: 2.7vh;
+    line-height: 1.4em;
+}
+.about-photo {
+    display: block;
+    float: right;
+    width: 15vw;
+    height: 15vw;
+    margin: 0 0 30px 30px;
+    border-radius: 5%;
 }

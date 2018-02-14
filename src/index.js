@@ -9,7 +9,9 @@ import './style.css';
 import axios from 'axios';
 
 import About from './about';
+import Contact from './contact';
 import Project from './project';
+import ProjectDetail from './project-detail';
 import Footer from './footer';
 
 require('dotenv').load();
@@ -82,13 +84,13 @@ class App extends Component {
                   <Route 
                     path="/contact"
                     render={(routeProps)=> (
-                      <h1>Contact</h1>
+                      <Contact />
                     )
                   }/>
                   <Route 
                     path="/project/:id"
                     render={(routeProps)=> (
-                      <h1>Project</h1>
+                      <ProjectDetail />
                     )
                   }/>
                 </div>

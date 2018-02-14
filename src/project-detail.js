@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
-class Footer extends Component {
+class ProjectDetail extends Component {
     handleClick = (e) => {
         switch (e.target.id) {
             case 'about':
@@ -21,20 +21,13 @@ class Footer extends Component {
     }
     render() {
         return (
-          <div className='footer'>
-            <div>
-              <ul className='footer-nav'>
-                <li id='home' onClick={this.handleClick}>Home</li>
-                <li id='about' onClick={this.handleClick}>About</li>
-                <li id='contact' onClick={this.handleClick}>Contact</li>
-              </ul>
-            </div>
-            <div className='footer-copyright'>
-              Shohei Shibata 2018 ©
-            </div>
+          <div className='project-detail'>
+            <p>
+                Project Detail Page
+            </p>
           </div>
         );
     }
 }
 
-export default withRouter(Footer);
+export default withRouter(ProjectDetail);
