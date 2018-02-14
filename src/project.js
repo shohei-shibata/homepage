@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 
 class Project extends Component {
     handleClick = (e) => {
         console.log('click');
+        this.props.history.push('/project/' + this.props.project._id);
         this.props.toggleView(true);
     }
     render() {
@@ -22,4 +24,4 @@ class Project extends Component {
     }
 }
 
-export default Project;
+export default withRouter(Project);

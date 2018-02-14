@@ -78,6 +78,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #222;
     
     top: 0;
     left: 0;
@@ -86,6 +87,12 @@ body {
 .alt-contents.off {
     left: -2000px;
     transition: left 0.5s;
+}
+.alt-contents-card {
+    width: 60%;
+    height: 60%;
+    background-color: #eee;
+    border-radius: 5px;
 }
 
 .projects-container {
@@ -146,9 +153,17 @@ body {
     padding: 5px;
     width: 100px;
     text-align: center;
-    border: solid 0.5px #ccc;
+    border: solid 0.5px #888;
     color: #888;
 }
+
+.footer-nav li:hover {
+    color: #e9b1cd;
+    border-color: #e9b1cd;
+    transition: color border-color 0.2s;
+    cursor: pointer;
+}
+
 .footer-copyright {
     color: #888;
 }
