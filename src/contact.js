@@ -21,13 +21,14 @@ class Contact extends Component {
     }
     render() {
         return (
-            <div className='alt-contents-card'>
+            <div className={(this.props.altView) ? ('alt-contents-card shift') : ('alt-contents-card')}>
               <div className='contact'>
                 <h3>Contact Form</h3>
     
                 <form className="contact-form" action="https://formspree.io/me@shoheishibata.com" method="POST">          
                     <input className="contact-form-item name" type="text" name="name" placeholder="Name" autoFocus={true}/>
                     <input className="contact-form-item email" type="email" name="_replyto" placeholder="Email" />    
+                    <input className="contact-form-item subject" type="subject" name="_replyto" placeholder="Subject" />  
                     <div>
                         <textarea placeholder="Your message here" className="contact-form-item message" type="text" name="message" rows="5" />
                     </div>

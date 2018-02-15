@@ -16,7 +16,7 @@ class ProjectDetail extends Component {
             <div key={this.props.match.params.id} className='project-detail'>
                 {(project) ? (
                     <div>
-                        <img src={project.img[0]} />
+                        <img src={project.img[0]} alt={project.title} />
                         <p>{project.description}</p>
                         <div className='project-detail-links'>
                             <a href={project.appUrl} target='_blank'><i className="fas fa-external-link-alt"></i></a>

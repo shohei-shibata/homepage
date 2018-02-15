@@ -14,44 +14,30 @@ body {
 }
 
 .page-container {
-    position: absolute;
-    width: 100%;
+    position: fixed;
+    width: calc(100vw - 300px);
     top: 0;
     left: 0;
-
-    display: flex;
+    transition: top 0.5s;
+}
+.page-container.shift {
+    top: -100vh;
+    transition: top 0.5s;
 }
 
 .main-container {
-    position: fixed;
-    min-width: 600px;
-    width: calc(100vw - 300px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
     height: 100vh;
-    margin: 0;
-    padding: 0;
     background: radial-gradient(#ffffff 30%, #eee 90%);
 }
 .main-contents {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: calc(100vw - 300px);
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    
-    top: 0;
-    transition: top 0.5s;
-}
-.main-contents.off {
-    top: -1000px;
-    transition: top 0.5s;
+    margin-top: 25vh;
 }
 .main-headline {
-    padding: 20px;
     width: 100%;
     max-width: 500px;
     color: #222;
@@ -66,47 +52,37 @@ body {
     background: linear-gradient(to right, #ccc, #eee, #ccc);
     box-shadow: 2px 2px 5px #aaa;
     color: #333;
-    margin: 10px;
+    margin: 20px 20px 0 0;
     width: 100px;
     line-height: 30px;
     text-align: center;
 }
 
-.alt-contents {
-    position: fixed;
+.alt-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 
-    width: calc(100vw - 300px);
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100vh;
     background-color: #222;
-    
-    top: 0;
-    left: 0;
-    transition: left 0.5s;
-}
-.alt-contents.off {
-    left: -2000px;
-    transition: left 0.5s;
-}
-.alt-contents-card {
-    margin-top: 10vh;
-    width: 60vw;
-    height: 65vh;
-    background-color: #eee;
-    border-radius: 5px;
-    padding: 20px 50px;
 }
 
+.alt-contents-card {
+    width: 60vw;
+    height: 65vh;
+    background: linear-gradient(to right, #ccc, #eee, #ccc);
+    border-radius: 5px;
+    padding: 20px 50px;
+    margin-top: 10vh;
+}
+
+
 .projects-container {
-    position: absolute;
-    right: 0;
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    left: calc(100vw - 300px);
+    width: 300px;
     overflow: visible;
     background-color: #888;
     margin: 0;
@@ -135,28 +111,28 @@ body {
     transition: opacity 0.5s;
 }
 
-.footer {
+.nav {
     position: fixed;
-    top: calc(100vh - 120px);
+    top: 87vh;
     left: 0;
-    height: 100px;
-    width: 80%;
-    min-width: 600px;
-    max-width: calc(100vw - 300px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    width: calc(100vw - 300px);
+    transition: top 0.5s;
 }
-.footer-nav {
+/*.nav.shift {
+    top: 2vh;
+    transition: top 0.5s;
+}*/
+.nav-container {
     margin: 0;
     padding: 0;
     font-size: 1.3em;
+    display: flex;
+    justify-content: center;
 }
-.footer-nav li {
+.nav-container li {
     list-style-type: none;
     display: inline-block;
-    margin: 0 50px;
+    margin: 0 2vw;
     padding: 5px;
     width: 100px;
     text-align: center;
@@ -164,15 +140,22 @@ body {
     color: #888;
 }
 
-.footer-nav li:hover {
+.nav-container li:hover {
     color: #e9b1cd;
     border-color: #e9b1cd;
     transition: color border-color 0.2s;
     cursor: pointer;
 }
 
+.footer {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: calc(100vw - 300px);
+}
 .footer-copyright {
     color: #888;
+    text-align: center;
 }
 
 .about {
@@ -195,9 +178,10 @@ body {
     animation: fade-in 1s;
 }
 .contact-form-item {
-    margin: 20px 2.5%;
+    margin: 10px 2.5%;
     padding: 0 2.5%;
     border: none;
+    font-family: "Times New Roman", Times, serif;
     font-size: 0.8em;
     line-height: 2em;
 }
@@ -207,13 +191,16 @@ body {
 .contact-form-item.email {
     width: 40%;
 }
+.contact-form-item.subject {
+    width: 90%;
+}
 .contact-form-item.message {
     width: 90%;
 }
 .contact-form-submit {
     width: 10%;
     margin: 0 45%;
-    font-size: 1.2em;
+    font-size: 0.8em;
 }
 
 .project-detail {
@@ -221,9 +208,15 @@ body {
     color: #bbb;
     text-align: center;
     padding: 30px;
+    margin-top: 5vh;
+    width: 60%;
     animation: fade-in 1s;
 }
 .project-detail-links a {
     color: #bbb;
     margin: 2vw;
+}
+.project-detail img {
+    width: 80%;
+    max-width: 600px;
 }

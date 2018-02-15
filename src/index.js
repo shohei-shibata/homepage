@@ -10,9 +10,12 @@ import axios from 'axios';
 
 import About from './about';
 import Contact from './contact';
+import Nav from './nav';
 import ProjectCard from './project-card';
 import ProjectDetail from './project-detail';
 import Footer from './footer';
+
+import BtnOne from './btn-one';
 
 require('dotenv').load();
 
@@ -20,16 +23,29 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      projects: null
+      altView: false,
+      projects: null,
+      tags: null,
+      filter: null
     }
   }
   componentDidMount() {
     const url = process.env.REACT_APP_APIURL + '/project';
     axios.get(url)
     .then(res => {
+      let tags = [];
+      res.data.forEach(data => {
+        data.tags.forEach(tag => {
+          if (tags.indexOf(tag) === -1) {
+            tags.push(tag);
+          }
+        })
+      });
+      console.log('tags', tags);
       this.setState({
         altView: false,
-        projects: res.data
+        projects: res.data,
+        tags: tags
       })
     })
   }
@@ -38,7 +54,13 @@ class App extends Component {
       altView: newState
     });
   }
+  filterProjects = (tag) => {
+    this.setState({
+      filter: tag
+    });
+  }
   handleClick = (e) => {
+    console.log('handleClick', e.target.id);
     switch (e.target.id) {
       case 'home':
         this.toggleView(false);
@@ -48,41 +70,51 @@ class App extends Component {
     }
   }
   render() {
-    const projects = this.state.projects;
+    const tags = (this.state.tags) ? (this.state.tags) : ([]);
+    const filter = this.state.filter;
+    let projects = this.state.projects;
+    
+    // Filter projects if filter is set
+    if (projects && filter) {
+      projects = projects.filter(project => {
+        return project.tags.indexOf(filter) !== -1;
+      });      
+    }
+    
     return (
       <Router>
-        <div className='page-container'>
-          <div className='main-container'>
-            <div className={(this.state.altView) ? ('main-contents off') : ('main-contents')}>
-              <div className='main-headline'>
-                <h1>Hello, I'm Shohei.</h1>
-                <h1>I enjoy creating<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;Simple<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;Intuitive<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;Practical<br />
-                    Web Apps.</h1>
+        <div>
+          <div className={(this.state.altView) ? ('page-container shift') : ('page-container')}>
+              <div className='main-container'>
+                <div className='main-contents'>
+                  <div className='main-headline'>
+                    <h1>Hello, I'm Shohei.</h1>
+                    <h1>I enjoy creating<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Simple<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Intuitive<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Practical<br />
+                        Web Apps.</h1>
+                  </div>
+                  <div className='main-filters'>
+                    {tags.map((item, i) => {
+                      return (
+                        <BtnOne key={i} value={item} onClick={this.filterProjects}/>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
-              <div className='main-filters'>
-                <div className='main-filters-btn'>HTML</div>
-                <div className='main-filters-btn'>CSS</div>
-                <div className='main-filters-btn'>Javascript</div>
-                <div className='main-filters-btn'>React</div>
-                <div className='main-filters-btn'>Node.js</div>
-                <div className='main-filters-btn'>Express.js</div>
-                <div className='main-filters-btn'>MongoDB</div>
-              </div>
-            </div>
-            <div className={(!this.state.altView) ? ('alt-contents off') : ('alt-contents')}>
+              <div className='alt-container'>
                   <Route 
                     path="/about"
                     render={(routeProps)=> (
-                      <About />
+                      <About altView={this.state.altView} />
                     )
                   }/>
                   <Route 
                     path="/contact"
                     render={(routeProps)=> (
-                      <Contact />
+                      <Contact altView={this.state.altView} />
                     )
                   }/>
                   <Route 
@@ -104,7 +136,8 @@ class App extends Component {
               <h1>Loading...</h1>
             )}
           </div>
-          <Footer toggleView={this.toggleView} />
+          <Nav toggleView={this.toggleView} altView={this.state.altView} />
+          <Footer />
         </div>
       </Router>
     );

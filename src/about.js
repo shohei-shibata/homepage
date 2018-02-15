@@ -21,7 +21,7 @@ class About extends Component {
     }
     render() {
         return (
-            <div className='alt-contents-card'>
+            <div className={(this.props.altView) ? ('alt-contents-card shift') : ('alt-contents-card')}>
               <div className='about'>
                 <p>   
                     <img className='about-photo' src='https://picsum.photos/200/200' alt='me' />
