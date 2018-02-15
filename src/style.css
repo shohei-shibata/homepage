@@ -1,3 +1,8 @@
+@keyframes fade-in {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -173,6 +178,7 @@ body {
 .about {
     font-size: 2.7vh;
     line-height: 1.4em;
+    animation: fade-in 1s
 }
 .about-photo {
     display: block;
@@ -186,6 +192,7 @@ body {
 .contact {
     font-size: 3vh;
     line-height: 2em;
+    animation: fade-in 1s;
 }
 .contact-form-item {
     margin: 20px 2.5%;
@@ -207,4 +214,16 @@ body {
     width: 10%;
     margin: 0 45%;
     font-size: 1.2em;
+}
+
+.project-detail {
+    font-size: 1.5em;
+    color: #bbb;
+    text-align: center;
+    padding: 30px;
+    animation: fade-in 1s;
+}
+.project-detail-links a {
+    color: #bbb;
+    margin: 2vw;
 }

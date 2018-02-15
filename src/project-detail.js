@@ -2,25 +2,8 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
 class ProjectDetail extends Component {
-    handleClick = (e) => {
-        switch (e.target.id) {
-            case 'about':
-                this.props.toggleView(true);
-                this.props.history.push('/about');
-                break;
-            case 'home':
-                this.props.toggleView(false);
-                this.props.history.push('/');
-                break;
-            case 'contact':
-                this.props.toggleView(true);
-                this.props.history.push('/contact');
-                break;
-            default:
-        }
-    }
+
     render() {
-        console.log(this.props.projects, this.props.match.params);
         const project = (this.props.projects) ? (
             this.props.projects.find(item => {
                 return this.props.match.params.id === item._id;
@@ -30,14 +13,20 @@ class ProjectDetail extends Component {
         )
         console.log(project);
         return (
-            <div className='project-detail'>
+            <div key={this.props.match.params.id} className='project-detail'>
                 {(project) ? (
-                    <img src={project.img[0]} />
-  
+                    <div>
+                        <img src={project.img[0]} />
+                        <p>{project.description}</p>
+                        <div className='project-detail-links'>
+                            <a href={project.appUrl} target='_blank'><i className="fas fa-external-link-alt"></i></a>
+                            <a href={project.repoUrl} target='_blank'><i className="fab fa-github"></i></a>
+                        </div>
+                    </div>
                 ) : (
                     <h1>Loading</h1>
                 )}
-          </div>
+            </div>
         );
     }
 }
