@@ -182,3 +182,29 @@ body {
     margin: 0 0 30px 30px;
     border-radius: 5%;
 }
+
+.contact {
+    font-size: 3vh;
+    line-height: 2em;
+}
+.contact-form-item {
+    margin: 20px 2.5%;
+    padding: 0 2.5%;
+    border: none;
+    font-size: 0.8em;
+    line-height: 2em;
+}
+.contact-form-item.name {
+    width: 40%;
+}
+.contact-form-item.email {
+    width: 40%;
+}
+.contact-form-item.message {
+    width: 90%;
+}
+.contact-form-submit {
+    width: 10%;
+    margin: 0 45%;
+    font-size: 2em;
+}

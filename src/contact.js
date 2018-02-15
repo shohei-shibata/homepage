@@ -22,9 +22,21 @@ class Contact extends Component {
     render() {
         return (
           <div className='contact'>
-            <p>
-                Contact Page
-            </p>
+            <h3>Contact Form</h3>
+
+            <form className="contact-form" action="https://formspree.io/me@shoheishibata.com" method="POST">          
+                <input className="contact-form-item name" type="text" name="name" placeholder="Name" autoFocus={true}/>
+                <input className="contact-form-item email" type="email" name="_replyto" placeholder="Email" />    
+                <div>
+                    <textarea placeholder="Your message here" className="contact-form-item message" type="text" name="message" rows="5" />
+                </div>
+                <input type="hidden" name="_next" value="/" />
+                <input type="text" name="_gotcha" style={{display:'none'}} />
+                <input type="hidden" name="_subject" placeholder="shoheishibata.com Contact Form" />
+                <div>
+                    <input className="contact-form-submit" type="submit" value="Send" />
+                </div>
+            </form>
           </div>
         );
     }
