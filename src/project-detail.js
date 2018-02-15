@@ -20,11 +20,23 @@ class ProjectDetail extends Component {
         }
     }
     render() {
+        console.log(this.props.projects, this.props.match.params);
+        const project = (this.props.projects) ? (
+            this.props.projects.find(item => {
+                return this.props.match.params.id === item._id;
+            })
+        ) : (
+            null    
+        )
+        console.log(project);
         return (
-          <div className='project-detail'>
-            <p>
-                Project Detail Page
-            </p>
+            <div className='project-detail'>
+                {(project) ? (
+                    <img src={project.img[0]} />
+  
+                ) : (
+                    <h1>Loading</h1>
+                )}
           </div>
         );
     }

@@ -10,7 +10,7 @@ import axios from 'axios';
 
 import About from './about';
 import Contact from './contact';
-import Project from './project';
+import ProjectCard from './project-card';
 import ProjectDetail from './project-detail';
 import Footer from './footer';
 
@@ -57,7 +57,7 @@ class App extends Component {
               <div className='main-headline'>
                 <h1>Hello, I'm Shohei.</h1>
                 <h1>I enjoy creating<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;Minimalist<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Simple<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;Intuitive<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;Practical<br />
                     Web Apps.</h1>
@@ -73,8 +73,6 @@ class App extends Component {
               </div>
             </div>
             <div className={(!this.state.altView) ? ('alt-contents off') : ('alt-contents')}>
-              <div className='alt-contents-card'>
-                <div>
                   <Route 
                     path="/about"
                     render={(routeProps)=> (
@@ -90,18 +88,16 @@ class App extends Component {
                   <Route 
                     path="/project/:id"
                     render={(routeProps)=> (
-                      <ProjectDetail />
+                      <ProjectDetail projects={projects}/>
                     )
                   }/>
-                </div>
               </div>
-            </div>
           </div>
           <div className='projects-container'>
             {(projects) ? (
               <div>
                 {projects.map((project, i) => {
-                  return <Project key={i} project={project} toggleView={this.toggleView} />;
+                  return <ProjectCard key={i} project={project} toggleView={this.toggleView} />;
                 })}
               </div>
             ) : (

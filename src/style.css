@@ -179,7 +179,7 @@ body {
     float: right;
     width: 15vw;
     height: 15vw;
-    margin: 0 0 30px 30px;
+    margin: 0 0 80px 80px;
     border-radius: 5%;
 }
 
@@ -206,5 +206,5 @@ body {
 .contact-form-submit {
     width: 10%;
     margin: 0 45%;
-    font-size: 2em;
+    font-size: 1.2em;
 }
