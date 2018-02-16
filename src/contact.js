@@ -23,7 +23,8 @@ class Contact extends Component {
         return (
             <div className={(this.props.altView) ? ('alt-contents-card shift') : ('alt-contents-card')}>
               <div className='contact'>
-                <h3>Contact Form</h3>
+                <h3>Contact Me</h3>
+                <small>Please use the form below to get in touch.</small>
     
                 <form className="contact-form" action="https://formspree.io/me@shoheishibata.com" method="POST">          
                     <input className="contact-form-item name" type="text" name="name" placeholder="Name" autoFocus={true}/>

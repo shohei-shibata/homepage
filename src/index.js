@@ -41,7 +41,6 @@ class App extends Component {
           }
         })
       });
-      console.log('tags', tags);
       this.setState({
         altView: false,
         projects: res.data,
@@ -89,16 +88,17 @@ class App extends Component {
                 <div className='main-contents'>
                   <div className='main-headline'>
                     <h1>Hello, I'm Shohei.</h1>
-                    <h1>I enjoy creating<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Simple<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Intuitive<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Practical<br />
+                    <h1>My passion is building<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intuitive<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Practical<br />
                         Web Apps.</h1>
                   </div>
                   <div className='main-filters'>
                     {tags.map((item, i) => {
+                      const active = (item === this.state.filter);
                       return (
-                        <BtnOne key={i} value={item} onClick={this.filterProjects}/>
+                        <BtnOne key={i} value={item} active={active} onClick={this.filterProjects}/>
                       );
                     })}
                   </div>
@@ -129,7 +129,7 @@ class App extends Component {
             {(projects) ? (
               <div>
                 {projects.map((project, i) => {
-                  return <ProjectCard key={i} project={project} toggleView={this.toggleView} />;
+                  return <ProjectCard key={i} position={i} project={project} toggleView={this.toggleView} />;
                 })}
               </div>
             ) : (

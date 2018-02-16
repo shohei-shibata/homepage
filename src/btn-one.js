@@ -14,8 +14,15 @@ class BtnOne extends Component {
             margin: '20px 20px 0 0',
             width: '100px',
             border: 'none',
-            lineHeight: '30px'
+            lineHeight: '30px',
+            opacity: '0.5',
+            fontSize: '1em'
         };
+        if (this.props.active) {
+            style.background = 'linear-gradient(to right, #a50b5e, #b50c67, #a50b5e)';
+            style.color = '#eee';
+            style.opacity = '1';
+        }
         return (
             <button id={this.props.value} style={style} onClick={this.handleClick} >{this.props.value}</button>
         );

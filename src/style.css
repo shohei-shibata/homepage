@@ -2,6 +2,10 @@
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
+@keyframes slide-up {
+    0%   { transform: translateY(100vh) }
+    100% { transform: translateY(0) }
+}
 
 html, body {
     margin: 0;
@@ -70,8 +74,7 @@ body {
 }
 
 .alt-contents-card {
-    width: 60vw;
-    height: 65vh;
+    width: 50%;
     background: linear-gradient(to right, #ccc, #eee, #ccc);
     border-radius: 5px;
     padding: 20px 50px;
@@ -84,10 +87,11 @@ body {
     left: calc(100vw - 300px);
     width: 300px;
     overflow: visible;
-    background-color: #888;
+    background-color: #222;
     margin: 0;
     padding: 0;
     color: white;
+    min-height: 100vh;
 }
 .projects-card {
     background-color: #888;
@@ -141,8 +145,8 @@ body {
 }
 
 .nav-container li:hover {
-    color: #e9b1cd;
-    border-color: #e9b1cd;
+    color: #b50c67;
+    border-color: #b50c67;
     transition: color border-color 0.2s;
     cursor: pointer;
 }
@@ -159,23 +163,32 @@ body {
 }
 
 .about {
-    font-size: 2.7vh;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.7vw;
     line-height: 1.4em;
     animation: fade-in 1s
+}
+.about h3 {
+    text-align: center;
 }
 .about-photo {
     display: block;
     float: right;
-    width: 15vw;
-    height: 15vw;
-    margin: 0 0 80px 80px;
+    width: 30%;
+    margin: 0 0 30px 80px;
     border-radius: 5%;
 }
 
 .contact {
     font-size: 3vh;
     line-height: 2em;
+    text-align: center;
     animation: fade-in 1s;
+}
+.contact h3 {
+    margin-bottom: 0;
 }
 .contact-form-item {
     margin: 10px 2.5%;
@@ -210,7 +223,6 @@ body {
     padding: 30px;
     margin-top: 5vh;
     width: 60%;
-    animation: fade-in 1s;
 }
 .project-detail-links a {
     color: #bbb;
@@ -218,5 +230,5 @@ body {
 }
 .project-detail img {
     width: 80%;
-    max-width: 600px;
+    max-width: 50vh;
 }
