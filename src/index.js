@@ -94,7 +94,7 @@ class App extends Component {
                     <h1>My passion is building<br/>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple<br/>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intuitive<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Helpful<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beautiful<br />
                         Web Apps.</h1>
                   </div>
                   <div className='main-filters'>

@@ -166,7 +166,7 @@ body {
     width: 100%;
     max-width: 700px;
     margin: auto;
-    font-size: 1.7vw;
+    font-size: 2.7vh;
     line-height: 1.4em;
     animation: fade-in 1s
 }
@@ -223,6 +223,8 @@ body {
     padding: 30px;
     margin-top: 5vh;
     width: 60%;
+    
+    animation: fade-in 0.5s;
 }
 .project-detail-links a {
     color: #bbb;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import profilePhoto from './img/profile.png';
 
 class About extends Component {
     handleClick = (e) => {
@@ -25,7 +26,7 @@ class About extends Component {
               <div className='about'>
                 <h3>About Me</h3>
                 <p>   
-                    <img className='about-photo' src='https://picsum.photos/200/200' alt='me' />
+                    <img className='about-photo' src={profilePhoto} alt='me' />
                     My name is Shohei Shibata. Living in Düsseldorf with my wife and two boys,
                     I work as a mechanical engineer in the automotive industry during the day,
                     and code in the spare time.
