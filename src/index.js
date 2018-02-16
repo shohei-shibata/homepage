@@ -54,6 +54,9 @@ class App extends Component {
     });
   }
   filterProjects = (tag) => {
+    if (tag === this.state.filter) {
+      tag = null;
+    }
     this.setState({
       filter: tag
     });
