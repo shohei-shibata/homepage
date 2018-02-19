@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
+import BtnOne from './btn-one';
+
 class Contact extends Component {
     handleClick = (e) => {
         switch (e.target.id) {
@@ -37,7 +39,7 @@ class Contact extends Component {
                     <input type="text" name="_gotcha" style={{display:'none'}} />
                     <input type="hidden" name="_subject" placeholder="shoheishibata.com Contact Form" />
                     <div>
-                        <input className="contact-form-submit" type="submit" value="Send" />
+                        <BtnOne value='Send' active={true} type='submit' fontSize='0.8em' width='120px' lineHeight='40px' />
                     </div>
                 </form>
               </div>

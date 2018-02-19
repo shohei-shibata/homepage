@@ -3,8 +3,10 @@ import { withRouter } from 'react-router-dom';
 
 class BtnOne extends Component {
     handleClick = (e) => {
-        e.preventDefault();
-        this.props.onClick(e.target.id);
+        if (this.props.onClick) {
+            e.preventDefault();
+            this.props.onClick(e.target.id);
+        }
     }
     render() {
         const style = {
@@ -12,11 +14,11 @@ class BtnOne extends Component {
             boxShadow: '2px 2px 5px #aaa',
             color: '#333',
             margin: '20px 20px 0 0',
-            width: '100px',
+            width: this.props.width || '100px',
             border: 'none',
-            lineHeight: '30px',
+            lineHeight: this.props.lineHeight || '30px',
             opacity: '0.5',
-            fontSize: '1em'
+            fontSize: (this.props.fontSize) || ('1em')
         };
         if (this.props.active) {
             style.background = 'linear-gradient(to right, #a50b5e, #b50c67, #a50b5e)';
@@ -24,7 +26,7 @@ class BtnOne extends Component {
             style.opacity = '1';
         }
         return (
-            <button id={this.props.value} style={style} onClick={this.handleClick} >{this.props.value}</button>
+            <button id={this.props.value} style={style} onClick={this.handleClick} type={this.props.type}>{this.props.value}</button>
         );
     }
 }
