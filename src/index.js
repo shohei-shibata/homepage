@@ -34,8 +34,15 @@ class App extends Component {
     axios.get(url)
     .then(res => {
       let tags = [];
-      res.data.forEach(data => {
-        data.tags.forEach(tag => {
+      let data = res.data
+        .filter(item => {
+          return item.priority > 0;
+        })
+        .sort((current, next) => {
+          return current.priority - next.priority;
+        })
+      data.forEach(item => {
+        item.tags.forEach(tag => {
           if (tags.indexOf(tag) === -1) {
             tags.push(tag);
           }
@@ -43,7 +50,7 @@ class App extends Component {
       });
       this.setState({
         altView: false,
-        projects: res.data,
+        projects: data,
         tags: tags
       })
     })
