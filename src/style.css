@@ -105,6 +105,7 @@ body {
 }
 .projects-card:hover {
     filter: grayscale(30%);
+    cursor: pointer;
 }
 .projects-card-text {
     font-size: 1.5em;
