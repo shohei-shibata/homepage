@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 
+import Markdown from 'react-markdown';
+
 class ProjectDetail extends Component {
 
     render() {
@@ -18,7 +20,7 @@ class ProjectDetail extends Component {
                     <div>
                         <img src={project.img[0]} alt={project.title} />
                         <div>
-                            <p>{project.description}</p>
+                            <Markdown source={project.description} />
                         </div>
                         <div className='project-detail-links'>
                             <a href={project.appUrl} target='_blank'><i className="fas fa-external-link-alt"></i></a>
