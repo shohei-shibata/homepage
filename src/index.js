@@ -4,18 +4,17 @@ import {
     BrowserRouter as Router,
     Route 
   } from 'react-router-dom';
-import './style.css';
+import './css/index.css';
 
 import axios from 'axios';
 
-import About from './about';
-import Contact from './contact';
-import Nav from './nav';
-import ProjectCard from './project-card';
-import ProjectDetail from './project-detail';
-import Footer from './footer';
+import About from './organisms/about';
+import Blog from './organisms/blog';
+import Contact from './organisms/contact';
+import Home from './organisms/home';
+import Portfolio from './organisms/portfolio';
 
-import BtnOne from './btn-one';
+import Nav from './molecules/nav';
 
 require('dotenv').load();
 
@@ -91,65 +90,20 @@ class App extends Component {
     }
     
     return (
-      <Router>
-        <div>
-          <div className={(this.state.altView) ? ('page-container shift') : ('page-container')}>
-              <div className='main-container'>
-                <div className='main-contents'>
-                  <div className='main-headline'>
-                    <h1>Hello, I'm Shohei.</h1>
-                    <h1>My passion is building<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intuitive<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beautiful<br />
-                        Web Apps.</h1>
-                  </div>
-                  <div className='main-filters'>
-                    {tags.map((item, i) => {
-                      const active = (item === this.state.filter);
-                      return (
-                        <BtnOne key={i} value={item} active={active} onClick={this.filterProjects}/>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-              <div className='alt-container'>
-                  <Route 
-                    path="/about"
-                    render={(routeProps)=> (
-                      <About altView={this.state.altView} />
-                    )
-                  }/>
-                  <Route 
-                    path="/contact"
-                    render={(routeProps)=> (
-                      <Contact altView={this.state.altView} />
-                    )
-                  }/>
-                  <Route 
-                    path="/project/:id"
-                    render={(routeProps)=> (
-                      <ProjectDetail projects={projects}/>
-                    )
-                  }/>
-              </div>
+      <div>
+        <Router>
+          <div className="fixed-page">
+            <Nav />
+            <div className="main flex-col">
+              <Route exact path="/" component={Home}/>
+              <Route path="/about" component={About}/>
+              <Route path="/portfolio" component={Portfolio}/>
+              <Route path="/blog" component={Blog}/>
+              <Route path="/contact" component={Contact}/>
+            </div>
           </div>
-          <div className='projects-container'>
-            {(projects) ? (
-              <div>
-                {projects.map((project, i) => {
-                  return <ProjectCard key={i} position={i} project={project} toggleView={this.toggleView} />;
-                })}
-              </div>
-            ) : (
-              <h1>Loading...</h1>
-            )}
-          </div>
-          <Nav toggleView={this.toggleView} altView={this.state.altView} />
-          <Footer />
-        </div>
-      </Router>
+        </Router>
+      </div>
     );
   }
 }

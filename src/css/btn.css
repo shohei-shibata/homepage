@@ -1,0 +1,12 @@
+.btn-primary {
+    background-color: transparent;
+    border: solid 1px #990033;
+    color: #990033;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    background-color: #990033;
+    border: solid 1px #990033;
+    color: #fff;
+}

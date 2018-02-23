@@ -13,7 +13,7 @@ class BtnOne extends Component {
             background: 'linear-gradient(to right, #ccc, #eee, #ccc)',
             boxShadow: '2px 2px 5px #aaa',
             color: '#333',
-            margin: '20px 20px 0 0',
+            margin: this.props.margin || '20px 20px 0 0',
             width: this.props.width || '100px',
             border: 'none',
             lineHeight: this.props.lineHeight || '30px',
