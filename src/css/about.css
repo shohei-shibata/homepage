@@ -1,0 +1,10 @@
+.about {
+    width: 60vw;
+}
+.about-photo {
+    float: right;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 0 20px 20px;
+}

@@ -40,16 +40,15 @@ h1 {
 .main {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
 }
 .main-card {
   background-color: #fff;
-  max-width: 90%;
-  max-height: 80vh;
+  width: 100vw;
+  height: 80vh;
   padding: 10vmin;
-  border-radius: 2px;
-  box-shadow: 5px 5px 10px #444;
   font-family: 'Source Sans Pro', sans-serif;
   animation: 1s slide 1s both;
 }
@@ -59,5 +58,14 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
-
+  .main {
+    justify-content: center;
+  }
+  .main-card {
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px #444;
+  }
 }
