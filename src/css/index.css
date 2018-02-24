@@ -45,10 +45,12 @@ h1 {
 }
 .main-card {
   background-color: #fff;
-  width: 90%;
-  height: 80vh;
+  max-width: 90%;
+  max-height: 80vh;
+  padding: 10vmin;
   border-radius: 2px;
   box-shadow: 5px 5px 10px #444;
+  font-family: 'Source Sans Pro', sans-serif;
   animation: 1s slide 1s both;
 }
 

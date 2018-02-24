@@ -4,9 +4,9 @@ import BtnPrimary from '../atoms/btn-primary';
 
 import '../css/home.css';
 
-class About extends Component {
+class Home extends Component {
     handleClick = (e) => {
-        this.props.history.push('/projects');
+        this.props.history.push('/portfolio');
     }
     render() {
         return (
@@ -37,4 +37,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default Home;

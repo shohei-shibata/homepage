@@ -47,6 +47,6 @@
     animation: fade-in 1s 2s both;
 }
 
-button {
+.intro button {
     animation: fade-in 1s 3s both;
 }

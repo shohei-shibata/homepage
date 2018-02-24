@@ -1,0 +1,33 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-form-item {
+    margin: 5px 0;
+    border: none;
+    border-bottom: solid 0.1px #ccc;
+    font-size: 1.2em;
+}
+.email, .name {
+    width: 45%;
+}
+.subject, .message {
+    width: 100%;
+}

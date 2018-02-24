@@ -2,6 +2,7 @@
     background-color: transparent;
     border: solid 1px #990033;
     color: #990033;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .btn-primary:hover {
