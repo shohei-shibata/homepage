@@ -22,7 +22,6 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      altView: false,
       projects: null,
       tags: null,
       filter: null
@@ -96,10 +95,16 @@ class App extends Component {
             <Nav />
             <div className="main flex-col">
               <Route exact path="/" component={Home}/>
-              <Route path="/about" component={About}/>
-              <Route path="/portfolio" component={Portfolio}/>
-              <Route path="/blog" component={Blog}/>
-              <Route path="/contact" component={Contact}/>
+              <Route path="/about/" component={About}/>
+              <Route path="/portfolio/" 
+                render={routeProps => (
+                  <Portfolio {...routeProps} {...{
+                    projects: this.state.projects
+                  }} />
+                )}  
+              />
+              <Route path="/blog/" component={Blog}/>
+              <Route path="/contact/" component={Contact}/>
             </div>
           </div>
         </Router>

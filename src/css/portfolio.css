@@ -1,0 +1,96 @@
+.portfolio {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3vh;
+
+    overflow: scroll;
+}
+
+.portfolio-card {
+    margin: 1vw;
+    box-shadow: 3px 3px 10px #555;
+    position: relative;
+}
+.portfolio-background {
+    width: 45vw;
+    height: 30vw;
+}
+.portfolio-card:hover {
+    cursor: pointer;
+}
+.portfolio-card-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #990033;
+    opacity: 0;
+    font-size: 1em;
+    color: #fff;
+    filter: none;
+}
+.portfolio-card:hover .portfolio-card-text {
+    opacity: 0.8;
+}
+
+.project-big {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -50px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-big a {
+    color: #fff;
+}
+.project-big-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #555;
+    opacity: 0.9;
+    z-index: 10000;
+}
+.project-big-contents {
+    z-index: 10001;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.project-big-contents img {
+    width: 90%;
+    max-height: 70vh;
+}
+.project-big-links {
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+}
+.project-big-links a {
+    margin: 0 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .portfolio-card {
+        width: 45vw;
+        height: 30vw;
+    }
+}

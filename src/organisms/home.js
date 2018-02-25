@@ -19,9 +19,10 @@ class Home extends Component {
                 <div className="intro">
                     <div className="text-background">
                         <div>
-                            <h1>Web Experiences,<br/>
-                            made simply, <br/>
-                            with attention to detail.</h1>
+                            <h1>I'm a developer<br/>
+                            building Web Apps<br/>
+                            that makes our lives better.<br/>
+                            </h1>
                         </div>
                     </div>
                     <BtnPrimary 

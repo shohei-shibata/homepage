@@ -38,7 +38,11 @@ h1 {
   flex-direction: column;
 }
 .main {
-    flex-grow: 1;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100vw;
+    min-height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -50,7 +54,7 @@ h1 {
   height: 80vh;
   padding: 10vmin;
   font-family: 'Source Sans Pro', sans-serif;
-  animation: 1s slide 1s both;
+  animation: slide 1s both;
 }
 
 @media only screen and (orientation: landscape) {

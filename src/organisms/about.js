@@ -11,14 +11,17 @@ class About extends Component {
                     <h1>About Me</h1>
                     <p>   
                         <img className='about-photo' src={profilePhoto} alt='me' />
-                        My name is Shohei Shibata. Living in Düsseldorf with my wife and two boys,
-                        I code as much as I can outside of my day job responsibility as a mechanical engineer in the automotive industry.
+                        My name is Shohei Shibata.<br/>
+                        Living in Düsseldorf with my wife and two boys,
+                        I code as much as I can outside of my day job responsibility as 
+                        a mechanical engineer in the automotive industry.
                     </p>
                     <p>
-                        My biggest focus is in creating simple web apps that positively influence people's lives. I want to help the web to be useful, rather than distracting or addictive.
+                        My biggest focus is in creating simple web apps that positively influence people's lives. 
+                        If my apps help people to produce, learn, build a community... I'd be a very happy man.
                     </p>
                     <p>
-                        If there are any projects which I could support you in any way, please don't hesitate to contact me.
+                        If there are any projects which I could support you in any way, I'll be excited to hear about it!
                     </p>
                 </div>
             </div>  

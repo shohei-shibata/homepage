@@ -1,22 +1,60 @@
 import React, { Component } from 'react';
 
+import '../css/portfolio.css';
+
+import ProjectSmall from '../molecules/project-small';
+import ProjectBig from '../molecules/project-big';
+
 class Portfolio extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            details: null
+        };
+    }
+    toggleModal = (val) => {
+        console.log('toggle modal', val);
+        if (val) {
+            this.setState({
+                details: val
+            });
+        } else {
+            this.setState({
+                details: null
+            })
+        }
+    }
     render() {
-        return (
-            <div className='main-card'>
-                <h3>About Me</h3>
-                <p>   
-                    My name is Shohei Shibata. Living in Düsseldorf with my wife and two boys,
-                    I code as much as I can outside of my day job responsibility as a mechanical engineer in the automotive industry.
-                </p>
-                <p>
-                    My biggest focus is in creating simple web apps that positively influence people's lives. I want to help the web to be useful, rather than distracting or addictive.
-                </p>
-                <p>
-                    If there are any projects which I could support you in any way, please don't hesitate to contact me.
-                </p>
-            </div>  
-        );
+        console.log('projects', this.props.projects)
+        const projects = this.props.projects;
+        if (projects) {
+            console.log('will render cards')
+            return (
+                <div className='portfolio' >
+                    {projects.map(project => {
+                        return (
+                            <ProjectSmall 
+                                key={project._id} 
+                                project={project}
+                                toggleModal={this.toggleModal}
+                            />
+                        );
+                    })}
+                    {(this.state.details) ? (
+                        <ProjectBig project={this.state.details} toggleModal={this.toggleModal}/>
+                    ) : (
+                        null
+                    )}
+                </div>  
+            );
+        } else {
+            return (
+                <div className='portfolio' >
+                    <h1>Loading...</h1>
+                </div>  
+            );
+        }
+        
     }
 }
 

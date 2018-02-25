@@ -18,7 +18,8 @@ class Nav extends Component {
         this.props.history.push('/' + destination);
     }
     render() {
-        const navItems = ["Home", "About", "Portfolio", "Blog", "Contact"];
+        // Blog is deleted until it's ready
+        const navItems = ["Home", "About", "Portfolio", "Contact"];
         return (
             <div className="nav-container">
               <div id="logo" className="logo-container" onClick={this.handleClick}>

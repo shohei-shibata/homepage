@@ -24,6 +24,7 @@
     border: none;
     border-bottom: solid 0.1px #ccc;
     font-size: 1.2em;
+    outline: none;
 }
 .email, .name {
     width: 45%;

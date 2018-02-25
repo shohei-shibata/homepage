@@ -1,6 +1,9 @@
 .about {
     width: 60vw;
 }
+.about h1 {
+    text-align: center;
+}
 .about-photo {
     float: right;
     width: 150px;
