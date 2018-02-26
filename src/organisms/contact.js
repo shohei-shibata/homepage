@@ -26,8 +26,9 @@ class Contact extends Component {
         return (
             <div className='main-card'>
               <div className='contact'>
-                <h1>Send me a message</h1>
-                <p>I will take your message very seriously and will respond as quickly as I can.</p>
+                <h2>Contact Form</h2>
+                <p>Do you want to get in touch with me? Great!<br/>
+                 I will take your message very seriously and will respond as quickly as I can.</p>
     
                 <form className="contact-form" action="https://formspree.io/me@shoheishibata.com" method="POST">          
                     <div className='form-row'>

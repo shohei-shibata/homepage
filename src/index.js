@@ -93,7 +93,7 @@ class App extends Component {
         <Router>
           <div className="fixed-page">
             <Nav />
-            <div className="main flex-col">
+            <div className="main">
               <Route exact path="/" component={Home}/>
               <Route path="/about/" component={About}/>
               <Route path="/portfolio/" 

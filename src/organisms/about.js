@@ -8,13 +8,10 @@ class About extends Component {
         return (
             <div className='main-card'>
                 <div className='about'>
-                    <h1>About Me</h1>
+                    <h2>About Me</h2>
                     <p>   
                         <img className='about-photo' src={profilePhoto} alt='me' />
-                        My name is Shohei Shibata.<br/>
-                        Living in Düsseldorf with my wife and two boys,
-                        I code as much as I can outside of my day job responsibility as 
-                        a mechanical engineer in the automotive industry.
+                        My name is Shohei Shibata. I'm a web developer currently living in Düsseldorf with my wife and two boys.<br/>
                     </p>
                     <p>
                         My biggest focus is in creating simple web apps that positively influence people's lives. 

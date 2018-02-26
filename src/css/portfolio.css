@@ -5,25 +5,23 @@
     justify-content: center;
     align-items: center;
 
-    margin-top: 3vh;
+    height: calc(100vh - 50px);
 
     overflow: scroll;
 }
 
 .portfolio-card {
-    margin: 1vw;
+    margin: 2vh;
     box-shadow: 3px 3px 10px #555;
     position: relative;
-}
-.portfolio-background {
-    width: 45vw;
-    height: 30vw;
+    width: 90vw;
+    height: 60vw;
 }
 .portfolio-card:hover {
     cursor: pointer;
 }
 .portfolio-card-text {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     display: flex;
@@ -76,8 +74,8 @@
     color: #fff;
 }
 .project-big-contents img {
-    width: 90%;
-    max-height: 70vh;
+    width: 90vw;
+    height: 60vw;
 }
 .project-big-links {
     font-size: 2em;
@@ -87,10 +85,26 @@
 .project-big-links a {
     margin: 0 20px;
 }
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 500px) {
     .portfolio-card {
+        margin: 1vw;
         width: 45vw;
         height: 30vw;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .portfolio-card {
+        margin: 1vw;
+        width: 30vw;
+        height: 20vw;
+    }
+}
+@media only screen and (orientation: landscape) {
+    .project-big-contents {
+        width: 70vh;
+    }    
+    .project-big-contents img {
+        width: 60vh;
+        height: 40vh;
     }
 }

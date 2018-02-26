@@ -19,11 +19,12 @@ class ProjectSmall extends Component {
             <div 
                 key={project.title + this.props.position}
                 id={project._id}
+                style={style}
                 className='portfolio-card'
                 onClick={this.handleClick}
             >
-                <div className='portfolio-background' style={style}>
-                </div>
+                {/*<div className='portfolio-background' style={style}>
+                </div>*/}
                 <div className='portfolio-card-text'>
                     <h1>{project.title}</h1>
                     <p>Click for more info</p>

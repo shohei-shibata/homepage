@@ -1,13 +1,26 @@
 .about {
-    width: 60vw;
+    width: 80vw;
+    margin: auto;
+    margin-top: 20px;
 }
-.about h1 {
+.about h2 {
     text-align: center;
 }
 .about-photo {
-    float: right;
-    width: 150px;
+    width: 50%;
+    margin: 10px 25%;
     height: auto;
     border-radius: 10px;
-    margin: 0 0 20px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .about {
+        width: 60vw;
+        margin: auto;
+    }
+    .about-photo {
+        float: right;
+        width: 150px;
+        margin: 20px;
+    }
 }

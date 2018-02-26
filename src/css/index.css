@@ -45,16 +45,21 @@ h1 {
     min-height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 .main-card {
-  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: calc(100vh - 70px);
   width: 100vw;
-  height: 80vh;
-  padding: 10vmin;
+  background-color: #fff;
+  margin: auto;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5em;
   animation: slide 1s both;
+  overflow: scroll;
 }
 
 @media only screen and (orientation: landscape) {
@@ -66,9 +71,11 @@ h1 {
     justify-content: center;
   }
   .main-card {
-    width: auto;
+    position: static;
+
+    padding: 20px;
     height: auto;
-    max-width: 90%;
+    max-width: 70%;
     border-radius: 2px;
     box-shadow: 5px 5px 10px #444;
   }
