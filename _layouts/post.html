@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="nav-bar-spacer"></div>
+<section class="content">
+	<div class="projects-detail-header">
+		<div class="projects-detail-banner">
+		  {%- if page.image -%}
+			<img src="{{ page.image | relative_url }}">
+			{%- else -%}
+			<img src="https://source.unsplash.com/random">
+			{%- endif -%}
+			<h1 class="projects-detail-banner-title sans-serif heading">{{ page.title | escape }}</h1>
+		</div>
+		<div class="btns">
+			{%- if page.site_url -%}
+			<a class="btn btn-light small" href="{{ page.site_url }}" target="_blank">Live App</a>
+			{%- endif -%}
+			{%- if page.code_repo_url -%}
+			<a class="btn btn-light small" href="{{ page.code_repo_url }}" target="_blank">Code Repo</a>
+			{%- endif -%}
+		</div>
+		<p class="text-light">
+		  {% for item in page.tags %}
+          <span>{{ item }}</span>
+      {% endfor %}
+		</p>
+	</div>
+	<div class="post-content">
+		{{ content }}
+	</div>
+	<div class="btns">
+		<a class="btn btn-dark small" href="{{ site.baseurl }}/contact">Contact me</a>
+		<a class="btn btn-dark small" href="{{ site.baseurl }}">Back to home</a>
+	</div>
+	
+	{%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+</section>

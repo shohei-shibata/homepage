@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="nav-bar-spacer"></div>
+<div class="section-header">
+  <h1>{{ page.title | escape }}</h1>
+  {%- if page.subtitle -%}
+    <p>{{ page.subtitle | escape }}</p>
+  {%- endif -%}
+</div>
+
+<div class="content">
+  {%- if site.posts.size > 0 -%}
+    <section class="page-section">
+      <div class="project-section">
+        {%- for post in site.posts -%}
+          {%- if post.categories contains "Projects" -%}
+          <div class="project-item">
+              {%- if post.image -%}
+              <img src="{{ site.baseurl }}{{ post.image }}">
+              {%- else -%}
+              <img src="https://source.unsplash.com/random">
+              {%- endif -%}
+              <div class="project-item-text">
+                <h2>{{ post.title | escape }}</h2>
+                <p class="text-light">
+                    {% for item in post.tags %}
+                        <span>{{ item }}</span>
+                    {% endfor %}
+                </p>
+                <p>{{ post.excerpt }}</p>
+                <div class="desktop-only">
+                  <a href="{{ post.url | relative_url }}">Read more >></a>
+                </div>
+                <div class="mobile-only">
+                  <a class="btn btn-light" href="{{ post.url | relative_url }}">Read more</a>
+                </div>
+              </div>
+          </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </section>
+  {%- endif -%}
+  <div class="btns">
+		<a class="btn btn-dark" href="{{ site.baseurl }}/contact">Contact me</a>
+		<div class="mobile-only spacer"></div>
+		<a class="btn btn-dark" href="{{ site.baseurl }}/">Back to home</a>
+	</div>
+	<div class="spacer"></div>
+</div>

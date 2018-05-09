@@ -1,0 +1,109 @@
+@keyframes slide-down {
+  from { transform: translateY(-100vh); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes slide-across {
+  from { transform: translateX(100vw); }
+  to   { transform: translateX(0); }
+}
+
+/* NAV BAR */
+
+nav {
+    position: fixed;
+    top: 0;
+    height: $nav-height;
+    width: calc(100vw - #{$spacing-unit * 1});
+	padding: 0 #{$spacing-unit * 0.5};
+	background-color: rgba(253, 253, 253, 0.8);
+	border-bottom: solid 0.1px $grey-color-light;
+  	z-index: 101;
+  	
+  	display: flex;
+  	justify-content: space-between;
+	  align-items: center;
+	 
+	animation: slide-down 0.5s;
+	animation-fill-mode: both;
+	animation-delay: 0.5s;
+	  
+	@include media-query($on-desktop) {
+		width: calc(100vw - #{$spacing-unit * 2});
+		padding: 0 #{$spacing-unit * 1};
+	}
+}
+
+.nav-logo.logo-font {
+  display: block;
+  	font-size: #{$logo-font-size * 0.8};
+  	text-decoration: none;
+  	line-height: $nav-height;
+}
+
+.nav-mobile {
+  	width: 30px;
+  	height: 30px;
+  	line-height: 30px;
+  	text-align: center;
+  	font-size: 1.5em;
+	cursor: pointer;
+}
+.nav-mobile-open {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: $nav-height;
+	left: 0;
+	height: calc(100vh - #{$nav-height});
+	width: 100vw;
+	background-color: rgba(253, 253, 253, 0.8);
+	z-index: 100;
+	
+	animation: slide-across 0.5s;
+}
+.nav-mobile-open-wrapper {
+	width: calc(100% - #{$spacing-unit});
+}
+
+#nav-mobile-toggle {
+	position: absolute;
+    left: -9999px;
+}
+
+label::before {
+	content: "\f0c9";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+}
+
+#nav-mobile-toggle:checked + label::before {
+	content: "\f00d"
+}
+
+
+#nav-mobile-toggle:checked ~ div {
+	display: flex;
+}
+
+.nav-desktop ul {
+	height: $nav-height;
+	display: flex;
+	align-items: center;
+}
+
+.nav-desktop-item {
+  	display: inline-block;
+  	list-style: none;
+  	margin-left: $spacing-unit;
+}
+.nav-desktop-item a {
+  	text-decoration: none;
+  	font-size: .8em;
+}
+
+.nav-bar-spacer {
+	  height: #{$nav-height + ($spacing-unit * 0)};
+}

@@ -1,0 +1,45 @@
+<nav>
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+			<a class="nav-logo logo-font" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+			<div class="mobile-only nav-mobile">
+                <input id="nav-mobile-toggle" type="checkbox"> 
+                <label for="nav-mobile-toggle"></label>
+                <div class="nav-mobile-open">
+                    <div class="nav-mobile-open-wrapper">
+                        <a class="btn btn-dark" href="/">Home</a>
+                        <div class="spacer"></div>
+                    {%- for path in page_paths -%}
+                    {%- assign my_page = site.pages | where: "path", path | first -%}
+                        <a class="btn btn-dark" href="{{ my_page.url | relative_url}}">{{ my_page.link-name | escape }}</a>
+                        <div class="spacer"></div>
+                    {%- endfor -%}
+                    </div>
+                </div>
+            </div>
+
+			<div class="desktop-only nav-desktop">
+				<ul>
+                {%- for path in page_paths -%}
+                {%- assign my_page = site.pages | where: "path", path | first -%}
+                
+                {%- assign link_class = "btn btn-light btn-nav sans-serif" -%}
+                {%- if my_page.link-name -%}
+                    {%- if my_page.link-name == "Contact" -%}
+                        {%- assign link_class = "btn btn-light btn-nav sans-serif" -%}
+                    {%- else -%}
+                        {%- assign link_class = "sans-serif" -%}
+                    {%- endif -%}
+                    
+                    <li class="nav-desktop-item">
+                      <a class="{{ link_class }}" href="{{ my_page.url | relative_url}}">{{ my_page.link-name | escape }}</a>
+                    </li>
+                {%- endif -%}
+                {%- endfor -%}
+				</ul>
+			</div>
+		</div>	
+		
+</nav>
+

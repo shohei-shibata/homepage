@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<div class="content">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+  
+  {%- include header.html -%}
+  
+  <hr>
+  
+  <div class="section-header">
+      <h1>My Work</h1>
+      <p>What have I been up to?</p>
+  </div>
+  {%- if site.posts.size > 0 -%}
+    <section class="page-section">
+      <div class="project-section">
+        {%- for post in site.posts -%}
+          {%- if post.categories contains "Projects" -%}
+          <div class="project-item column">
+  						{%- if post.image -%}
+        			<img src="{{ site.baseurl }}{{ post.image }}">
+        			{%- else -%}
+        			<img src="https://source.unsplash.com/random">
+        			{%- endif -%}
+              <h3>{{ post.title | escape }}</h3>
+  						<p class="text-light">
+                  {% for item in post.tags %}
+                      <span>{{ item }}</span>
+                  {% endfor %}
+              </p>
+  						<p>{{ post.excerpt }}</p>
+  						<div class="desktop-only">
+  							<a href="{{ post.url | relative_url }}">Read more >></a>
+  						</div>
+  						<div class="mobile-only">
+  							<a class="btn btn-light" href="{{ post.url | relative_url }}">Read more</a>
+  						</div>
+          </div>
+          {%- endif -%}
+        {%- endfor -%}
+        
+      </div>
+      <div class="mobile-only">
+          <a class="btn btn-dark" href="{{ site.baseurl }}/projects">To all projects</a>
+        </div>
+        <div class="desktop-only">
+            <a href="{{ site.baseurl }}/projects">To all projects >></a>
+      </div>
+    </section>
+  {%- endif -%}
+  
+  <div class="spacer"></div>
+
+  <hr>
+  
+  <div class="section-header">
+  	<h1>Contact Me</h1>
+  	<p>What's on your mind? </p>
+  </div>
+  {%- include contact.html -%}
+  
+</div>
