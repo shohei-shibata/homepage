@@ -29,7 +29,7 @@ layout: default
                         <span>{{ item }}</span>
                     {% endfor %}
                 </p>
-                <p>{{ post.excerpt }}</p>
+                {{ post.excerpt }}
                 <div class="desktop-only">
                   <a href="{{ post.url | relative_url }}">Read more >></a>
                 </div>

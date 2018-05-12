@@ -1,6 +1,6 @@
 ---
 layout: post
-image: "/assets/images/bithelper-main.png"
+image: "/assets/images/posts/bithelper/bithelper-main.png"
 title:  "BitHelper"
 categories: Projects
 tags: ["React.js", "Node.js", "MongoDB"]
