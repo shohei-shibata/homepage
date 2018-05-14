@@ -15,7 +15,7 @@ I am a big fan of minimal, very readable websites. So when I began working on my
 
 ### Website Design on Figma
 
-{% include figure.html image_url="/assets/images/posts/portfolio/figma-main-view.png" alt="Figma" caption="A Figma file" %}
+{% include figure.html image_url="/assets/images/posts/portfolio/figma-main-view.png" alt="Figma Main View" caption="Figma" %}
 
 [Figma](https://figma.com) is an amazing online tool. It enables me to do everything I need to do in terms of designing a website right in the browser, in such an easy, efficient process.
 
@@ -24,7 +24,7 @@ I'd like to show you how my portfolio was designed on Figma.
 #### Getting Started
 Once I create a new file in Figma, I create a "UI Library" frame containing the fonts, buttons, and input fields. Just the very, very basics and I don't need to worry about the design of these items at the moment.
 
-**//Screenshot of UI Library Starter**
+{% include figure.html image_url="/assets/images/posts/portfolio/figma-ui-library.png" alt="Figma UI Library" caption="My UI Library starter file for Figma" %}
 
 What is important here, is that these are reusable components, which are simply called "Components" in Figma. 
 
@@ -34,23 +34,23 @@ Next, I begin drawing my wireframes.
 
 #### Wireframe
 
-**//Screenshot of wireframes**
+{% include figure.html image_url="/assets/images/posts/portfolio/figma-main-view.png" alt="Figma" caption="A Figma file" %}
 
 For my portfolio, I am going to create a landing page, project list page, a detail page for a single project, and a contact page. This set of pages will be created in three screen sizes: desktop, tablet, and phone.
 
 Starting from whatever page I have in mind, I begin laying down components, copying from the UI Library whenever possible. Here I am thinking about the composition of the page: the order, size, and alignment of everything that goes on the page but not the visual details like font family or graphics. 
 
-**//Wireframe screenshot, single frame**
+{% include figure.html image_url="/assets/images/posts/portfolio/figma-wireframe.png" alt="Wireframe made in Figma" caption="Wireframe made in Figma" %}
 
 In most cases, many components of a wireframe are reused throughout the design. The navigation bar, the footer, the project summary in the list view among other things. This means they should also be made in a Component to make them easy to keep up-to-date.
 
-The first copy of these items can be made directly in the wireframe. Then, to turn it into a Component, just move it over to a separate frame where other Components are stored, hit `Ctrl-K` on Windows or `?-K` on Mac to turn the item into a Component, then, copy it and paste into back into the wireframe.
+The first copy of these items can be made directly in the wireframe. Then, to turn it into a Component, just move it over to a separate frame where other Components are stored, hit `Ctrl-K` on Windows or `⌘-K` on Mac to turn the item into a Component, then, copy it and paste into back into the wireframe.
 
 Next, let's turn our wireframe into a clickable prototype. 
 
 #### Prototype
 
-**//Screenshot Figma Prototype tab**
+{% include figure.html image_url="/assets/images/posts/portfolio/figma-prototype.png" alt="Prototype mode in Figma" caption="Prototype Mode" %}
 
 On the right side of the Figma screen, there is a tab called Prototype. Clicking on it puts Figma in prototyping mode. Now, when any element is selected it will show a ball on the right side of it. Drag the ball to wherever the element should link to. 
 
@@ -63,6 +63,9 @@ For my portfolio, this step was extremely simple because the design is so minima
 
 Then, everything was checked in the prototype mode to get a better feel for how it would look in a browser.
 
+{% include figure.html image_url="/assets/images/posts/portfolio/figma-final-design.png" alt="Final Design in Figma" caption="Final Design in Figma" %}
+
+
 Good. Now it's time to start coding!
 
 ### Static Website using HTML/CSS only
@@ -73,7 +76,7 @@ In most cases I will need to eventually utilize a site-generator (like Jekyll), 
 
 It's also helpful, that simple HTML/CSS website needs no special development environment. I just make a folder in Google Drive and place my files there. Then I can work on it wherever and whenever. 
 
-**//Screenshot, html/css code
+{% include figure.html image_url="/assets/images/posts/portfolio/html-css-code.png" alt="html and css code" caption="HTML and CSS code only" %}
 
 Once it looks just like the Figma design, this HTML/CSS code will serve as the master for my final code in Jekyll.
 
@@ -88,6 +91,8 @@ First order of business is to install Jekyll in my development environment. That
 Then I am ready to create a Jekyll website by simply typing `jekyll new my-website` in the console. A folder named "my-website" is created with a default Jekyll website inside. Or if you'd like, use a unique name other than "my-website".
 
 Here I will not dive into the details of how to customize a Jekyll theme. Once I became familiar with [the anatomy of a Jekyll theme](https://jekyllrb.com/docs/themes/), I began replacing the code with my static HTML and CSS code, using [variables](https://jekyllrb.com/docs/variables/) where applicable.
+
+{% include figure.html image_url="/assets/images/posts/portfolio/jekyll-directory.png" alt="jekyll file structure" caption="The Jekyll folder structure for my portfolio" %}
 
 One thing to note here, is that the default website is loaded with a theme called "minima", but the theme files are not in the folder. I went to the theme's [GitHub repository](https://github.com/jekyll/minima) and copied the files over to my Jekyll website directory. Then, all the files that need to be modified to customize the website will be there.
 
