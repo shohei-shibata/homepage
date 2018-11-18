@@ -14,10 +14,8 @@ layout: home
         </div>
     </div>
     <div class="banner-lower-text">
-        <h3 class="sans-serif">Let's Create Together</h3>
-        <p>A simple and effective website to let the world learn about your business or organization.</p>
-        <p>A fully interactive web application to build a new online community, or to realize your idea for an online tool.</p> 
-        <p>Your idea. Your mission. I’d love to help build it.</p>
+        <h3 class="sans-serif">Welcome to my homepage</h3>
+        <p>Some words here...</p>
         <div class="mobile-only">
             <a class="btn btn-dark" href="/contact">Contact me</a>
         </div>
