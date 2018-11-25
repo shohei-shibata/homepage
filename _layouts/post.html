@@ -21,18 +21,21 @@ layout: default
 			<a class="btn btn-light small" href="{{ page.code_repo_url }}" target="_blank">Code Repo</a>
 			{%- endif -%}
 		</div>
-		<div class="spacer"></div>
-		<p class="text-light">
-		  {% for item in page.tags %}
-          <span>{{ item }}</span>
-      {% endfor %}
-		</p>
-	</div>
+
 	<div class="post-content">
 		{{ content }}
 	</div>
+
+	<div class="spacer"></div>
+		<p class="text-light">
+			{% for item in page.tags %}
+					<span>{{ item }}</span>
+			{% endfor %}
+		</p>
+	</div>
+
 	<div class="btns">
-		<a class="btn btn-dark small" href="{{ site.baseurl }}/contact">Contact me</a>
+		<a class="btn btn-dark small" href="{{ site.baseurl }}/blog">Back to all posts</a>
 		<div class="mobile-only spacer"></div>
 		<a class="btn btn-dark small" href="{{ site.baseurl }}">Back to home</a>
 	</div>

@@ -321,3 +321,10 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
+/**
+ * Flexbox
+ */
+.flex-last {
+  order: 999;
+}
