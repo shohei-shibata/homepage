@@ -28,11 +28,13 @@
                 {%- if my_page.link-name -%}
                     {%- if my_page.link-name == "Contact" -%}
                         {%- assign link_class = "btn btn-light btn-nav sans-serif" -%}
+                        {%- assign li_class = "nav-desktop-item flex-last" -%}
                     {%- else -%}
                         {%- assign link_class = "sans-serif" -%}
+                        {%- assign li_class = "nav-desktop-item" -%}
                     {%- endif -%}
                     
-                    <li class="nav-desktop-item">
+                    <li class="{{ li_class }}">
                       <a class="{{ link_class }}" href="{{ my_page.url | relative_url}}">{{ my_page.link-name | escape }}</a>
                     </li>
                 {%- endif -%}
