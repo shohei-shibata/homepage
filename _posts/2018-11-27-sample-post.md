@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog-post
 image: 
 title:  "Sample Post"
 categories: Blog
