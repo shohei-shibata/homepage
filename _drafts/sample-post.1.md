@@ -37,22 +37,3 @@ What's also happening here, is that you've created value to the company by using
 This is something that could be done at any kind of work. 
 
 So you can either work to not mess up and strive to be average, or you can become much more than that, actually add value to the workplace, and bring larger satisfaction to your life.
-
---------------------------
-
-The schools are supposed to prepare us for the real world. 
-
-What our schools are teaching the children is the skill of following instructions. Generally in the class the children are told exactly what will be on the test, and they are given homework assignments to practice those things. If they complete those assignments, then the test should look very familiar. Follow the rules, take care of the tasks you are given, and you will be fine.
-
-Then it comes as no surprise that when we finish school, we seek the jobs which are most comfortable for us. We look to be hired by a company which will give us tasks to complete and paychecks in return. 
-
-We look to live in a neighborhood with a good school system so that they may also follow the same path. Hopefully they will improve upon our own accomplishments, but the same kind of path anyway.
-
-There is a couple of major problems with this system that we find ourselves in. 
-
-Number one, the employees are getting less and less for the work we are putting in.
-
-(Examples of Ford's benefit in early 20th century?)
-
-Number two, it is holding us back from true life satisfaction.
-

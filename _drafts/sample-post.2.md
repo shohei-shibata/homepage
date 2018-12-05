@@ -6,17 +6,14 @@ categories: Blog
 tags: ["Technology"]
 ---
 
-My experience of living without a smartphone, and why I went back to having one in the end.
+When I moved back to the States, I put off buying a smart phone for a couple of months. And it gave me a great opportunity to take a step back and review my relationship with technology.
 <!--more-->
 
-So what is a smart phone helpful for, and how is it harmful? Here's my observation on it after going through my experiment.
+In this age there is technology involved in nearly everything we do, and the society seems hungry to keep adding more. But with every benefit of technology, whether it's convenience, efficiency, or ability to do things we couldn't before, we are always losing something we used to have. With faster and more efficient transportation method, we get to go far but we miss great things right in our neighborhood. When smart phones replace a large chunk of our communication, we lose opportunities to talk to each other face-to-face. There are times when the positives of a new technology outweight the negative, but there are also situations where technologies are making our lives worse. 
 
-# How Smartphones are Harmful
+The industry and the capitalism will continue to push to create and sell more technologies to us because they cannot survive without doing this. But when a technology is harmful to our lives and it is only making money for the company selling it, it's up to each of us to keep it out of our lives, despite of all the advertisement and the peer pressure.
 
-# Why Smartphones are Helpful
+I firmly believe that no matter how much the technologies will advance, the best moments in life will have nothing to do with technology. Instead it will be people and nature. The airplane might have helped me to meet my family or to see that stunning scenery, and the smart phone might have let me preserve those moments. But what I will remember in the last moments on Earth will be only the moments with the people and the nature, not the technologies involved.
 
-Communication is so multi-fauceted these days. Messages may come from Whatsapp, LINE, Google Hangout, Facebook Messenger... and I have little control over what other people use. The amount of work required just to check and respond to messages from all those sources, is something I find unnecessary and I hope will change someday. Although this is true regardless of I have a smartphone or not, it is definitely faster with a smartphone. 
+So it is a tragedy when I am not paying my full attention to my kid singing on the stage and all the facial expressions he is making, because I am busy taking a video with my phone. 
 
-Without a smartphone, it's possible to check most of those messaging platforms in a web browser. 
-
-Going without my smartphone gave me an opportunity to see the negative impact it had in my life, but also see why it is useful. That observation is going to help me be more concious about how I use it from now on.  
