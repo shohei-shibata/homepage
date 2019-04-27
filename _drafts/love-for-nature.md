@@ -7,6 +7,6 @@ tags: ["Nature"]
 ---
 
 ---Summary---
-Love for nature developed by spending time outdoors as a child stays with you for life. Spending time in nature is benefitial for our help. Also this is the only way we can get ourselves to care enough about nature to do something about the destruction we are causing to it.
+Love for nature developed by spending time outdoors as a child stays with you for life. Spending time in nature is beneficial for our health. Also this is the only way we can get ourselves to care enough about nature to do something about the destruction we are causing to it.
 
 Increasing screen time and decreasing time spent outdoors. I am concerned about the lack of connection with nature with our future generation.
