@@ -6,15 +6,34 @@ categories: Blog
 tags: ["Just a sample"]
 ---
 
-Difficult times will always come around, no matter what. I am going through such a phase right now. How am I dealing with it, and how should I be handling it? Here are my observations.
+Intro
 <!--more-->
 
-We have little control over all the things that happen in our daily lives. And no matter how prepared we think we are, we will occassionally be thrown into challenging situations, and have no choice but to grind our teeth and dig ourselves out of it. 
+* A more satisfying 9-5 workplace
 
-That's where I find myself right now at work. A couple of co-workers have left the company only a couple of months apart, directing a massive tsunami of a project in deep trouble in my direction. 
+Less task-oriented, allowing individual's creativity to shine.
 
-# There's always an end 
+If given the time and the freedom, people will find problems and come up with creative solutions. That's much more satisfying than doing only what they are told. That satisfaction will make employees hungry to do more. The company will also benefit because each employee will be accomplishing more.
 
-Unless it's a sausage, in that case there are two ends, as Germans would say. :)
+Unfortunately that's not the system we find ourselves in. We are evaluated on how we handle the tasks that we are given. We are under pressure to not fail, not to make a mistake. We are working to meet the expectations so that hopefully our paychecks will rise evenly with the tide. There is hardly an opportunity to do better than expected and be rewarded for it.
 
-# Right attitude attracts support
+Can this system be changed? 
+
+As employees we have little control over the systematic side, but I believe there's also a lot we can do on our own, even against the grain of the current workplace tendencies.
+
+
+# Creating value is the foundation
+
+If our value as workers lie solely on completing the tasks you are given, then our value could disappear at any moment as the world around us changes. And the world is changing constantly and rapidly. 
+
+Instead, we should be *creating* values. How can we make the process more efficient? How do we eliminate the roadblocks that are holding us back often? How can the errors be reduced or eliminated?
+
+Most likely, the bosses will not demand those things. They will only ask that you finish the tasks on-time and without errors. So you have to initiate the value-creating activities on your own. That could be difficult depending on the work volume at that time. But I think it's work it to make that time. And my belief is that once the management sees the outcome, they *have to* value that.
+
+What's even better is that by improving the process, handling the job tasks becomes more efficient, freeing up even more of your time to improve the work process and quality. 
+
+What's also happening here, is that you've created value to the company by using your observation and creativity. That will never be replaced by robots or cheaper labor. You're not only more valuable to the employer but you've also gotten a much bigger satisfaction from working. It's a win for everybody. 
+
+This is something that could be done at any kind of work. 
+
+So you can either work to not mess up and strive to be average, or you can become much more than that, actually add value to the workplace, and bring larger satisfaction to your life.
