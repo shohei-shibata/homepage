@@ -1,9 +1,12 @@
 ---
+title: Sample Post
+date: 2019-07-30 10:03:47.814000000 Z
+categories:
+- Blog
+tags:
+- Just a sample
 layout: blog-post
-image: "https://images.unsplash.com/photo-1499872995989-56985d47da53?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ed1e81bf0e23244d68f97ca08244076&auto=format&fit=crop&w=1052&q=80"
-title:  "Sample Post"
-categories: Blog
-tags: ["Just a sample"]
+image: https://images.unsplash.com/photo-1499872995989-56985d47da53?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ed1e81bf0e23244d68f97ca08244076&auto=format&fit=crop&w=1052&q=80
 ---
 
 Intro

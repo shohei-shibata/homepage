@@ -1,12 +1,15 @@
 ---
+title: My Portfolio
 layout: post
 image: "/assets/images/posts/portfolio/portfolio-banner-image.png"
-title:  "My Portfolio"
 categories: Projects
-tags: ["Figma", "Jekyll"]
-site_url: "Live App URL"
-code_repo_url: "Code Repo Url"
-excerpt: My portfolio website designed on Figma and developed using Jekyll. Click on to learn about my process of creating this website.
+tags:
+- Figma
+- Jekyll
+site_url: Live App URL
+code_repo_url: Code Repo Url
+excerpt: My portfolio website designed on Figma and developed using Jekyll. Click
+  on to learn about my process of creating this website.
 ---
 
 I am a big fan of minimal, very readable websites. So when I began working on my personal portfolio, that was my number one focus. So there is probably nothing ground-breaking to write about here in terms of the design or the code. Instead, I'd like to show you the process of building this website. Easy-to-use tools like Figma and Jekyll helped me to really focus on how the portfolio should look and function, as well as to finish it very efficiently.

@@ -1,7 +1,8 @@
 ---
+title: My Web Programming Work
+permalink: "/projects/"
 layout: projects
 link-name: Projects
-title: My Web Programming Work
-subtitle: "Recent Projects Etc."
-permalink: /projects/
+subtitle: Recent Projects Etc.
 ---
+

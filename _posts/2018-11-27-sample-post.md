@@ -1,9 +1,12 @@
 ---
+title: Sample Post
+date: 2018-11-27 00:00:00 Z
+categories:
+- Blog
+tags:
+- Just a sample
 layout: blog-post
 image: 
-title:  "Sample Post"
-categories: Blog
-tags: ["Just a sample"]
 ---
 
 A blog sample
