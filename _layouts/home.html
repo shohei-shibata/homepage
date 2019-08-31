@@ -26,13 +26,7 @@ layout: default
                     {% endfor %}
                 </p>
                 {{ post.content }}
-                <div class="desktop-only">
-                  <a href="{{ post.url | relative_url }}">Read more >></a>
-                </div>
-                <div class="mobile-only">
-                  <a class="btn btn-light" href="{{ post.url | relative_url }}">Read more</a>
-                </div>
-              </div>
+             </div>
           </div>
           {%- endif -%}
         {%- endfor -%}

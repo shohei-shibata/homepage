@@ -42,7 +42,7 @@
 }
 
 /* PROJECTS DETAIL */
-.projects-detail-banner {
+.post-banner {
     position: relative;
     width: 100%;
 	max-height: 200px;
@@ -58,7 +58,7 @@
 	}
 }
 
-.projects-detail-header {
+.post-header {
 	span {
 		margin-right: #{$spacing-unit * 0.5};
 	}
@@ -67,7 +67,7 @@
 	}
 }
 
-.projects-detail-banner-title {
+.post-banner-title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -76,4 +76,8 @@
 	margin: 0;
     text-align: center;
 	color: #eee;
+}
+
+.blog-post-tags {
+    text-align: center;
 }

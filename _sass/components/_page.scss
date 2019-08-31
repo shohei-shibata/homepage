@@ -1,0 +1,29 @@
+.page-banner {
+    position: relative;
+    width: 100%;
+	max-height: 200px;
+	min-height: 100px;
+	margin: 10px auto;
+    background-color: #222;
+}
+
+.page-header {
+	span {
+		margin-right: #{$spacing-unit * 0.5};
+	}
+	.btn {
+		margin-top: $spacing-unit;
+	}
+}
+
+.page-banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: inherit;
+	margin: 0;
+    text-align: center;
+	color: #eee;
+}
+

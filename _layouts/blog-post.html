@@ -4,34 +4,29 @@ layout: default
 
 <div class="nav-bar-spacer"></div>
 <section class="content">
-	<div class="projects-detail-header">
-		<div class="projects-detail-banner">
+	<div class="post-header">
+		<div class="post-banner">
 		  {%- if page.image -%}
 			<img src="{{ page.image | relative_url }}">
 			{%- else -%}
 			<img src="https://source.unsplash.com/random">
 			{%- endif -%}
-			<h1 class="projects-detail-banner-title sans-serif heading">{{ page.title | escape }}</h1>
+			<h1 class="post-banner-title sans-serif heading">{{ page.title | escape }}</h1>
 		</div>
-		<div class="btns">
-			{%- if page.site_url -%}
-			<a class="btn btn-light small" href="{{ page.site_url }}" target="_blank">Live App</a>
-			{%- endif -%}
-			{%- if page.code_repo_url -%}
-			<a class="btn btn-light small" href="{{ page.code_repo_url }}" target="_blank">Code Repo</a>
-			{%- endif -%}
-		</div>
-
-	<div class="post-content">
-		{{ content }}
+		<div class="spacer"></div>
+		<p class="text-light blog-post-tags">
+			{% for item in page.tags %}
+				{% if item != "Featured" %}
+					<span>{{ item }}</span>
+				{% endif %}
+			{% endfor %}
+		</p>
 	</div>
 
 	<div class="spacer"></div>
-		<p class="text-light">
-			{% for item in page.tags %}
-					<span>{{ item }}</span>
-			{% endfor %}
-		</p>
+
+	<div class="post-content">
+		{{ content }}
 	</div>
 
 	<div class="btns">

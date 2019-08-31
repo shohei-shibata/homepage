@@ -3,12 +3,12 @@ layout: default
 ---
 
 <div class="nav-bar-spacer"></div>
-<div class="section-header">
-  <h1>{{ page.title | escape }}</h1>
-  {%- if page.subtitle -%}
-    <p>{{ page.subtitle | escape }}</p>
-  {%- endif -%}
-</div>
+<div class="page-header">
+	<div class="page-banner">
+		<h1 class="page-banner-title sans-serif heading">{{ page.title | escape }}</h1>
+	</div>
+	<div class="spacer"></div>
+</div>  
 
 <div class="content">
   {%- if site.posts.size > 0 -%}
