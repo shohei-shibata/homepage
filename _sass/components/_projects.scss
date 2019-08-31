@@ -8,14 +8,9 @@
 .project-item {
     width: 100%;
 	margin-bottom: $spacing-unit;
-	display: flex;
-	flex-direction: column;
-	@include media-query($on-desktop) {
-		flex-direction: row;
-	}
 }
 .project-item.column {
-	width: calc(#{($content-width - $spacing-unit) * 0.5});
+	width: calc(#{($content-width - $spacing-unit) * 1});
 	flex-direction: column;
 }
 
