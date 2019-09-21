@@ -61,6 +61,7 @@ header {
 
 .page-section {
   flex-grow: 1;
+  margin-top: $spacing-unit;
 }
 
 
@@ -122,6 +123,7 @@ footer {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  margin-bottom: $spacing-unit;
 }
 
 
@@ -146,63 +148,4 @@ footer {
 
 
 
-/**
- * Posts
- */
-.post-header {
-  margin-bottom: $spacing-unit;
-}
 
-.post-title {
-  @include relative-font-size(2.625);
-  letter-spacing: -1px;
-  line-height: 1;
-
-  @include media-query($on-desktop) {
-    @include relative-font-size(2.25);
-  }
-}
-
-.post-content {
-  margin-bottom: $spacing-unit;
-
-  h2 {
-    @include relative-font-size(2);
-
-    @include media-query($on-desktop) {
-      @include relative-font-size(1.75);
-    }
-  }
-
-  h3 {
-    @include relative-font-size(1.625);
-
-    @include media-query($on-desktop) {
-      @include relative-font-size(1.375);
-    }
-  }
-
-  h4 {
-    @include relative-font-size(1.25);
-
-    @include media-query($on-desktop) {
-      @include relative-font-size(1.125);
-    }
-  }
-
-  figure {
-    width: 100%;
-    margin: $spacing-unit auto;
-
-    @include media-query($on-desktop) {
-      width: #{$content-width * 0.5};
-    }
-
-    figcaption {
-      color: $grey-color;
-      font-style: italic;
-      margin-top: #{$spacing-unit * 0.5};
-      text-align: center;
-    }
-  }
-}

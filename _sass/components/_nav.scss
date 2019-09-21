@@ -11,14 +11,12 @@
 /* NAV BAR */
 
 nav {
-    position: fixed;
     top: 0;
     height: $nav-height;
     width: calc(100vw - #{$spacing-unit * 1});
 	padding: 0 #{$spacing-unit * 0.5};
 	background-color: rgba(253, 253, 253, 0.8);
 	border-bottom: solid 0.1px $grey-color-light;
-  	z-index: 101;
   	
   	display: flex;
   	justify-content: space-between;
@@ -70,7 +68,7 @@ nav {
 
 #nav-mobile-toggle {
 	position: absolute;
-    left: -9999px;
+    	left: -9999px;
 }
 
 label::before {

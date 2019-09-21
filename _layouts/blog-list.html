@@ -2,21 +2,18 @@
 layout: default
 ---
 
-<div class="nav-bar-spacer"></div>
 <div class="page-header">
-	<div class="page-banner">
+	<div class="page-banner full-width">
 		<h1 class="page-banner-title sans-serif heading">{{ page.title | escape }}</h1>
 	</div>
-	<div class="spacer"></div>
 </div>  
 
 <div class="content">
   {%- if site.posts.size > 0 -%}
     <section class="page-section">
-      <div class="project-section">
         {%- for post in site.posts -%}
           {%- if post.categories contains "Blog" -%}
-          <div class="project-item">
+          <div class="post-content">
                 <h2>{{ post.title | escape }}</h2>
                 <p class="text-light">
                     {% for item in post.tags %}
@@ -33,11 +30,9 @@ layout: default
           </div>
           {%- endif -%}
         {%- endfor -%}
-      </div>
     </section>
   {%- endif -%}
   <div class="btns">
-		<a class="btn btn-dark" href="{{ site.baseurl }}/">Back to home</a>
-	</div>
-	<div class="spacer"></div>
+	  <a class="btn btn-dark" href="{{ site.baseurl }}/">Back to home</a>
+  </div>
 </div>
