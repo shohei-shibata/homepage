@@ -1,42 +1,41 @@
 ---
-title: Sample Post
-date: 2019-07-30 10:03:47.814000000 Z
+title: Web Development Setup for Less Than $200
 categories:
 - Blog
 tags:
-- Just a sample
+- Web Development 
 layout: blog-post
 image: https://images.unsplash.com/photo-1499872995989-56985d47da53?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ed1e81bf0e23244d68f97ca08244076&auto=format&fit=crop&w=1052&q=80
 ---
 
-Intro
-<!--more-->
+How much does a decent computer for coding cost in 2019? I recently bought a Samsung Chromebook 3 for $170, and I have been experimenting to see if this can function as my primary web development setup. <!--MORE--> And in my experience so far, it is pretty much doing everything I need for coding. For $1,000 less than my other laptop!
 
-* A more satisfying 9-5 workplace
+I'm going to describe how I do things on Chromebook, and the pros and the cons that I am finding. Hopefully this helps you figure out if this is worth it for you to try out.
 
-Less task-oriented, allowing individual's creativity to shine.
+## Crostini
 
-If given the time and the freedom, people will find problems and come up with creative solutions. That's much more satisfying than doing only what they are told. That satisfaction will make employees hungry to do more. The company will also benefit because each employee will be accomplishing more.
+Describe the crostini setup
 
-Unfortunately that's not the system we find ourselves in. We are evaluated on how we handle the tasks that we are given. We are under pressure to not fail, not to make a mistake. We are working to meet the expectations so that hopefully our paychecks will rise evenly with the tide. There is hardly an opportunity to do better than expected and be rewarded for it.
+End with opening the terminal
 
-Can this system be changed? 
+## Using the terminal
 
-As employees we have little control over the systematic side, but I believe there's also a lot we can do on our own, even against the grain of the current workplace tendencies.
+File folder structure
 
+Git is built in
 
-# Creating value is the foundation
+Ruby is not installed
 
-If our value as workers lie solely on completing the tasks you are given, then our value could disappear at any moment as the world around us changes. And the world is changing constantly and rapidly. 
+Node is not installed
 
-Instead, we should be *creating* values. How can we make the process more efficient? How do we eliminate the roadblocks that are holding us back often? How can the errors be reduced or eliminated?
+## What can I do with it?
 
-Most likely, the bosses will not demand those things. They will only ask that you finish the tasks on-time and without errors. So you have to initiate the value-creating activities on your own. That could be difficult depending on the work volume at that time. But I think it's work it to make that time. And my belief is that once the management sees the outcome, they *have to* value that.
+Work with terminal just like Linux
 
-What's even better is that by improving the process, handling the job tasks becomes more efficient, freeing up even more of your time to improve the work process and quality. 
+Save files locally in Linux container
 
-What's also happening here, is that you've created value to the company by using your observation and creativity. That will never be replaced by robots or cheaper labor. You're not only more valuable to the employer but you've also gotten a much bigger satisfaction from working. It's a win for everybody. 
+Clone git repository and work on code locally
 
-This is something that could be done at any kind of work. 
+I use VIM, but you can also code using VS Code, Atom, 
 
-So you can either work to not mess up and strive to be average, or you can become much more than that, actually add value to the workplace, and bring larger satisfaction to your life.
+Update my website on Jekyll
