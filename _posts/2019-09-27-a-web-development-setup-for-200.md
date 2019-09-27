@@ -1,9 +1,10 @@
 ---
-title: A Web Development Setup For Less Than $200
-date: 2019-07-30 10:03:47.814000000 Z
+title: A Web Development Setup For $200
+date: 2019-09-27 10:03:47.814000000 Z
 categories:
 - Blog
 tags:
+- Featured
 - Coding
 layout: blog-post
 image: 
