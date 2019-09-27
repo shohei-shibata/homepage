@@ -20,6 +20,7 @@
   margin-bottom: $spacing-unit;
 
   h2 {
+    margin-top: $spacing-unit;
     @include relative-font-size(2);
 
     @include media-query($on-desktop) {
@@ -48,25 +49,16 @@
     margin: $spacing-unit auto;
 
     @include media-query($on-desktop) {
-      width: #{$content-width * 0.5};
+      width: #{$content-width * 1};
     }
   }
   img {
 	display: block;
 	flex-grow: 0;
 	width: 100%;
-    height: calc(100vw * 0.75);
-    margin-bottom: #{$spacing-unit * 0.5};
+    	height: auto;
+	margin-bottom: #{$spacing-unit * 0.5};
 	object-fit: cover;
-	filter: brightness(90%);
-	@include media-query($on-desktop) {
-		width: #{$content-width * 0.4};
-		height: #{$content-width * 0.3};
-	}
-  }
-  img {
-	width: 100%;
-	height: calc(#{($content-width - $spacing-unit) * 0.5 * 0.75});
   }
 
   span {

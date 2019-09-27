@@ -13,6 +13,8 @@ image:
 What's the cost of a decent coding computer in 2019? I recently purchased a Samsung Chromebook 3 for around $170, and have been experimenting to see if it can work as my primary web development setup. Will it handle everything that I need to and want to do? What are some drawbacks? Read on to find out.
 <!--more-->
 
+{% include figure.html name="chromebook-open.jpg" alt="My Chromebook" caption="My Samsung Chromebook 3" %}
+
 ## Chrome OS
 
 When you open a Chromebook, there will be a browser and not much else. Any "apps" you will find or be able to add are essentially bookmarks to web apps. For a long time, if you wanted to code there were basically two options:
