@@ -1,0 +1,12 @@
+	<div class="post-header">
+		<h1 class="sans-serif heading">{{ include.title | escape }}</h1>
+		<p class="text-light blog-post-tags">
+			{% for item in include.tags %}
+				{% if item != "Featured" %}
+					<span>{{ item }}</span>
+				{% endif %}
+			{% endfor %}
+		</p>
+	</div>
+
+

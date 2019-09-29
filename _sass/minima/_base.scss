@@ -58,7 +58,7 @@ body {
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
-p, blockquote, 
+p, blockquote, ol, ul 
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
@@ -171,33 +171,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $heavy-font-weight;
 }
 
-
-
 /**
- * Links
+ * Paragraph
  */
-a {
-  color: $brand-color;
-
-/*  &:visited {
-    color: darken($brand-color, 15%);
-  } 
-
-  &:hover {
-    color: $text-color;
-    text-decoration: underline;
-  } */
-
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
-  }
+p {
+  line-height: $base-line-height;
 }
-
-
 /**
  * Blockquotes
  */
