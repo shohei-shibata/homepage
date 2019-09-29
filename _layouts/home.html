@@ -4,21 +4,12 @@ layout: default
 
 <div class="content">
   {%- if site.posts.size > 0 -%}
-    <section class="page-section">
+    <section class="content">
         {%- for post in site.posts -%}
           {%- if post.tags contains "Featured" -%}
+	  {% include post-header.html title=post.title tags=post.tags %}
           <div class="post-content">
-              <div class="post-content-text">
-                <h2>{{ post.title | escape }}</h2>
-                <p class="text-light">
-                    {% for item in post.tags %}
-			{% if item != "Featured" %}
-                          <span>{{ item }}</span>
-			{% endif %}
-                    {% endfor %}
-                </p>
                 {{ post.content }}
-             </div>
           </div>
           {%- endif -%}
         {%- endfor -%}

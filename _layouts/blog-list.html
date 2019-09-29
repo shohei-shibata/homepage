@@ -17,7 +17,9 @@ layout: default
                 <h2>{{ post.title | escape }}</h2>
                 <p class="text-light">
                     {% for item in post.tags %}
+		    	{%- if item != "Featured" -%}
                         <span>{{ item }}</span>
+			{%- endif -%}
                     {% endfor %}
                 </p>
                 {{ post.excerpt }}

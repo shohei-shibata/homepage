@@ -2,29 +2,8 @@
 layout: default
 ---
 
-<div class="nav-bar-spacer"></div>
 <section class="content">
-	<div class="post-header">
-		<div class="post-banner">
-		  {%- if page.image -%}
-			<img src="{{ page.image | relative_url }}">
-			{%- else -%}
-			<img src="https://source.unsplash.com/random">
-			{%- endif -%}
-			<h1 class="post-banner-title sans-serif heading">{{ page.title | escape }}</h1>
-		</div>
-		<div class="spacer"></div>
-		<p class="text-light blog-post-tags">
-			{% for item in page.tags %}
-				{% if item != "Featured" %}
-					<span>{{ item }}</span>
-				{% endif %}
-			{% endfor %}
-		</p>
-	</div>
-
-	<div class="spacer"></div>
-
+	{% include post-header.html title=page.title tags=page.tags %}
 	<div class="post-content">
 		{{ content }}
 	</div>
