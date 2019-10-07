@@ -1,9 +1,4 @@
 ---
-title: Climate Change: What Can Each of Us Do?
-type: blog-post
-categories: Blog
-Tags:
-- Thoughts
 ---
 
 Recently, Greta Thunberg has been on the news frequently with her no nonsense slap-in-the-face wakeup calls for the policy makers. And I love how she does it.
