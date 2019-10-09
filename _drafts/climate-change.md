@@ -1,10 +1,11 @@
 ---
 title: Climate Change - At Individual Level
-layout: blog-post
-categories: 
+date: 2019-10-07 11:03:09.087000000 Z
+categories:
 - Blog
-tags: 
+tags:
 - Thoughts
+layout: blog-post
 ---
 
 Recently, Greta Thunberg has been on the news frequently with her no nonsense slap-in-the-face wakeup calls for the policy makers. And I love how she does it.
