@@ -1,11 +1,12 @@
 ---
 title: Permaculture
-type: blog-post
+date: 2019-10-09 20:22:52.258000000 Z
 categories:
 - Blog
 tags:
 - Nature
 - Thoughts
+type: blog-post
 ---
 
 [Permaculture](https://en.wikipedia.org/wiki/Permaculture), for those unfamiliar, is ...define...
