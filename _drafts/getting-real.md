@@ -1,12 +1,6 @@
 ---
-title: Getting Real: My Top Takeaways 
-date: 2019-10-07 10:42:56.514000000 Z
-categories:
-- Blog
-tags:
-- Coding
-- Book Summary
-layout: blog-post
+title: Getting Real
+date: 2019-10-26 01:16:40.215000000 Z
 ---
 
 My summary of the book *Getting Real* by 37signals, and how I am applying the learnings into my coding or any other work. <!--more-->
