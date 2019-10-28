@@ -19,6 +19,12 @@ Ultimately, user interface is the only thing which users experience. So most of 
 
 Another helpful concept is the concept of *Epicenter Design*. Just because the navigation bar is at the top of the page, I don't need to work on that first. What is the most important content of the page? Whatever it is, work on that first.
 
+## Execute
+
+Once you have minimized your to-do list and prioritized your tasks, the biggest hurdles are gone. However, you still have to do the work. At this point, it's time to focus solely on the most important stuff and get working. 
+
+This is probably the most important step. None of these tips are ground-breaking. However, knowing something is entirely different from doing something, and it's only the doing part that actually counts at the end of the day. 
+
 ## Conclusions
 
 We all have a limited ability to focus and do quality work. If we waste our energy on less important things, we have less energy left to do good quality work on the more important tasks.
