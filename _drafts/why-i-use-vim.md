@@ -1,5 +1,6 @@
 ---
-title: Why I use VIM 
+title: Why I use VIM
+date: 2019-11-10 14:25:11.032000000 Z
 categories:
 - Blog
 ---
