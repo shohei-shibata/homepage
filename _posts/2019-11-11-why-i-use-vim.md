@@ -13,7 +13,9 @@ Why would anyone want to use VIM? The text editor is the place where a web devel
 
 {% include figure.html name="vim.png" alt="VIM" caption="VIM startup screen" %}
 
-VIM lacks any graphical interface. I imagine many people might not even know how to exit out of the thing if opening a file in VIM by accident! Each action is performed by typing in commands which you must memorize, and I can totally see how that can scare off a lot of people. However if you are patient and spend the time to learn how to use VIM, you will be hugely rewarded. The speed and efficiency of keyboard-based navigation makes me very productive. I love the simplicity of having only the text file that I am editing. I think that promotes better focus. Also, it's a tremendously satisfying thing to learn the language of VIM, because as you use it more, you will learn more commands which continuously improves your efficiency even more.
+VIM lacks any graphical interface. I imagine many people might not even know how to exit out of the thing if opening a file in VIM by accident! Each action is performed by typing in commands which you must memorize, and I can totally see how that can scare off a lot of people! 
+
+However if you are patient and spend the time to learn how to use VIM, you will be hugely rewarded. The speed and efficiency of keyboard-based navigation makes me very productive. I love the simplicity of having only the text file that I am editing. I think that promotes better focus. Also, it's a tremendously satisfying feeling to learn the language of VIM, because as you use it more, you will learn more commands which continuously improves your efficiency even more.
 
 ## The basic commands
 
