@@ -144,6 +144,7 @@ figure > img {
 
 figcaption {
   font-size: $small-font-size;
+  text-align: center;
 }
 
 
@@ -153,6 +154,7 @@ figcaption {
  */
 ul, ol {
   margin-left: $spacing-unit;
+  margin-bottom: $spacing-unit / 2;
 }
 
 li {

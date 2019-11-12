@@ -1,5 +1,5 @@
 {% capture image_url  %}/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
 <figure class="image">
-    <img src="{{site.baseurl}}/assets/posts/{{image_url}}" alt="{{ include.alt }}">
+    <img src="{{site.baseurl}}/assets/posts{{image_url}}" alt="{{ include.alt }}">
     <figcaption>{{ include.caption }}</figcaption>
 </figure>
