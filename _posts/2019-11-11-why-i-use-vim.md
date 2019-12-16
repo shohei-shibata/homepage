@@ -6,6 +6,7 @@ categories:
 tags:
 - Featured
 - Coding
+- Vim
 layout: blog-post
 ---
 
