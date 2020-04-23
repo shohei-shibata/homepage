@@ -7,7 +7,7 @@ tags:
 - Featured
 - Coding
 - Vim
-layout: blog-post
+layout: post
 ---
 
 Why would anyone want to use VIM? The text editor is the place where a web developer spends most of his or her time, and so we definitely want it to be efficient and stress-free. And there are a lot of great options out there, so why would anyone want to choose the most primitive, barebones looking option? <!--more--> 

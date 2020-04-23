@@ -21,17 +21,18 @@ body {
 }
 .title a {
   text-decoration: none;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 1.5em 0 1.5em 0;
-	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 h1 { 
 	font-size: 1.69em; 
 	line-height: calc(18px + 0.7em);
   text-align: center;
+  font-weight: bold;
 }
 h2 { font-size: 1.616em; }
 h3 { font-size: 1.471em; }
@@ -43,8 +44,13 @@ p, a {
 	margin: 0 0 1.5em 0;
 	letter-spacing: -0.002em;
   color: currentColor;
+  line-height: 1.6em;
 }
 small { font-size: 0.769em; }
+
+hr {
+  margin: 3em 0;
+}
 
 /*
     COMPONENTS
@@ -55,7 +61,7 @@ small { font-size: 0.769em; }
 	font-size: 1.243em;
 	text-transform: uppercase;
 	background-color: transparent;
-	border: solid 2px #D89F31;
+	border: solid 2px #e0c38d;
 	border-radius: 2px;
 	padding: 0.5em 3em;
   transition: all 0.1s;
@@ -63,7 +69,7 @@ small { font-size: 0.769em; }
 .btn:hover,
 .btn:focus {
 	cursor: pointer;
-	background-color: #D89F31;
+	background-color: #e0c38d;
   outline: none;
 	/*background-color: transparent;*/
 }
@@ -72,9 +78,38 @@ small { font-size: 0.769em; }
   padding: 0.1em 0.5em;
 }
 
+a.link-strong { 
+  display: inline-block;
+  color: inherit; 
+  text-transform: uppercase;  
+  text-decoration: none;
+  border-bottom: 0.2em solid #e0c38d;
+  line-height: 0.75em;
+  margin: 0;
+}
+a.link-strong::before {
+  content: ">> ";
+}
+
 img {
   width: 100%;
   height: auto;
+}
+
+figure {
+  margin: 1.5em 0;
+}
+
+figcaption {
+  text-align: center;
+  color: #aaa;
+}
+
+code {
+  display: inline-block;
+  background-color: #ddd;
+  border-radius: 3px;
+  padding: 0 0.5em;
 }
 
 /*
@@ -115,8 +150,10 @@ nav {
 }
 .nav-container a:hover,
 .nav-container a:focus,
+.link-strong:hover,
+.link-strong:focus,
 .nav-container .current {
-  border-bottom: 0.5em solid #D89F31;
+  border-bottom: 0.5em solid #e0c38d;
   line-height: 0.1em;
   outline: none;
 }

@@ -5,7 +5,7 @@ categories:
 - Blog
 tags:
 - Coding
-layout: blog-post
+layout: post
 image: 
 ---
 

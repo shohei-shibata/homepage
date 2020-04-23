@@ -7,9 +7,9 @@
       {% for item in site.data.pages %}
         {% if page.url contains item.url %}
           <li>
-            <span class="current">
+            <a href="{{ item.url }}" class="current">
               <small>{{ item.text }}</small>
-            </span>
+            </a>
           </li>
         {% else %}
           <li>

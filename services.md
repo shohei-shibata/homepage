@@ -21,3 +21,9 @@ You are already happy with the design of your existing website? Great! Let's spe
 Just need small improvements or bug fixes? Let me know! I'll see if I can help.
 
 To give you a better idea of what I can do, I've put up some examples on the [Projects page]({{ site.url }}/projects.html). Please check them out!
+
+<hr/>
+
+{% include link-strong.html url='/contact' text='Contact Me' %}
+{% include link-strong.html url='/projects' text='Project Examples' %}
+{% include link-strong.html url='/about' text='About Me' %}
