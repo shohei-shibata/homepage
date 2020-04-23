@@ -1,6 +1,6 @@
 ---
 title: A Web Development Setup For $200
-date: 2019-09-27 10:03:47.814000000 Z
+date: 2019-09-27 10:03:47 Z
 categories:
 - Blog
 tags:
