@@ -1,0 +1,137 @@
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+body {
+	overflow-x: hidden;
+	background-color: #fff;
+	color: #222;
+	font-size: calc(12px + 0.75vw);
+	font-family: "Open Sans", sans-serif; 
+	margin: 0;
+}
+
+/*
+    TYPOGRAPHY
+*/
+
+.title {
+	font-family: "Pacifico",cursive;
+}
+.title a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 1.5em 0 1.5em 0;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+h1 { 
+	font-size: 1.69em; 
+	line-height: calc(18px + 0.7em);
+  text-align: center;
+}
+h2 { font-size: 1.616em; }
+h3 { font-size: 1.471em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.243em; }
+h6 { font-size: 1.132em; }
+p, a { 
+	font-size: 1em; 
+	margin: 0 0 1.5em 0;
+	letter-spacing: -0.002em;
+  color: currentColor;
+}
+small { font-size: 0.769em; }
+
+/*
+    IMAGES
+*/
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*
+    NAV
+*/
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 1px #ddd;
+  padding-bottom: 1em;
+}
+
+.title h1 {
+  margin: 0.5em 0;
+}
+
+.nav-container ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+}
+.nav-container li,
+.nav-container small {
+  display: inline;
+}
+.nav-container small {
+  display: inline-block;
+  margin: 0 1em;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.nav-container a {
+  text-decoration: none;
+  line-height: 1em;
+}
+.nav-container small:hover {
+  border-bottom: 0.5em solid #D89F31;
+  line-height: 0.1em;
+}
+
+/*
+    MAIN CONTENT 
+*/
+
+main {
+  width: 80vw;
+  max-width: 800px;
+  min-height: 80vh;
+  margin: auto;
+  animation: fade-in 1s;
+}
+
+/*
+    FOOTER
+*/
+footer {
+	background-color: #AAA;
+	color: #fff;
+	padding: 0.5em;
+}
+#footer-container {
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#footer-container small {
+	max-width: 50vw;
+}
+.footer-social-logo {
+	margin: 0 0 0 0.3em;
+  transition: all 0.3s;
+  color: currentColor;
+}
+.footer-social-logo:hover,
+.footer-social-logo:focus {
+  color: #222;
+  outline: none;
+}

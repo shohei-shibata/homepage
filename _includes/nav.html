@@ -1,49 +1,12 @@
 <nav>
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-			<a class="nav-logo logo-font" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
-			<div class="mobile-only nav-mobile">
-                <input id="nav-mobile-toggle" type="checkbox"> 
-                <label for="nav-mobile-toggle"></label>
-                <div class="nav-mobile-open">
-                    <div class="nav-mobile-open-wrapper">
-                        <a class="btn btn-dark" href="/">Home</a>
-                        <div class="spacer"></div>
-                    {%- for path in page_paths -%}
-                        {%- assign my_page = site.pages | where: "path", path | first -%}
-		        {%- if my_page.link-name -%}
-                            <a class="btn btn-dark" href="{{ my_page.url | relative_url}}">{{ my_page.link-name | escape }}</a>
-                            <div class="spacer"></div>
-			{%- endif -%}
-                    {%- endfor -%}
-                    </div>
-                </div>
-            </div>
-
-			<div class="desktop-only nav-desktop">
-				<ul>
-                {%- for path in page_paths -%}
-                {%- assign my_page = site.pages | where: "path", path | first -%}
-                
-                {%- assign link_class = "btn btn-light btn-nav sans-serif" -%}
-                {%- if my_page.link-name -%}
-                    {%- if my_page.link-name == "Contact" -%}
-                        {%- assign link_class = "btn btn-light btn-nav sans-serif" -%}
-                        {%- assign li_class = "nav-desktop-item flex-last" -%}
-                    {%- else -%}
-                        {%- assign link_class = "sans-serif" -%}
-                        {%- assign li_class = "nav-desktop-item" -%}
-                    {%- endif -%}
-                    
-                    <li class="{{ li_class }}">
-                      <a class="{{ link_class }}" href="{{ my_page.url | relative_url}}">{{ my_page.link-name | escape }}</a>
-                    </li>
-                {%- endif -%}
-                {%- endfor -%}
-				</ul>
-			</div>
-		</div>	
-		
+  <div class="title">
+    <h1><a href="/">Shohei Shibata</a></h1>
+  </div>
+  <div class="nav-container">
+    <ul>
+      <li><a href="/about"><small>About me</small></a></li>
+      <li><a href="/services"><small>Work with me</small></a></li>
+      <li><a href="/blog"><small>Blog</small></a></li>
+    </ul>
+  </div>
 </nav>
-

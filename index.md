@@ -1,4 +1,10 @@
 ---
-layout: home
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
 ---
 
+# Hello!
+
+I'm Shohei Shibata, a freelance web developer based in Dayton, OH USA.
