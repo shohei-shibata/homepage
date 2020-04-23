@@ -47,8 +47,31 @@ p, a {
 small { font-size: 0.769em; }
 
 /*
-    IMAGES
+    COMPONENTS
 */
+
+.btn {
+  color: inherit;
+	font-size: 1.243em;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: solid 2px #D89F31;
+	border-radius: 2px;
+	padding: 0.5em 3em;
+  transition: all 0.1s;
+}
+.btn:hover,
+.btn:focus {
+	cursor: pointer;
+	background-color: #D89F31;
+  outline: none;
+	/*background-color: transparent;*/
+}
+.btn-small {
+  font-size: 1em;
+  padding: 0.1em 0.5em;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -80,18 +103,22 @@ nav {
   display: inline;
 }
 .nav-container small {
-  display: inline-block;
   margin: 0 1em;
   text-transform: uppercase;
-  transition: all 0.3s;
 }
-.nav-container a {
+.nav-container a,
+.nav-container .current {
+  display: inline-block;
   text-decoration: none;
   line-height: 1em;
+  margin: 0;
 }
-.nav-container small:hover {
+.nav-container a:hover,
+.nav-container a:focus,
+.nav-container .current {
   border-bottom: 0.5em solid #D89F31;
   line-height: 0.1em;
+  outline: none;
 }
 
 /*
@@ -102,13 +129,14 @@ main {
   width: 80vw;
   max-width: 800px;
   min-height: 80vh;
-  margin: auto;
-  animation: fade-in 1s;
+  margin: 0 auto 3em auto;
+  animation: fade-in 0.2s;
 }
 
 /*
     FOOTER
 */
+
 footer {
 	background-color: #AAA;
 	color: #fff;
@@ -134,4 +162,44 @@ footer {
 .footer-social-logo:focus {
   color: #222;
   outline: none;
+}
+
+
+/* 
+    CONTACT FORM 
+*/
+
+
+#contact-form label {
+	font-size: 1.243em;
+	/*color: #eee;*/
+	/*opacity: 1;*/
+	text-transform: uppercase;
+}
+.contact-form-text,
+.contact-form-textarea {
+  color: inherit;
+	background-color: transparent;
+	width: calc(100% - 4px);
+	margin-bottom: 1em;
+	border: solid 1px;
+	font-size: 1em;
+  border-color: currentColor;
+  outline: none;
+}
+.contact-form-text.dark,
+.contact-form-textarea.dark {
+	border-color: #eee;
+}
+.contact-form-text {
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+.contact-form-textarea {
+	resize: none;
+}
+.contact-form-submit {
+	display: block;
+	margin: auto;
 }
