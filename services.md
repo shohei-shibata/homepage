@@ -1,9 +1,8 @@
 ---
-layout: default
 title: Need a website?
-permalink: /services/
+permalink: "/services/"
+layout: default
 ---
-
 
 I can help. Let's create a website that provides an amazing experience for the visitor, and let it help you achieve your goals. I'm here to make the whole process stress-free for you.
 
