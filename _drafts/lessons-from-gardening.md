@@ -1,5 +1,6 @@
 ---
 title: Lessons from Gardening
+date: 2020-04-23 22:18:49.539000000 Z
 ---
 
 I feel like I have been preparing for this moment for years. Up to this point in my life, I did not have the right circumstances to be able to garden. For most of my life I have been moving every few years, often living in apartments. Last year, finally we moved to a house where we think we will put down roots. 
