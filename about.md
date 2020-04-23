@@ -1,7 +1,7 @@
 ---
-layout: default
 title: About Me
-permalink: /about/
+permalink: "/about/"
+layout: default
 ---
 
 ![Image of a computer and a coffee mug in a back porch]({{ site.url }}/assets/images/about.jpg)

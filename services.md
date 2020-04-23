@@ -1,6 +1,6 @@
 ---
+permalink: "/services/"
 layout: default
-permalink: /services/
 ---
 
 # Need a website?
