@@ -2,4 +2,8 @@
 layout: default
 ---
 
+{% if page.date %}
+  <small class="post-date">{{ page.date | date: '%B %d, %Y' }}</small>
+{% endif %}
+
 {{ content }}

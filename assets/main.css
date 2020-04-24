@@ -253,6 +253,11 @@ footer {
     POSTS
 */
 
+.post-date {
+  display: inline-block;
+  color: #aaa;
+  margin-bottom: 1.5em;
+}
 .post-excerpt h3 {
   margin-bottom: 0;
 }
