@@ -6,7 +6,7 @@ categories:
 tags:
 - Coding
 - Vim
-layout: post
+layout: blog-post
 ---
 
 When I chose to start using Vim instead of GUI-based editors, I figured one drawback was going to be navigating between multiple files, or working on multiple files at once. Well I was wrong. It's very easy to work with multiple files in Vim, and it's pretty awesome to be able to navigate files quickly without a mouse! 
