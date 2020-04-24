@@ -1,7 +1,7 @@
 ---
 title: My Personal Homepage
+date: 2020-04-24 00:00:00 Z
 layout: project
-date: 2020-04-24
 ---
 
 The biggest lesson I learned from creating this website has been about what it *doesn't* need. 
