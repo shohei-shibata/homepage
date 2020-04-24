@@ -48,9 +48,11 @@ p, a {
   line-height: 1.6em;
 }
 small { font-size: 0.769em; }
+em { margin-right: 0.2em; }
 
 hr {
   margin: 3em 0;
+  border: solid 0.5px #ddd;
 }
 
 /*
@@ -126,7 +128,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 0.5px #ddd;
   padding-bottom: 1em;
 }
 
