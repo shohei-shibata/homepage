@@ -26,6 +26,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 1.5em 0 1.5em 0;
+  text-transform: capitalize;
 }
 
 h1 { 
@@ -71,7 +72,12 @@ hr {
 	cursor: pointer;
 	background-color: #e0c38d;
   outline: none;
-	/*background-color: transparent;*/
+}
+.btn:disabled {
+  cursor: initial;
+  background-color: #ddd;
+  border-color: #ddd;
+  color: #888;
 }
 .btn-small {
   font-size: 1em;
@@ -239,4 +245,7 @@ footer {
 .contact-form-submit {
 	display: block;
 	margin: auto;
+}
+#contact-form-submit-status {
+  text-align: center;
 }
