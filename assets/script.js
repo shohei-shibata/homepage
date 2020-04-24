@@ -40,8 +40,6 @@ const showSubmitResult = function(submitStatus) {
   // Indicate to user whether or not the email was successfully sent.
   const submitStatusNode = document.getElementById("contact-form-submit-status");
 
-  console.log("status", typeof submitStatus);
-
   if (submitStatus == "200") { 
     submitStatusNode.innerText = "Email sent. Thank you!";
   } else {
