@@ -14,11 +14,11 @@ Nextjs and Gatsby are two of the most popular frameworks for React, and I happen
 
 I actually finished the website 90% of the way using Nextjs... But after all, I ended up switching to [Jekyll](https://jekyllrb.com).
 
-I feel that while Nextjs or Gatsby may have more features than Jekyll, I work really efficiently and stress-free with Jekyll. This could be because I'm familiar with it, but I also like that with Jekyll I am coding in plain HTML, only inserting a little bit of Liquid syntax here and there. Ultimately HTML is what is delivered to the user, and I am really interestd in learning to write good semantic HTML and making the website as natural as possible to navigate. That's hard to manage when the libraries and frameworks generate the HTML for you. 
+While Nextjs or Gatsby may have more features than Jekyll, I work really efficiently and stress-free with Jekyll. This could be because I'm more familiar with it, but I also like that with Jekyll I am coding in plain HTML, only inserting a little bit of Liquid syntax here and there. Ultimately HTML is what is delivered to the user, and I am really interestd in learning to write good semantic HTML and making the website as natural as possible to navigate. That can be hard to manage when the libraries and frameworks generate the HTML for you. 
 
 There are definitely many circumstances where React, Next or Gatsby has huge advantages. A web app full of interactive elements would be such a case, and in those instances I would reach for them without hesitation in those cases. Otherwise, I think it's better to stick to the minimal approach.
 
-That's my thought on the subject right now, anyway. Tomorrow, a new set of circumstances, and maybe a new view on things. :)
+That's my thought on the subject right now, anyway. Tomorrow, a new set of circumstances, and maybe a new view on things. 😋
 
 ### The Design
 

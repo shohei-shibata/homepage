@@ -6,7 +6,7 @@ layout: default
 
 ![Image of a computer and a coffee mug in a back porch]({{ site.url }}/assets/images/about.jpg)
 
-*Hello from Dayton, Ohio!*
+*Hello from Dayton, Ohio!* 💎🛩
 
 A self-taught web developer, a musician, a mechanical engineer, who currently battles the rabbits and squirrels daily in the backyard as I march toward my goal of establishing a vegetable garden there. 🌱 🐿
 
