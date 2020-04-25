@@ -30,7 +30,7 @@ It was so refreshing and eye-opening when I first saw [Leo Babauta's website](ht
 
 There is absolutely zero distractions and the reader can focus on the main content. The details like the font, the spacing, and a small bit of colors here and there really come to life. It feels so peaceful to be looking at this website.
 
-That's the path I tried to follow. Carefully selecting font, taking care to minimize the variety of the fonts. The font size being large enough to be easy to read. (Thanks Ricardo Zea for your lesson on [modular font sizing]()!)
+That's the path I tried to follow. Carefully selecting font, taking care to minimize the variety of the fonts. The font size being large enough to be easy to read. (Thanks Ricardo Zea for your lesson on [modular font sizing](https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g)!)
 
 I inserted some effects like link highlight animation because I felt that this helped to not only make links stand out, but make the functionality very clear. 
 
