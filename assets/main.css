@@ -9,6 +9,7 @@ body {
 	color: #222;
 	font-size: calc(12px + 0.75vw);
 	font-family: "Open Sans", sans-serif; 
+  text-align: justify;
 	margin: 0;
 }
 
