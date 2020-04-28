@@ -25,6 +25,44 @@ window.onload = function() {
         });
     });
   };
+  
+  // DARK MODE //
+
+  const toggle = document.querySelector('input[name="theme-toggle"]');
+  const icon = document.getElementById("theme-toggle-icon");
+  const storedTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+  toggle.addEventListener("click", function() {
+    console.log("icon class", icon.classList);
+    if (toggle.checked) {
+       document.documentElement.setAttribute('data-theme', 'dark'); 
+       localStorage.setItem('theme', 'dark');
+    } else {
+       document.documentElement.setAttribute('data-theme', 'light'); 
+       localStorage.setItem('theme', 'light');
+    }
+  });
+
+  if (storedTheme) {
+      document.documentElement.setAttribute('data-theme', storedTheme);
+
+      if (storedTheme === 'dark') {
+          toggle.checked = true;
+      } else {
+      }
+  };
+
+  const switchThemeToggleIcon = function(newTheme) {
+    if (newTheme === 'dark') {
+      console.log('switch to sun');
+      icon.classList.add('fa-moon');
+      icon.classList.remove('fa-sun');
+    } else {
+      console.log('switch to moon');
+      icon.classList.add('fa-sun');
+      icon.classList.remove('fa-moon');
+    }
+  }
 }
 
 const resetForm = function(form) {
@@ -49,40 +87,4 @@ const showSubmitResult = function(submitStatus) {
   }
 }
 
-// DARK MODE //
 
-const toggle = document.querySelector('input[name="theme-toggle"]');
-const icon = document.getElementById("theme-toggle-icon");
-const storedTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-
-toggle.addEventListener("click", function() {
-  console.log("icon class", icon.classList);
-  if (toggle.checked) {
-     document.documentElement.setAttribute('data-theme', 'dark'); 
-     localStorage.setItem('theme', 'dark');
-  } else {
-     document.documentElement.setAttribute('data-theme', 'light'); 
-     localStorage.setItem('theme', 'light');
-  }
-});
-
-if (storedTheme) {
-    document.documentElement.setAttribute('data-theme', storedTheme);
-
-    if (storedTheme === 'dark') {
-        toggle.checked = true;
-    } else {
-    }
-};
-
-const switchThemeToggleIcon = function(newTheme) {
-  if (newTheme === 'dark') {
-    console.log('switch to sun');
-    icon.classList.add('fa-moon');
-    icon.classList.remove('fa-sun');
-  } else {
-    console.log('switch to moon');
-    icon.classList.add('fa-sun');
-    icon.classList.remove('fa-moon');
-  }
-}
