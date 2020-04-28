@@ -1,8 +1,17 @@
-// CONTACT FORM //
-
 emailjs.init('user_pxYFdy40Fn6a2X7MFQ1Ln');
 
+const storedTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (storedTheme) {
+    document.documentElement.setAttribute('data-theme', storedTheme);
+
+    if (storedTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark'); 
+    } 
+};
+
 window.onload = function() {
+  // CONTACT FORM //
   const contactForm = document.getElementById('contact-form');
 
   if (contactForm) {
@@ -30,10 +39,8 @@ window.onload = function() {
 
   const toggle = document.querySelector('input[name="theme-toggle"]');
   const icon = document.getElementById("theme-toggle-icon");
-  const storedTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
   toggle.addEventListener("click", function() {
-    console.log("icon class", icon.classList);
     if (toggle.checked) {
        document.documentElement.setAttribute('data-theme', 'dark'); 
        localStorage.setItem('theme', 'dark');
@@ -42,27 +49,6 @@ window.onload = function() {
        localStorage.setItem('theme', 'light');
     }
   });
-
-  if (storedTheme) {
-      document.documentElement.setAttribute('data-theme', storedTheme);
-
-      if (storedTheme === 'dark') {
-          toggle.checked = true;
-      } else {
-      }
-  };
-
-  const switchThemeToggleIcon = function(newTheme) {
-    if (newTheme === 'dark') {
-      console.log('switch to sun');
-      icon.classList.add('fa-moon');
-      icon.classList.remove('fa-sun');
-    } else {
-      console.log('switch to moon');
-      icon.classList.add('fa-sun');
-      icon.classList.remove('fa-moon');
-    }
-  }
 }
 
 const resetForm = function(form) {
