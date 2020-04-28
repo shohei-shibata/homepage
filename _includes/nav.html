@@ -19,12 +19,19 @@
           </li>
         {% endif %}
       {% endfor %}
+          <li>
+            <div id="theme-toggle-container">
+              <label class="switch">
+                <input type="checkbox" name="theme-toggle">
+                <small id="theme-toggle-icon">
+                  <i class="fas fa-moon"></i>
+                  / 
+                  <i class="fas fa-sun"></i>
+                </small>
+              </label>
+            </div>                   
+          </li>
     </ul>
   </div>
-  <div id="toggle-dark-mode-container">
-    <label class="switch">
-      <input type="checkbox" id="toggle-dark-mode">
-      <span class="slider"></span>
-    </label>
-  </div>
+  
 </nav>
