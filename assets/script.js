@@ -46,3 +46,11 @@ const showSubmitResult = function(submitStatus) {
     submitStatusNode.innerText = "Email failed to send. Please try again later.";
   }
 }
+
+// DARK MODE //
+
+const toggle = document.getElementById("toggle-dark-mode");
+
+toggle.addEventListener("click", function() {
+  console.log("toggle", toggle.checked);
+});
