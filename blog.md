@@ -2,6 +2,7 @@
 title: Blog
 permalink: "/blog/"
 layout: default
+description: Here are all of my blog posts.
 ---
 
 {% for item in site.posts %}

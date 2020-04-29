@@ -2,6 +2,7 @@
 title: About Me
 permalink: "/about/"
 layout: default
+description: "A self-taught web developer, a musician, a mechanical engineer, who currently battles the rabbits and squirrels daily in the backyard as I march toward my goal of establishing a vegetable garden there. 🌱 🐿"
 ---
 
 ![Image of a computer and a coffee mug in a back porch]({{ site.url }}/assets/images/about.jpg)
