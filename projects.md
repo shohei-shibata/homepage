@@ -1,9 +1,10 @@
 ---
 title: Projects
 layout: default
+description: Here are some of my most recently completed web development projects.
 ---
 
-Here are some of my most recently completed web development projects
+Here are some of my most recently completed web development projects.
 
 {% for item in site.projects %}
 
