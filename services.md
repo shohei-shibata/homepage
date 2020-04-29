@@ -2,7 +2,9 @@
 title: Need a website?
 permalink: "/services/"
 layout: default
-description: I offer website development services. Let's create an amazing experience for your website visitors and help you achieve your goals. My goal, is to make the whole process stress-free for you.
+description: I offer website development services. Let's create an amazing experience
+  for your website visitors and help you achieve your goals. My goal, is to make the
+  whole process stress-free for you.
 ---
 
 I can help. Let's create an amazing experience for your website visitors and help you achieve your goals. My goal, is to make the whole process stress-free for you.
