@@ -37,17 +37,35 @@ window.onload = function() {
   
   // DARK MODE //
 
-  const toggle = document.querySelector('input[name="theme-toggle"]');
+  const toggleDark = document.querySelector('input[name="theme-toggle"]');
   const icon = document.getElementById("theme-toggle-icon");
 
-  toggle.addEventListener("click", function() {
-    if (toggle.checked) {
+  toggleDark.addEventListener("click", function() {
+    if (toggleDark.checked) {
        document.documentElement.setAttribute('data-theme', 'dark'); 
        localStorage.setItem('theme', 'dark');
     } else {
        document.documentElement.setAttribute('data-theme', 'light'); 
        localStorage.setItem('theme', 'light');
     }
+  });
+
+  // MOBILE NAV TOGGLE //
+
+  const nav = document.getElementById("nav-container");
+  const toggleMobileNav = document.getElementById("nav-mobile-toggle");
+  const menuIcon = document.getElementById("nav-mobile-icon-menu");
+  const closeIcon = document.getElementById("nav-mobile-icon-close");
+
+  menuIcon.addEventListener("click", function() {
+    nav.setAttribute("style", "display: initial;");  
+    menuIcon.setAttribute("style", "display: none;");  
+    closeIcon.setAttribute("style", "display: initial;");  
+  });
+  closeIcon.addEventListener("click", function() {
+    nav.setAttribute("style", "display: none;");  
+    menuIcon.setAttribute("style", "display: initial;");  
+    closeIcon.setAttribute("style", "display: none;");  
   });
 }
 
