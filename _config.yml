@@ -12,7 +12,8 @@ collections:
     title: Uploads
     output: true
 email: shohei.shibata.dev@gmail.com
-description: Personal website for Shohei Shibata, a freelance web developer. A blog describing his learning experiences in coding.
+description: Personal website for Shohei Shibata, a freelance web developer. A blog
+  describing his learning experiences in coding.
 twitter_username: _shoheishibata_
 github_username: shohei-shibata
 plugins:
