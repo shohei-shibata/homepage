@@ -140,6 +140,11 @@ code {
   transition: all 0.3s;
 }
 
+pre code {
+  width: 100%;
+  padding: 0.5em;
+}
+
 /*
     NAV
 */
@@ -308,7 +313,7 @@ footer {
     POSTS
 */
 
-.post-date {
+.post-meta {
   display: inline-block;
   color: var(--font-color-secondary);
   margin-bottom: 1.5em;

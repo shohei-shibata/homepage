@@ -1,2 +1,2 @@
-{% if include.date %}<small class="post-meta">{{ include.date | date: '%B %d, %Y' }}</small>{% endif %}
-{% if include.author %}<small class="post-meta">by {{ include.author }}</small>{% endif %}
+{% if include.date and include.date != "" %}<small class="post-meta">{{ include.date | date: '%B %d, %Y' }}</small>{% endif %}
+{% if include.author and include.author != "" %}<small class="post-meta">by {{ include.author }}</small>{% endif %}
