@@ -1,6 +1,6 @@
 ---
 title: Working with Git - Basic Terminal Commands
-date: 2020-05-02 13:16:40.881000000 Z
+date: 2020-05-02 13:16:40 Z
 layout: blog-post
 author: Shohei Shibata
 ---
