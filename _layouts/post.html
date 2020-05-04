@@ -2,13 +2,11 @@
 layout: default
 ---
 
-{% if page.date %}
-  {% capture date %}{{ page.date | date: '%B %d, %Y' }}{% endcapture %}
-  {% capture author %}{{ page.author }}{% endcapture %}
-  {% include post-meta.html 
-    date=date 
-    author=author
-  %}
-{% endif %}
+{% if page.date %}{% capture date %}{{ page.date | date: '%B %d, %Y' }}{% endcapture %}{% endif %}
+{% if page.author %}{% capture author %}{{ page.author }}{% endcapture %}{% endif %}
+{% include post-meta.html 
+  date=date 
+  author=author
+%}
 
 {{ content }}
