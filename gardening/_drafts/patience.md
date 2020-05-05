@@ -2,34 +2,35 @@
 layout: blog-post
 title: Patience
 author: Shohei Shibata
+date: 04-05-2020
+feature-image:
+  name: seedlings.jpg
+  alt: "Close-up photo of seedlings"
+  caption: "Photo by <a target='_blank' href='https://unsplash.com/@gallarotti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Francesco Gallarotti</a> on Unsplash"
 ---
-
-{% include figure.html 
-  name="seedlings.jpg"
-  alt="Close-up photo of seedlings"
-  caption="Photo by <a target='_blank' href='https://unsplash.com/@gallarotti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Francesco Gallarotti</a> on Unsplash"
-%}
 
 It's spring in Ohio. There are some warm sunny days that are just perfect to sit out on the back porch, soak in the sun and listen to the birds. Then the cold air will come in and the temperature comes down to near freezing in the morning. In between, there are consecutive days of rain.
 
-Today is one of the rainy days, but a very pleasant one with no wind and mild temperatures. Birds seem to love this kind of weather. They are singing so enthusiastically, and it feels like every tree around me are full of them! 
+Today is one of the rainy days. I woke up to see wet ground, and the light rain is still falling periodically, but it's comfortable. Birds seem to love this kind of weather. They are singing so enthusiastically, and it feels like every tree around me are full of them! 
 
-And this is my first year of gardening. As I watch the seeds sprout and seedlings grow, I am learning how difficult it is to be patient.
+This is my first year of serious gardening. And the lesson which I am being taught is on patience.
 
-When I plant a seed, I am excited thinking about the plant that this seed is going to become and possibly the harvest that we're going to be able to enjoy. 
+Planting a seed is exciting. I anticipate what this seed is going to become. I fill my mind with visions of a vigorously growing plant with lots of fruits, vegetables, and flowers for our family to enjoy.
 
-As I walk by that spot each day, I want to find a little seedling popping out. Once it has sprouted, I want to see the plant getting larger every day. 
+But then the reality is that things take time. *A lot more time* than I wish, especially in my first-year garden made mostly of clay. 
 
-But nature has its own pace which I can't change. And that pace is *a lot* slower than that of my anticipation.
+And to add some stress to this waiting, birds will come and eat some of the seeds. Then the squirrels will dig up the ground hoping, I imagine, to find some seeds or nuts they buried in the ground last fall. 
 
-I guess that's the gift. I receive an opportunity every morning as I walk through my garden, to notice this. To feel that anticipation in myself and laugh at the silliness of it. 
+Whatever seeds that remained will finally pop out of the ground. The squirrels will continue to stirr up the soil, flinging the vulnerable seedlings out of the ground. And here come the slugs, happily eating up the only two leaves on these young plants.
 
-And sometimes, nature is even more cruel. Many seedlings will disappear as slugs eat them up, or squirrels dig up the area. I've tried this and that to protect my little seedlings, but a few weeks in I've realized that those efforts are mostly not very effective. 
+At first, I dilligently battled these critters that were taking away my plants, with netting and fences. I'm not even sure that my efforts have really made a difference. Now, for the most part I just let it go. 
 
-First I covered up the seedlings to keep the squirrels from digging up the soil. Then the slugs got the free rein to eat the seedlings because birds and other prey cannot get to the slugs. 
+I'm not supposed to get all of my seeds to sprout. Some plants are bound be eaten. But after all that, some will remain for me and my family to enjoy. 
 
-So I've changed my strategy. Just let the nature take its course. After the slugs have eaten some seedlings, and the squirrels have dug up and killed some more, there will still be some seedlings remaining. 
+The thing is, this garden is not *my* garden. It belongs to the squirrels, rabbits, birds, slugs, and the plants as much as it does to me and my family. We share it.
 
-This may or may not be the most effective strategy in terms of maximizing harvest. But I'm going to chose to go this route, and watch what happens. 
+I've heard a story about how the European settlers observed the Native Americans harvesting wild rice. They saw that a lot of the rice were falling into the water as they were being brought onto the canoe. The Europeans saw precious rice being wasted. They even invented machines to harvest the rice efficiently without dropping a grain. 
 
-At the very worst, even if I don't have a great harvest of vegetables or beautiful rows of flowers in my garden, I will have received a great lesson on patience.
+What the settlers did not realize was that the rice was being dropped on purpose in order to ensure future harvest. 
+
+

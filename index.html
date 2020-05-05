@@ -5,6 +5,22 @@ layout: default
 {% assign post = site.posts[0] %}
 
 <h1>{{ post.title }}</h1>
+
+{% if post.feature-image %}
+  {% assign name = post.feature-image.name %}
+  {% assign alt = post.feature-image.alt %}
+  {% assign caption = post.feature-image.caption %}
+  {% assign date = post.date %}
+  {% assign title = post.title %}
+  {% include figure.html 
+    name=name
+    alt=alt
+    caption=caption
+    date=date
+    title=title
+  %}
+{% endif %}
+
 {%- if post.date -%}{%- capture date -%}{{ post.date | date: '%B %d, %Y' }}{%- endcapture -%}{%- endif -%}
 {%- if post.author -%}{%- capture author -%}{{ post.author }}{%- endcapture -%}{%- endif -%}
 {%- include post-meta.html 
@@ -18,7 +34,7 @@ layout: default
 
 {% if post.categories %}
   {% for category in post.categories %}
-    {% capture url %}/categories/{{ category }}{% endcapture %}
+    {% capture url %}/blog/categories/{{ category }}{% endcapture %}
     {% capture text %}{{ category }}{% endcapture %}
     {% include category-link.html
       url=url

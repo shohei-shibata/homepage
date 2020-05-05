@@ -321,6 +321,10 @@ footer {
 .post-excerpt h3 {
   margin-bottom: 0;
 }
+#categories-list {
+  color: var(--font-color-secondary);
+  text-align: center;
+}
 .category-link {
   display: inline-block;
   color: var(--font-color);
