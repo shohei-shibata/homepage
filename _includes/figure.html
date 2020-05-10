@@ -1,5 +1,18 @@
-{% capture image_url  %}/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
-<figure class="image">
+{% if include.date %} 
+  {% assign date = include.date %}
+{% elsif page.date %}
+  {% assign date = page.date %}
+{% endif %}
+
+{% if include.title %}
+  {% assign title = include.title %}
+{% elsif page.title %}
+  {% assign title = page.title %}
+{% endif %}
+
+{% capture image_url  %}/{{ date | date: "%Y-%m-%d" }}-{{ title | slugify }}/{{ include.name }}{% endcapture %}
+
+<figure class="figure-img">
     <img src="{{site.baseurl}}/assets/posts{{image_url}}" alt="{{ include.alt }}">
-    <figcaption><small>{{ include.caption }}</small></figcaption>
+    <figcaption class="figure-img-caption"><small>{{ include.caption }}</small></figcaption>
 </figure>

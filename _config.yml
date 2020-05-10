@@ -18,4 +18,11 @@ twitter_username: _shoheishibata_
 github_username: shohei-shibata
 plugins:
 - jekyll-feed
+- jekyll-archives
 google_analytics: true
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/blog/categories/:name/'

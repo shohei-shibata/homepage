@@ -1,0 +1,36 @@
+---
+layout: default
+title: Title
+---
+
+<p id="categories-list">
+  <a class="link-light" href="/blog/">Back To All Categories</a>
+</p>
+
+{% for item in page.posts %}
+
+  {% capture title %}
+    {{ item.title }}
+  {% endcapture %}
+
+  {% capture postUrl %}
+    {{ item.url | relative_url }}
+  {% endcapture %}
+
+  {% capture excerpt %}
+    {{ item.excerpt }}
+  {% endcapture %}
+
+  {% include post-excerpt.html 
+    title=title 
+    excerpt=excerpt
+    postUrl=postUrl
+  %}
+
+{% endfor %}
+
+<hr>
+
+<p>{% include link-strong.html url='/blog' text='To All Blog Posts' %}</p>
+<p>{% include link-strong.html url='/about' text='About Me' %}</p>
+<p>{% include link-strong.html url='/projects' text='Web Development Projects' %}</p>

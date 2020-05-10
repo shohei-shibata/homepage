@@ -2,13 +2,22 @@
 layout: default
 ---
 
-{% if page.date %}
-  {% capture date %}{{ page.date | date: '%B %d, %Y' }}{% endcapture %}
-  {% capture author %}{{ page.author }}{% endcapture %}
-  {% include post-meta.html 
-    date=date 
-    author=author
+{% if page.feature-image %}
+  {% assign name = page.feature-image.name %}
+  {% assign alt = page.feature-image.alt %}
+  {% assign caption = page.feature-image.caption %}
+  {% include figure.html 
+    name=name
+    alt=alt
+    caption=caption
   %}
 {% endif %}
+
+{% if page.date %}{% capture date %}{{ page.date | date: '%B %d, %Y' }}{% endcapture %}{% endif %}
+{% if page.author %}{% capture author %}{{ page.author }}{% endcapture %}{% endif %}
+{% include post-meta.html 
+  date=date 
+  author=author
+%}
 
 {{ content }}

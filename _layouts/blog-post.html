@@ -4,6 +4,18 @@ layout: post
 
 {{ content }}
 
+{% if page.categories %}
+  <h5>See more posts about</h5>
+  {% for category in page.categories %}
+    {% capture url %}/blog/categories/{{ category }}{% endcapture %}
+    {% capture text %}{{ category | replace: "-", " " }}{% endcapture %}
+    {% include category-link.html
+      url=url
+      text=text
+    %}
+  {% endfor %}
+{% endif %}
+
 <hr>
 
-{% include link-strong.html url='/blog' text='View More Blog Posts' %}
+{% include link-strong.html url='/blog' text='To All Blog Posts' %}
