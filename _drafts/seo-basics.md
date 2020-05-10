@@ -1,6 +1,8 @@
 ---
 title: Simple Steps to Cover the Basics of SEO
 date: 2020-04-30 02:13:07 Z
+categories:
+- web-development
 layout: post
 author: Shohei Shibata
 ---

@@ -22,7 +22,7 @@ plugins:
 google_analytics: true
 jekyll-archives:
   enabled:
-    - categories
+  - categories
   layout: archive
   permalinks:
-    category: '/blog/categories/:name/'
+    category: "/blog/categories/:name/"

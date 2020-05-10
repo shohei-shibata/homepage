@@ -1,12 +1,15 @@
 ---
-layout: blog-post
 title: This is Our Garden
+date: 2020-05-10 00:00:00 Z
+categories:
+- gardening
+layout: blog-post
 author: Shohei Shibata
-date: 10-05-2020
 feature-image:
   name: birds-eye-view.jpg
-  alt: "Birds eye view of a suburban neighborhood"
-  caption: "Photo by <a target='_blank' href='https://unsplash.com/@riley3dwards?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Riley Edwards</a> on Unsplash"
+  alt: Birds eye view of a suburban neighborhood
+  caption: Photo by <a target='_blank' href='https://unsplash.com/@riley3dwards?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Riley
+    Edwards</a> on Unsplash
 ---
 
 Recently I had a big *Aha* moment that changed the way I view my garden, as well as the concept of gardening in general. And it happened thanks to Farmer Rishi's video on [YouTube](https://www.youtube.com/watch?v=YKAFVtaeYz4). 

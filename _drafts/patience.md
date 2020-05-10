@@ -1,12 +1,15 @@
 ---
-layout: blog-post
 title: Patience
+date: 2020-05-04 00:00:00 Z
+categories:
+- gardening
+layout: blog-post
 author: Shohei Shibata
-date: 04-05-2020
 feature-image:
   name: seedlings.jpg
-  alt: "Close-up photo of seedlings"
-  caption: "Photo by <a target='_blank' href='https://unsplash.com/@gallarotti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Francesco Gallarotti</a> on Unsplash"
+  alt: Close-up photo of seedlings
+  caption: Photo by <a target='_blank' href='https://unsplash.com/@gallarotti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Francesco
+    Gallarotti</a> on Unsplash
 ---
 
 It's spring in Ohio. There are some warm sunny days that are just perfect to sit out on the back porch, soak in the sun and listen to the birds. Then the cold air will come in and the temperature comes down to near freezing in the morning. In between, there are consecutive days of rain.

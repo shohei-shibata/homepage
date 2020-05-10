@@ -1,6 +1,8 @@
 ---
 title: Why I use VIM
 date: 2019-11-11 14:25:11 Z
+categories:
+- web-development
 tags:
 - Featured
 - Coding

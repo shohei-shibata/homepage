@@ -1,6 +1,8 @@
 ---
 title: Navigating between files in Vim
 date: 2019-12-15 00:00:00 Z
+categories:
+- web-development
 tags:
 - Vim
 layout: blog-post

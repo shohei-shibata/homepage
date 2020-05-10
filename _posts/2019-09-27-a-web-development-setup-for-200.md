@@ -1,6 +1,8 @@
 ---
 title: A Web Development Setup For $200
 date: 2019-09-27 10:03:47 Z
+categories:
+- web-development
 tags:
 - Coding
 layout: blog-post
