@@ -123,11 +123,11 @@ img {
   height: auto;
 }
 
-figure {
+figure-img {
   margin: 1.5em 0;
 }
 
-figcaption {
+figcaption-img-caption {
   text-align: center;
   color: var(--font-color-secondary);
 }
@@ -143,6 +143,23 @@ code {
 pre code {
   width: 100%;
   padding: 0.5em;
+}
+
+blockquote {
+  margin: 0;
+  font-style: italic;
+}
+blockquote:before {
+  content: "\"";
+}
+blockquote:after {
+  content: "\"";
+}
+.blockquote-author {
+  margin-top: 0.5em;
+}
+.blockquote-author:before {
+  content: "- "; 
 }
 
 /*
@@ -239,7 +256,7 @@ main {
     FOOTER
 */
 
-footer {
+#site-footer {
 	background-color: var(--bg-color-secondary); 
   color: var(--font-color-footer); 
   padding: 0.5em; 

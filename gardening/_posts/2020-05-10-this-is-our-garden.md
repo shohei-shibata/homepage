@@ -2,14 +2,21 @@
 layout: blog-post
 title: This is Our Garden
 author: Shohei Shibata
+date: 10-05-2020
+feature-image:
+  name: birds-eye-view.jpg
+  alt: "Birds eye view of a suburban neighborhood"
+  caption: "Photo by <a target='_blank' href='https://unsplash.com/@riley3dwards?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Riley Edwards</a> on Unsplash"
 ---
 
-Recently I had a big *Aha* moment that changed the way I view my garden, as well as the concept of gardening in general. And it happened thanks to Farmer Rishi's video on [YouTube](https://www.youtube.com/watch?v=YKAFVtaeYz4). In it, he asks you to visualize yourself in the garden. Then zoom out to a bird's eye view. 
+Recently I had a big *Aha* moment that changed the way I view my garden, as well as the concept of gardening in general. And it happened thanks to Farmer Rishi's video on [YouTube](https://www.youtube.com/watch?v=YKAFVtaeYz4). 
 
-From there you will see that, 
+In it, he asks you to visualize yourself in the garden. Then zoom out to a bird's eye view. From there you will see that, 
 
-> You're just like the squirrel, kind of running around... You're not in control. You're not in charge. But you have a role.
-> - Farmer Rishi
+{% include blockquote.html
+  text="You're just like the squirrel, kind of running around... You're not in control. You're not in charge. But you have a role."
+  author="Farmer Rishi"
+%}
 
 There are two concepts that I learned from his message. First is about letting go of our control, and second is about sharing of the gifts of the garden with our non-human friends.
 
@@ -29,6 +36,8 @@ There these Daikon radish seeds that I have planted randomly around my garden in
 
 I would struggle to explain why some have done well, and others have not. But I guess there is no need for a scientific explanation. I now know a few good spots to put Daikon radishes, and possibly other root vegetables too, like carrots. And that's what is important.
 
+As Farmer Rishi also says in the video, our role as humans isn't to control what happens, but to assist nature in whatever it is trying to do. Once I observe that a particular plant does well in a certain spot, I can plant more. I have learned what nature is wanting, and I can provide it by bringing the seeds.
+
 This isn't to say that I should have zero plans for my garden. I still have my plans and dreams for what I want. But what I will do is be flexible, and adapt my plans to what I'm observing. 
 
 ### Sharing the Gifts
@@ -41,9 +50,8 @@ In nature's way, everybody is fed including the soil. It ensures that everybody 
 
 I imagine that if I let nature successfully accomplish her goals in my garden, the harvest will be so plenty that a small share of it will be engough for everyone. Everyone including the squirrels, the rabbits, the birds, the worms and the bugs.
 
+That's state of abundance. There would be no fighting for the limited resources, and the amount of work I have to put in will become smaller and smaller.
+
 My share may be small in the first few years as I try to help improve the soil. I am going to keep my expectations in check in terms of the harvest, and instead measure my successes in the health of the soil and the plants. 
 
-So that's my *plan*. And things never go according to a plan. I am 100% sure that I will make mistakes along the way. Wherever this road takes me, I am OK with it because I would have helped to improve a small piece of the Earth.
-
-It's extremly difficult to keep in check that urge to be control. It's a life-long exercise to try to improve in that department, and being out in the garden is going to give me an amazing opportunity to work at it.
-
+So that's my *plan*. And things never go according to a plan. I am 100% sure that I will make mistakes along the way. Wherever this road takes me, I am going to try to accept that. I may feel disappointment from time to time, but I am going to try to focus on wins other than the size of my harvest. The more important wins of building good soil, and helping nature thrive.
