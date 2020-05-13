@@ -123,8 +123,8 @@ img {
   height: auto;
 }
 
-figure-img {
-  margin: 1.5em 0;
+figure {
+  margin: 1.5em 2em;
 }
 
 figcaption-img-caption {
@@ -382,5 +382,8 @@ main {
   #nav-container li {
     font-size: 2em;
     margin: 3vh 0;
+  }
+  figure {
+    margin: 1.5em 0;
   }
 }

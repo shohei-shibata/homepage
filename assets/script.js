@@ -58,11 +58,13 @@ window.onload = function() {
   const closeIcon = document.getElementById("nav-mobile-icon-close");
 
   menuIcon.addEventListener("click", function() {
+    document.body.setAttribute("style", "overflow-y: hidden;");
     nav.setAttribute("style", "display: initial;");  
     menuIcon.setAttribute("style", "display: none;");  
     closeIcon.setAttribute("style", "display: initial;");  
   });
   closeIcon.addEventListener("click", function() {
+    document.body.setAttribute("style", "overflow-y: auto;");
     nav.setAttribute("style", "display: none;");  
     menuIcon.setAttribute("style", "display: initial;");  
     closeIcon.setAttribute("style", "display: none;");  
