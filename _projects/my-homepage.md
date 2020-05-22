@@ -2,6 +2,10 @@
 title: My Personal Homepage
 date: 2020-04-24 00:00:00 Z
 layout: project
+author: Shohei Shibata
+feature-image:
+  name: homepage.png
+  alt: Screenshot of my homepage
 ---
 
 The biggest lesson I learned from creating this website has been about what it *doesn't* need. 
