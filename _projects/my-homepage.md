@@ -2,42 +2,43 @@
 title: My Personal Homepage
 date: 2020-04-24 00:00:00 Z
 layout: project
+author: Shohei Shibata
+feature-image:
+  name: homepage.png
+  alt: Screenshot of my homepage
 ---
 
-The biggest lesson I learned from creating this website has been about what it *doesn't* need. 
+When I set out to design and build my own homepage, I wanted it to be clean and easy to read. I also wanted it to be very simple and quick for me to add contents, because I need all the help I can get to stay in the habit of posting new content. 
 
-### The Tool
+## The Stack
 
-There is definitely no shortage of tools and frameworks out there to choose from, when building a website. For my own personal website, it's pretty fun to choose what to use because it's 100% up to me. I can use whatever I like!
+The code for this website is public on GitHub. Feel free to click [here](https://github.com/shohei-shibata/shohei-shibata.github.io) and take a look around.
 
-Nextjs and Gatsby are two of the most popular frameworks for React, and I happened to be learning about them, so I tried to use them for this website. 
+This website is built on [Jekyll](https://jekyllrb.com/), which is a very easy-to-use static site generator. I've used it on previous iterations of my website. I love the simplicity of creating posts in markdown. You only need to open a text editor and start creating. When you're trying to get into a habit of writing blog posts... it definitely helps to make it as easy as possible!
 
-I actually finished the website 90% of the way using Nextjs... But after all, I ended up switching to [Jekyll](https://jekyllrb.com).
+GitHub and Jekyll work really nicely together, which is another good reason to pick Jekyll. GitHub can automatically build Jekyll-based websites. That means if I create a new post or modify the design, I simply push the code to the repository and GitHub will take care of the rest. In a few minutes usually, my website is updated with the new content.
 
-While Nextjs or Gatsby may have more features than Jekyll, I work really efficiently and stress-free with Jekyll. This could be because I'm more familiar with it, but I also like that with Jekyll I am coding in plain HTML, only inserting a little bit of Liquid syntax here and there. Ultimately HTML is what is delivered to the user, and I am really interestd in learning to write good semantic HTML and making the website as natural as possible to navigate. That can be hard to manage when the libraries and frameworks generate the HTML for you. 
+My website is hosted on GitHub, and my domain (https://shoheishibata.com) is forwarded to my GitHub page. 
 
-There are definitely many circumstances where React, Next or Gatsby has huge advantages. A web app full of interactive elements would be such a case, and in those instances I would reach for them without hesitation in those cases. Otherwise, I think it's better to stick to the minimal approach.
+Finally, I make use of the free services by [Cloudflare](https://www.cloudflare.com/) for added security and more. They offer SSL certificates, caching to make your website load faster, and I am sure a lot more features that I am not fully taking advantages of. 
 
-That's my thought on the subject right now, anyway. Tomorrow, a new set of circumstances, and maybe a new view on things. 😋
+## Responsive Topography
 
-### The Design
+I've implemented a responsive typography that scales to the viewport size, thanks to [Ricardo Zea](http://ricardozea.design/) who taught me his simple system for doing just that. I definitely recommend anyone to check out his article on the method [here](https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g).
 
-Once again, it's about what I *don't* need. Start with nothing and add only what is absolutely necessary. 
+I hope this isn't a sign of my age (!) but, I often find the font sizes too small and difficult to read. By using Ricardo's method and after a lot of fine-tuning, I think I've got a nice readable font size whether it's in a smart phone, desktop monitor, portrait or landscape layout.
 
-...Okay, have a little bit of fun tweaking it to my liking, but do it with restraint.
+Well, it looks good to me anyway. If the fonts seem too large for you, it may be that I am simply getting that old.
 
-It was so refreshing and eye-opening when I first saw [Leo Babauta's website](https://zenhabits.net/){:target="_blank"} years ago. And here I am not talking about his message (which I also love!) but about the look of his website.
+## Dark Mode
 
-There is absolutely zero distractions and the reader can focus on the main content. The details like the font, the spacing, and a small bit of colors here and there really come to life. It feels so peaceful to be looking at this website.
+I'm a big fan of dark mode and I turn it on whenever that is a possibility. And these days it is becoming a standard in OS and many apps to have a dark mode option. When you've got your OS in dark mode, it's really blinding when you visit a website with black text over white background! That is why I've added the dark mode option on my website. It also remembers your choice for future visits by storing the setting in the cookie.
 
-That's the path I tried to follow. Carefully selecting font, taking care to minimize the variety of the fonts. The font size being large enough to be easy to read. (Thanks Ricardo Zea for your lesson on [modular font sizing](https://www.codementor.io/@ricardozea/100-responsive-typography-system-using-a-modular-scale-s5rhft58g)!)
+Especially with using CSS variables, I found it really easy to set up a dark theme color scheme right at the top of my (plain vanilla) CSS file. 
 
-I inserted some effects like link highlight animation because I felt that this helped to not only make links stand out, but make the functionality very clear. 
+## Final Thoughts
 
-Maybe my font choices aren't the best in some people's eyes, and the design doesn't feel right to others. I welcome all and any feedback. :) 
+I don't see myself as a good writer and I may never become one. But I don't think that should keep me from working at it. So hopefully, I can keep it going for a long time to come.
 
-### Conclusion
-
-The design *feels right* to me and I'm pretty happy with it. And I love the simplicity of updating the website using Jekyll. The only missing piece now is CONTENT! Now it's time to work on writing some posts!
-
+This website is also a sandbox for my learning to create great looking and feeling website. I am going to continue to tweak it here and there to make it better. Please stay tuned.
 
