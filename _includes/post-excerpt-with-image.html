@@ -1,0 +1,15 @@
+<div class="post-excerpt">
+  {% if page.feature-image %}
+    {% assign name = page.feature-image.name %}
+    {% assign alt = page.feature-image.alt %}
+    {% assign caption = page.feature-image.caption %}
+    {% include figure.html 
+      name=name
+      alt=alt
+      caption=caption
+    %}
+  {% endif %}
+
+  <h3><a href="{{ include.postUrl }}">{{ include.title }}</a></h3>
+  <p>{{ include.excerpt }}</p>
+</div>

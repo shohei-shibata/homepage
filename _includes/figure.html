@@ -10,9 +10,21 @@
   {% assign title = page.title %}
 {% endif %}
 
-{% capture image_url  %}/{{ date | date: "%Y-%m-%d" }}-{{ title | slugify }}/{{ include.name }}{% endcapture %}
+{% if include.image_url %}
+  {% assign image_url = include.image_url %}
+{% else %}
+  {% capture image_url  %}/{{ date | date: "%Y-%m-%d" }}-{{ title | slugify }}/{{ include.name }}{% endcapture %}
+{% endif %}
+
+{% if include.linkUrl %}
+  {% assign linkUrl = include.linkUrl %}
+{% else %}
+  {% assign linkUrl = "#" %}
+{% endif %}
 
 <figure class="figure-img">
+  <a href="{{ linkUrl }}">
     <img src="{{site.baseurl}}/assets/posts{{image_url}}" alt="{{ include.alt }}">
-    <figcaption class="figure-img-caption"><small>{{ include.caption }}</small></figcaption>
+  </a>
+  <figcaption class="figure-img-caption"><small>{{ include.caption }}</small></figcaption>
 </figure>

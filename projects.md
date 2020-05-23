@@ -20,6 +20,18 @@ Here are some of my most recently completed web development projects.
     {{ item.excerpt }}
   {% endcapture %}
 
+  {% if item.feature-image %}
+    {% assign name = item.feature-image.name %}
+    {% assign date = item.date %}
+    {% assign title = item.title %}
+    {% include figure.html 
+      name = name
+      date = date
+      title = title
+      linkUrl= postUrl
+    %}
+  {% endif %}
+
   {% include post-excerpt.html 
     title=title 
     excerpt=excerpt
