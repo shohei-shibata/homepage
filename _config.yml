@@ -18,6 +18,8 @@ twitter_username: _shoheishibata_
 github_username: shohei-shibata
 plugins:
 - jekyll-feed
+- jekyll-sitemap
+- jekyll-seo-tag
 - jekyll-archives
 google_analytics: true
 jekyll-archives:
