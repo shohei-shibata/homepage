@@ -18,7 +18,6 @@ window.onload = function() {
     contactForm.addEventListener('submit', function(event) {
       event.preventDefault();
 
-      resetForm(contactForm);
       disableSubmit();
 
       // generate the contact number value
@@ -27,6 +26,7 @@ window.onload = function() {
       emailjs.sendForm('gmail_dev', 'freelance_contact_form', this)
         .then(function(res) {
           console.log('Email sent successfully', res.status, res.text);
+          resetForm(contactForm);
           showSubmitResult(res.status);
         }, function(err) {
           console.log('Error. Email failed to send.', err); 
