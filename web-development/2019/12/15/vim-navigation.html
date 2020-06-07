@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navigating between files in Vim | Shohei Shibata</title>
+  <meta name="description" content="When I chose to start using Vim instead of GUI-based editors, I figured one drawback was going to be navigating between multiple files, or working on multiple files at once. Well I was wrong. It’s very easy to work with multiple files in Vim, and it’s pretty awesome to be able to navigate files quickly without a mouse!
+">
+  <link rel="canonical" href="">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/main.css"> 
+  <link rel='shortcut icon' type='image/x-icon' href='/assets/favicon.ico' />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script src="/assets/script.js" type="text/javascript"></script><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Shohei Shibata" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Navigating between files in Vim | Shohei Shibata</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="Navigating between files in Vim" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="When I chose to start using Vim instead of GUI-based editors, I figured one drawback was going to be navigating between multiple files, or working on multiple files at once. Well I was wrong. It’s very easy to work with multiple files in Vim, and it’s pretty awesome to be able to navigate files quickly without a mouse!" />
+<meta property="og:description" content="When I chose to start using Vim instead of GUI-based editors, I figured one drawback was going to be navigating between multiple files, or working on multiple files at once. Well I was wrong. It’s very easy to work with multiple files in Vim, and it’s pretty awesome to be able to navigate files quickly without a mouse!" />
+<meta property="og:site_name" content="Shohei Shibata" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-15T00:00:00+00:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Navigating between files in Vim","dateModified":"2019-12-15T00:00:00+00:00","datePublished":"2019-12-15T00:00:00+00:00","url":"/web-development/2019/12/15/vim-navigation.html","mainEntityOfPage":{"@type":"WebPage","@id":"/web-development/2019/12/15/vim-navigation.html"},"description":"When I chose to start using Vim instead of GUI-based editors, I figured one drawback was going to be navigating between multiple files, or working on multiple files at once. Well I was wrong. It’s very easy to work with multiple files in Vim, and it’s pretty awesome to be able to navigate files quickly without a mouse!","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164959803-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164959803-1');
+</script>
+<!-- End Google Analytics -->
+</head>
+
+  <body>
+    <nav>
+  <div class="title">
+    <h1><a href="/">Shohei Shibata</a></h1>
+  </div>
+  <div id="nav-container">
+    <ul>
+      
+        
+          <li>
+            <a href="/about">
+              <small>About</small>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="/projects">
+              <small>Projects</small>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="/blog">
+              <small>Blog</small>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="/contact">
+              <small>Contact</small>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="/services">
+              <small>Work With Me</small>
+            </a>
+          </li>
+        
+      
+          <li>
+            <div id="theme-toggle-container">
+              <label class="switch">
+                <input type="checkbox" name="theme-toggle">
+                <small id="theme-toggle-icon">
+                  <i class="fas fa-moon"></i>
+                  / 
+                  <i class="fas fa-sun"></i>
+                </small>
+              </label>
+            </div>                   
+          </li>
+    </ul>
+  </div>
+  <div id="nav-mobile-toggle">
+    <i id="nav-mobile-icon-menu" class="fas fa-bars fa-2x"></i>
+    <i id="nav-mobile-icon-close" class="fas fa-times fa-2x"></i>
+  </div>
+</nav>
+
+    <main class="wrapper">
+      
+        <h1>Navigating between files in Vim</h1>
+      
+        
+
+
+
+<small class="post-meta">December 15, 2019</small>
+
+
+
+<p>When I chose to start using Vim instead of GUI-based editors, I figured one drawback was going to be navigating between multiple files, or working on multiple files at once. Well I was wrong. It’s very easy to work with multiple files in Vim, and it’s pretty awesome to be able to navigate files quickly without a mouse!</p>
+
+<!--more-->
+
+<p>Here are some basic commands I’ve learned to help me navigate my way through multiple files in Vim.</p>
+
+<h2 id="the-jump-list">The Jump List</h2>
+
+<p>Each time you open a new file or jump to a new location within the same file, Vim records the locations in the “Jump List”. The jump list can be viewed by the command <code class="highlighter-rouge">:jump</code>.</p>
+
+<figure class="figure-img">
+  <a href="#">
+    <img src="/assets/posts/2019-12-15-navigating-between-files-in-vim/jumplist.png" alt="Jump List" />
+  </a>
+  <figcaption class="figure-img-caption"><small>The jump list</small></figcaption>
+</figure>
+
+<p>You can quickly go to any of those locations by hitting <code class="highlighter-rouge">ctrl + o</code> or <code class="highlighter-rouge">ctrl + i</code> in normal mode. <code class="highlighter-rouge">ctrl + o</code> takes you to the previous location in the jump history (e.g. last file you opened), and <code class="highlighter-rouge">ctrl + i</code> takes you forward in the jump history.</p>
+
+<p>If you have just a few files open, this is definitely the fastest way to flip through the files.</p>
+
+<h2 id="the-buffer">The Buffer</h2>
+
+<p>Each loaded file is stored as a buffer in Vim. To view what files you have loaded, use the command <code class="highlighter-rouge">:ls</code>.</p>
+
+<figure class="figure-img">
+  <a href="#">
+    <img src="/assets/posts/2019-12-15-navigating-between-files-in-vim/bufferslist.png" alt="Buffers List" />
+  </a>
+  <figcaption class="figure-img-caption"><small>The buffers list</small></figcaption>
+</figure>
+
+<p>You can see that each line starts with a number. That’s the buffer number for that file. To go to open buffer 1, type <code class="highlighter-rouge">:b1</code> and so on.</p>
+
+<h2 id="split-view">Split View</h2>
+
+<p>One thing I love about Vim is the uncluttered view, with the only thing in front of me being the one text file I am editing. However sometimes it is much better to have two files side-by-side. When I am writing a test, for example, it’s nice to be able to view the code that I am trying to test. The split screen view is perfect for this.</p>
+
+<figure class="figure-img">
+  <a href="#">
+    <img src="/assets/posts/2019-12-15-navigating-between-files-in-vim/splitview.png" alt="Split View" />
+  </a>
+  <figcaption class="figure-img-caption"><small>The split view</small></figcaption>
+</figure>
+
+<p>Instead of opening a new file by the <code class="highlighter-rouge">:e &lt;filename&gt;</code> command, you can use <code class="highlighter-rouge">:vsp &lt;filename&gt;</code> to open the new file in a split screen to the side, or <code class="highlighter-rouge">:sp</code> to add a split screen below. To move the cursor between the open files, use <code class="highlighter-rouge">ctrl + w w</code>. To close a split window, go to that window and type <code class="highlighter-rouge">:q</code>.</p>
+
+<h2 id="tab-view">Tab View</h2>
+
+<p>You can also open files in tabs. <code class="highlighter-rouge">:tabnew &lt;filename&gt;</code> will open a new file in a new tab. <code class="highlighter-rouge">:tabn1</code> will take you to the first tab, <code class="highlighter-rouge">:tabn2</code> for the second tab, and so on. You can also use <code class="highlighter-rouge">:tabn</code> to go to the next tab, and <code class="highlighter-rouge">:tabp</code> for the previous tab.</p>
+
+<figure class="figure-img">
+  <a href="#">
+    <img src="/assets/posts/2019-12-15-navigating-between-files-in-vim/tabview.png" alt="Tab View" />
+  </a>
+  <figcaption class="figure-img-caption"><small>The tab view</small></figcaption>
+</figure>
+
+<p>Personally, I find that the other three commands (jump, buffer, split) are sufficient for me in most any situation. One unique thing about the tab view though, is that you are basically creating a new instance of Vim in each tab. If that is what you need then the tab view is what you want to use.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>By getting familiar with these commands, it’s possible to efficiently work with multiple files in Vim. Over time, you can develop your way of using these commands, and possibly also create some custom <code class="highlighter-rouge">.vimrc</code> keybindings to make you even faster.</p>
+
+
+
+  <h5>See more posts about</h5>
+  
+    
+    
+    <a href=/blog/categories/web-development class="category-link">Web development</a>
+
+  
+
+
+<hr>
+
+<a class="link-strong" href="/blog">To All Blog Posts</a><br>
+
+
+
+    </main>
+    <footer id="site-footer">
+  <div id="footer-container">
+    <small>© 2020 Shohei Shibata.</small>
+    <div id="footer-social-icons-container">
+      <a aria-label="github" href="https://github.com/shohei-shibata" class="footer-social-logo"><i aria-hidden="true" class="fab fa-github fa-2x"></i></a>
+      <a aria-label="linkedin" href="https://www.linkedin.com/in/shohei-shibata-53867a41/" class="footer-social-logo"><i aria-hidden="true" class="fab fa-linkedin fa-2x"></i></a>
+      <a aria-label="twitter" href="https://twitter.com/_shoheishibata_" class="footer-social-logo"><i aria-hidden="true" class="fab fa-twitter fa-2x"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
