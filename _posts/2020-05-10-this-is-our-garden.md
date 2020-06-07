@@ -12,9 +12,9 @@ feature-image:
     Edwards</a> on Unsplash
 ---
 
-Recently I had a big *Aha* moment that changed the way I view my garden, as well as the concept of gardening in general. And it happened thanks to Farmer Rishi's video on [YouTube](https://www.youtube.com/watch?v=YKAFVtaeYz4). 
+Recently I watched a [YouTube video by Farmer Rishi](https://www.youtube.com/watch?v=YKAFVtaeYz4) which resonated with me so much. He explained a concept that I had felt in me but couldn't quite put into words myself. I saw his video and immediately thought, *that's what I've been feeling all along!* 
 
-In it, he asks you to visualize yourself in the garden. Then zoom out to a bird's eye view. From there you will see that, 
+In the video, he asks you to visualize yourself in the garden. Then zoom out to a bird's eye view. From there you will see that, 
 
 {% include blockquote.html
   text="You're just like the squirrel, kind of running around... You're not in control. You're not in charge. But you have a role."
