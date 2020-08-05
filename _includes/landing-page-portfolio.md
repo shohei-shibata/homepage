@@ -1,9 +1,4 @@
-# Hello!
-
-  I'm Shohei Shibata. A freelance web designer & developer from Dayton, Ohio. 
-
-  I enjoy building clean, high quality websites. But what I really love is making my clients happy.
-
+{% include landing-page-banner.html %}
 
 ### Website Design
 
@@ -30,4 +25,4 @@
   Nippon Production
 
 
-{% include link-strong.html url='/contact' text="I am available for new freelance projects" %}
+{% include link-strong.html url='/contact' text="Work With Me" %}
