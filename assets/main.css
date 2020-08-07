@@ -3,7 +3,7 @@
   --font-color-secondary: #aaa;
   --font-color-footer: #fff;
   --bg-color: #eee;
-  --bg-color-secondary: #888;
+  --bg-color-secondary: #ccc;
   --accent-color: #e0a943;
   --page-max-width: 1000px;
 }
@@ -24,7 +24,7 @@
 
 @keyframes hello-slide {
   from {
-    transform: translateX(20vw) scale(1.4);
+    transform: translateX(100px) scale(1.3);
   }
   to {
     transform: translateX(0) scale(1);
@@ -177,11 +177,13 @@ blockquote:after {
 */
 
 nav {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-bottom: solid 0.5px var(--font-color-secondary);
   padding-bottom: 1em;
+  z-index: 1;
 }
 
 .title h1 {
@@ -259,14 +261,14 @@ nav {
   margin-top: 20vh;
   display: grid;
   grid-template-columns: 40% auto;
-  min-height: 40vh;
+  min-height: 60vh;
 }
 
 #landing-page-hello {
   margin: 0;
   text-align: left;
   font-size: 2em;
-  transform: translateX(20vw) scale(1.4);
+  transform: translateX(100px) scale(1.3);
   animation: hello-slide 1s forwards;
   animation-delay: 1s;
 }
