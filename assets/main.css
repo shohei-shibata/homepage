@@ -1,6 +1,6 @@
 :root {
   --font-color: #222;
-  --font-color-secondary: #aaa;
+  --font-color-secondary: #666;
   --font-color-footer: #fff;
   --bg-color: #eee;
   --bg-color-secondary: #ccc;
@@ -31,13 +31,20 @@
   }
 }
 
+[data-trigger].visible, [data-trigger].invisible {
+  opacity: 0.0;
+  transition: opacity 1s ease;
+}
+[data-trigger].visible {
+  opacity: 1.0;
+}
+
 body {
 	overflow-x: hidden;
 	background-color: var(--bg-color);
 	color: var(--font-color);
 	font-size: calc(12px + 0.75vw);
 	font-family: "Open Sans", sans-serif; 
-  text-align: justify;
 	margin: 0;
 }
 
@@ -120,6 +127,7 @@ a.link-strong {
   color: inherit; 
   text-transform: uppercase;  
   text-decoration: none;
+  font-size: 1.2em;
   border-bottom: 0.2em solid var(--accent-color);
   line-height: 0.75em;
   margin: 0;
@@ -257,11 +265,33 @@ nav {
 
 */
 
-.landing-page-banner-container {
-  margin-top: 20vh;
+.landing-page-banner-container,
+.landing-page-service-container {
   display: grid;
   grid-template-columns: 40% auto;
+}
+
+.landing-page-banner-container {
+  margin-top: 20vh;
   min-height: 60vh;
+}
+
+.landing-page-service-container {
+  opacity: 0;
+  margin: 0;
+  margin-bottom: 3em;
+}
+
+.landing-page-service-text {
+  margin-left: 20px;
+}
+
+.landing-page-service-text h3 {
+  margin-top: 0;
+}
+
+.landing-page-service-text small {
+  color: var(--font-color-secondary);
 }
 
 #landing-page-hello {
@@ -277,6 +307,12 @@ nav {
   opacity: 0;
   animation: fade-in 1s forwards;
   animation-delay: 2s;
+}
+
+.landing-page-service-image {
+  background-color: #aaa;
+  width: 100%;
+  height: calc(200px + 10vw);
 }
 
 /*
@@ -296,7 +332,7 @@ main {
 */
 
 #site-footer {
-	background-color: var(--bg-color-secondary); 
+	background-color: #555; 
   color: var(--font-color-footer); 
   padding: 0.5em; 
 }
@@ -425,9 +461,22 @@ main {
   figure {
     margin: 1.5em 0;
   }
+  .landing-page-banner-container,
+  .landing-page-service-container {
+    display: block;
+  }
   .landing-page-banner-container {
     margin-top: 5em;
-    display: block;
+  }
+  .landing-page-service-image {
+    height: 60vw;
+  }
+  .landing-page-service-text {
+    margin: 0;
+    margin-bottom: 3em;
+  }
+  .landing-page-service-container h3 {
+    margin-top: 1em;
   }
   #landing-page-hello {
     margin-bottom: 1em;

@@ -1,5 +1,7 @@
 emailjs.init('user_pxYFdy40Fn6a2X7MFQ1Ln');
 
+// Remember Light or Dark Theme if user has stored preference
+
 const storedTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
 if (storedTheme) {
@@ -11,7 +13,9 @@ if (storedTheme) {
 };
 
 window.onload = function() {
+  
   // CONTACT FORM //
+  
   const contactForm = document.getElementById('contact-form');
 
   if (contactForm) {
@@ -34,6 +38,7 @@ window.onload = function() {
         });
     });
   };
+
   
   // DARK MODE //
 
@@ -49,6 +54,7 @@ window.onload = function() {
        localStorage.setItem('theme', 'light');
     }
   });
+
 
   // MOBILE NAV TOGGLE //
 
@@ -69,6 +75,23 @@ window.onload = function() {
     menuIcon.setAttribute("style", "display: initial;");  
     closeIcon.setAttribute("style", "display: none;");  
   });
+
+
+  // SCROLL TRIGGER //
+
+  const trigger = new ScrollTrigger.default({
+    trigger: {
+      offset: {
+        viewport: {
+          x: 0,
+          y: (trigger, frame, direction) => {
+            return trigger.visible ? 0 : 0.2
+          }
+        }
+      }
+    }
+  });
+  trigger.add('[data-trigger]');
 }
 
 const resetForm = function(form) {
