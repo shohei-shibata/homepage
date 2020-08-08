@@ -6,4 +6,4 @@
 
 {% include landing-page-projects.html %}
 
-{% include link-strong.html url='/contact' text="Work With Me" %}
+<!--{% include link-strong.html url='/contact' text="Work With Me" %}-->

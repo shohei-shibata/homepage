@@ -1,7 +1,13 @@
 {% for item in site.data.services %}
 
-  <h3>{{ item.heading }}</h3>
-  <p>{{ item.text }}</p>
-  <small>{{ item.tags }}</small>
+<div data-trigger class="landing-page-service-container">
+  <div class="landing-page-service-image">
+  </div>
+  <div class="landing-page-service-text">
+    <h3>{{ item.heading }}</h3>
+    <p>{{ item.text }}</p>
+    <small class="landing-page-service-tags">{{ item.tags }}</small>
+  </div>
+</div>
 
 {% endfor %}
