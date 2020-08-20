@@ -55,7 +55,8 @@ body {
 .title {
 	font-family: "Pacifico",cursive;
 }
-.title a {
+.title a,
+#landing-page-hello {
   text-decoration: none;
 	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
@@ -261,18 +262,17 @@ nav {
 }
 
 /*
-    LANDING PAGE
-
+    LANDING PAGE 
 */
 
-.landing-page-banner-container,
-.landing-page-service-container {
+.landing-page-banner-container {
   display: grid;
   grid-template-columns: 40% auto;
 }
 
 .landing-page-banner-container {
   margin-top: 20vh;
+  margin-bottom: 3em;
   min-height: 60vh;
 }
 
@@ -289,10 +289,11 @@ nav {
   opacity: 0;
   margin: 0;
   margin-bottom: 3em;
+  display: flex;
 }
 
 .landing-page-service-text {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .landing-page-service-text h3 {
@@ -331,10 +332,16 @@ nav {
   margin-top: 30px;
 }
 
-.landing-page-service-image {
-  background-color: #aaa;
-  width: 100%;
+.landing-page-service-image-container {
   height: calc(200px + 10vw);
+}
+
+.landing-page-service-image {
+  object-fit: cover;
+  width: 30vw;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px 0px var(--font-color-secondary);
 }
 
 /*
@@ -490,8 +497,12 @@ main {
   .landing-page-banner-container {
     margin-top: 3em;
   }
-  .landing-page-service-image {
+  .landing-page-service-image-container {
     height: 60vw;
+    margin-bottom: 3em;
+  }
+  .landing-page-service-image {
+    width: 100%;
   }
   .landing-page-service-text {
     margin: 0;
