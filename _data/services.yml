@@ -1,9 +1,15 @@
 - heading: Website Design
   text: I carefully listen to the needs and goals of the client, then I turn them into a beautiful and effective website design.
   tags: Figma, Responsive Design, UI/UX Design
+  image: halacious-tZc3vjPCk-Q-unsplash.jpg 
+  image-position: right
 - heading: Full-stack Development
   text: Making your dreams a reality… not only in design and function of the website, but also considering performance, security, accessibility, and ease of maintenance.
   tags: Semantic HTML, CSS, Javascript, WordPress, React.js, Node.js, Ruby on Rails, Git
+  image: ilya-pavlov-OqtafYT5kTw-unsplash.jpg
+  image-position: left
 - heading: Website Maintenance
   text: Let’s keep your website running smooth. And I will be there in case of unforeseen trouble!
   tags: Updates, backup, security, hosting, technical support
+  image: gustavo-campos-B87zMorEZRo-unsplash.jpg
+  image-position: right
