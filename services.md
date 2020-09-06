@@ -1,5 +1,5 @@
 ---
-title: Need a website?
+title: Services
 permalink: "/services/"
 layout: default
 description: I offer website development services. Let's create an amazing experience
@@ -7,33 +7,35 @@ description: I offer website development services. Let's create an amazing exper
   whole process stress-free for you.
 ---
 
-I am available to hire as a freelance web developer. 
+Here are some of my clients have said about my work:
 
-Currently I am focusing on building WordPress sites for individuals and small organizations, ranging from blogs to business homepages to online stores.
+> Shohei is an amazing freelancer. He create a website for us from scratch and we love it. The design is sleek and very well adapted to our business and the performance of the website is high. He was always available for us and we communicated very well.
+
+> Frankly, he's the consummate gentleman; patient, kind and respectful. Never did he fail to deliver on schedule whatever he set out to. He's knowledgable and eager to discover an answer if something requires investigation. In summary, I could not have imagined a better experience and I highly recommend him.
+
+If you are looking for a stress-free experience in building a website for yourself or your business, you've come to the right place!
 
 Whether it's a quick fix or modification to your website, or a full design and development, I would love to find out how I can help. I have the skills to create the website that you will be excited about, but more importantly I will be your reliable partner who will make the process painless for you. 
 
-Especially if you are from the Dayton Ohio region, or run a business or an organization here, I would be delighted to be able to work with you and support the local community!
+I would be especially delighted to help individuals, businesses, or organizations from the Dayton Ohio region!
 
-All you need to do to start the process is to send me a quick message from the contact page:
+### What Can I Do?
 
-{% include link-strong.html url='/contact' text='Contact Me' %}
+##### Website Design
 
-Or, feel free to look at other projects I've done.
+I will carefully listen to your needs, your vision and preferences to come up with a design proposal that you are truly excited about! 
 
-{% include link-strong.html url='/projects' text='Projects Page' %}
+##### Website Development
 
-# What Can I Do?
+I will turn our design idea into a fully functional website, that is built right and with the utmost attention to detail. 
 
-I can work with a website design tool (Figma) to make a design proposal.
+##### Website Maintenance
 
-I have a solid knowledge of HTML, CSS, and Javascript to be able to deliver robust and clean-looking websites. I can manipulate the looks of the website to exactly how you like it, and make sure that people can find your website by following the SEO best practice. 
+I want you to enjoy your new website for years to come. When I build your website, I will help you to learn to properly maintain your website. 
 
-I am experienced in working with WordPress. WordPress makes managing websites accessible to everyone, even if you don't know how to work with code... I love the fact that it allows me to deliver websites that anyone can work with.
+But there are definitely some upkeep that should be done by an expert, such as monitoring for hackers, making backups, and updating software. 
 
-When I deliver the final product to my clients, I also offer to deliver a documentation explaining how to maintain and update the website, helping to ensure that the website stays trouble-free for as long as possible!
-
-In addition, I also know how to make interactive websites and application using React, work with backend in PHP, Ruby or Node.js. 
+That's why I am happy to offer maintenance plans. Just let me know that you're interested and we will work out a plan that is customized for your needs!
 
 ##### Can I help you with your next website project?
 
