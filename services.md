@@ -7,7 +7,7 @@ description: I offer website development services. Let's create an amazing exper
   whole process stress-free for you.
 ---
 
-Here are some of my clients have said about my work:
+Here is what some of my clients have said about my work:
 
 > Shohei is an amazing freelancer. He create a website for us from scratch and we love it. The design is sleek and very well adapted to our business and the performance of the website is high. He was always available for us and we communicated very well.
 
