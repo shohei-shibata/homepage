@@ -43,6 +43,5 @@ Here are some of my most recently completed web development projects.
 
 <hr/>
 
-{% include link-strong.html url='/services' text='Need a website?' %}
 {% include link-strong.html url='/blog' text='Go To My Blog' %}
 {% include link-strong.html url='/about' text='About Me' %}

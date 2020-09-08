@@ -22,6 +22,5 @@ Thanks for visiting!
 
 <hr/>
 
-{% include link-strong.html url='/services' text='Need a website?' %}
 {% include link-strong.html url='/projects' text='My Projects' %}
 {% include link-strong.html url='/contact' text='Contact Me' %}

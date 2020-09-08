@@ -5,7 +5,7 @@ layout: default
 description: Here are all of my blog posts.
 ---
 
-{% include categories-list.html %}
+<!--{% include categories-list.html %}-->
 
 {% for item in site.posts %}
 
