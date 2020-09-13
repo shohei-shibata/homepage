@@ -469,7 +469,6 @@ main {
 
 .project-container {
   display: flex;
-  align-items: top;
 }
 .project-container figure {
   margin: 0;
@@ -523,6 +522,10 @@ main {
   .landing-page-banner-container {
     margin-top: 3em;
   }
+  .landing-page-banner-col-2 {
+    margin: 0;
+    margin-top: 3em;
+  }
   .landing-page-service-image-container {
     height: 60vw;
     margin-bottom: 3em;
@@ -540,8 +543,8 @@ main {
   #landing-page-portrait {
     width: 40vw;
     clip-path: circle(20vw at center);
-    top: -30px;
-    left: 25vw;
-    margin-bottom: -30px;
+  }
+  .project-container {
+    flex-direction: column;
   }
 }
