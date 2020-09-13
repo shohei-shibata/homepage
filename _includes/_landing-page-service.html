@@ -1,0 +1,22 @@
+{% for item in site.data.services %}
+
+{% assign style-second = "" %}
+{% assign style-first = "" %}
+
+{% if item.image-position == "right" %}
+  {% assign style-second = "order:2;" %}
+  {% assign style-first = "order:1;margin-left:0;margin-right:80px;" %}
+{% endif %}
+
+<div data-trigger class="landing-page-service-container">
+  <div class="landing-page-service-image-container" style="{{style-second}}">
+    <img class="landing-page-service-image" src="/assets/images/{{ item.image }}">
+  </div>
+  <div class="landing-page-service-text" style="{{style-first}}">
+    <h3>{{ item.heading }}</h3>
+    <p>{{ item.text }}</p>
+    <small class="landing-page-service-tags">{{ item.tags }}</small>
+  </div>
+</div>
+
+{% endfor %}

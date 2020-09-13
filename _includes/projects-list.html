@@ -1,0 +1,35 @@
+{% for item in site.projects %}
+
+  {% capture title %}
+    {{ item.title }}
+  {% endcapture %}
+
+  {% capture postUrl %}
+    {{ item.url | relative_url }}
+  {% endcapture %}
+
+  {% capture excerpt %}
+    {{ item.excerpt }}
+  {% endcapture %}
+
+  <div class="project-container">
+    {% if item.feature-image %}
+      {% assign name = item.feature-image.name %}
+      {% assign date = item.date %}
+      {% assign title = item.title %}
+      {% include figure.html 
+        name = name
+        date = date
+        title = title
+        linkUrl= postUrl
+      %}
+    {% endif %}
+
+    {% include post-excerpt.html 
+      title=title 
+      excerpt=excerpt
+      postUrl=postUrl
+    %}
+  </div>
+
+{% endfor %}

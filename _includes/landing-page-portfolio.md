@@ -1,9 +1,18 @@
 {% include landing-page-banner.html %}
 
-{% include landing-page-service.html %}
+{% include landing-page-service.md %}
 
-{% include link-strong.html url='/contact' text="Let's Talk!" %}
+<br/>
+<hr/>
+<br/>
 
-{% include landing-page-projects.html %}
+# Recent Projects
 
+{% include projects-list.html %}
+
+<br/>
+<br/>
+<br/>
+
+{% include link-strong.html url='/contact' text="Let's Work Together!" %}
 <!--{% include link-strong.html url='/contact' text="Work With Me" %}-->
