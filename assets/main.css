@@ -1,3 +1,18 @@
+/*
+
+  INDEX:
+    1. TYPOGRAPHY
+    2. COMPONENTS
+    3. NAV
+    4. LANDING PAGE
+    5. MAIN CONTENT
+    6. FOOTER
+    7. CONTACT FORM
+    8. POSTS
+    9. RESPONSIVE
+
+*/
+
 :root {
   --font-color: #222;
   --font-color-secondary: #666;
@@ -452,6 +467,23 @@ main {
   margin: 0;
   margin-right: 1em;
   text-transform: capitalize;
+}
+
+/*
+    PROJECTS
+*/
+
+.project-container {
+  display: flex;
+  align-items: top;
+}
+.project-container figure {
+  margin: 0;
+  margin-right: 20px;
+  max-width: 400px;
+}
+.project-container h3 {
+  margin-top: 0;
 }
 
 /* 
