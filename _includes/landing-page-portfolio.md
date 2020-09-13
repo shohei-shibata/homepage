@@ -4,7 +4,6 @@
 
 <br/>
 <hr/>
-<br/>
 
 # Recent Projects
 
