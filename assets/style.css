@@ -1,0 +1,11 @@
+body {
+  background-color: #eee;
+}
+
+#header-title {
+  font-family: Pacifico;
+}
+#header-title a {
+  text-decoration: none;
+  color: #000;
+}
