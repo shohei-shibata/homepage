@@ -1,14 +1,24 @@
 :root {
+  --background-color-primary: #eee;
+  --background-color-secondary: #ddd;
   --text-color-primary: #222;
-  --max-content-width: 600px;
+  --spacing-section-vertical: 5rem;
+  --width-text-area: 600px;
+  --width-main-content: 800px;
 }
 body {
-  background-color: #eee;
+  background-color: var(--background-color-primary);
   margin: 0;
   color: --text-color-primary;
   font-size: calc(12px + 0.75vw);
 	font-family: "Open Sans", sans-serif; 
   min-height: 100vh;
+  text-align: justify;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--width-text-area);
 }
 h1 {
   text-align: center;
@@ -37,18 +47,29 @@ a:hover {
   opacity: 0.7;
 }
 main {
-  margin: 5rem auto;
-  max-width: var(--max-content-width);
+  margin: var(--spacing-section-vertical) auto;
+  padding: 0 5vw;
+  max-width: var(--width-main-content);
 }
 nav {
+  background-color: var(--background-color-secondary);
   text-align: center;
+  padding: 1rem 0;
+}
+section {
+  margin: var(--spacing-section-vertical) auto;
+}
+img {
+  margin: 3rem auto;
+  max-width: var(--width-main-content);
 }
 #footer-container {
   margin: auto;
   padding: 1rem 2vw;
   display: flex;
   justify-content: space-between;
-  max-width: var(--max-content-width);
+  align-items: center;
+  max-width: var(--width-text-area);
 }
 #footer-social-icons-container a {
   margin-right: 10px;
@@ -84,6 +105,10 @@ nav {
 }
 #post-content {
   margin-bottom: 3rem;
+}
+.links-container {
+  max-width: var(--width-text-area);
+  margin: auto;
 }
 .list-posts ul {
   padding: 0;

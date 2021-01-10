@@ -10,7 +10,9 @@ layout: layout.liquid
   {%- for post in collections.post -%}
     <li>
       <a href="{{ post.url }}">{{ post.data.title }}</a>
-      <p>{{ post.data.description }}</p>
+      {%- if post.data.description -%}
+        <p>{{ post.data.description }}</p>
+      {%- endif -%}
     </li>
   {%- endfor -%}
   </ul>
