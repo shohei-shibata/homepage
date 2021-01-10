@@ -7,8 +7,13 @@
     
     {% include nav %}
 
-    <main class="wrapper">
+    <main>
       {{ content }}
+      <div class="links-container">
+        {%- if page.url != "/" -%}
+          <a href="/">>> Back to home</a>
+        {%- endif -%}
+      </div>
     </main>
 
     {% include footer %}
