@@ -1,0 +1,23 @@
+{
+  "name": "shohei-shibata.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shohei-shibata/shohei-shibata.github.io.git"
+  },
+  "author": "Shohei Shibata",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shohei-shibata/shohei-shibata.github.io/issues"
+  },
+  "homepage": "https://github.com/shohei-shibata/shohei-shibata.github.io#readme"
+}
