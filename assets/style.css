@@ -8,6 +8,7 @@ body {
   color: --text-color-primary;
   font-size: calc(12px + 0.75vw);
 	font-family: "Open Sans", sans-serif; 
+  min-height: 100vh;
 }
 h1 {
   text-align: center;

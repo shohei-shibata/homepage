@@ -3,7 +3,7 @@ layout: layout.liquid
 ---
 
 <h1>{{ title }}</h1>
-<small class="post-date">{{ date | date: "%B %e, %Y" }}</small>
+<small class="post-date">{{ date | formatDate }}</small>
 
 <div id="post-content">
   {{ content }}

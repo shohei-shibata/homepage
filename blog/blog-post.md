@@ -1,6 +1,4 @@
 ---
-layout: post.liquid
-tags: post
 date: 2021-01-09
 title: This is my Title
 description: This is just a test blog post.
