@@ -1,10 +1,13 @@
 :root {
   --background-color-primary: #eee;
   --background-color-secondary: #ddd;
+  --color-cards-bg: #fff;
+  --color-cards-shadow: #ddd;
   --text-color-primary: #222;
   --spacing-section-vertical: 5rem;
-  --width-text-area: 600px;
-  --width-main-content: 800px;
+  --width-text-area: 700px;
+  --width-text-area-narrow: 600px;
+  --width-main-content: 900px;
 }
 body {
   background-color: var(--background-color-primary);
@@ -15,14 +18,20 @@ body {
   min-height: 100vh;
   text-align: justify;
 }
-h1, h2, h3, h4, h5, h6, p, ul, li {
+h1, h2, h3, h4, h5, h6, p {
   margin-left: auto;
   margin-right: auto;
   max-width: var(--width-text-area);
 }
+ul, li {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--width-text-area-narrow);
+  line-height: 2.5rem;
+}
 h1 {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
 	font-size: 1.69em; 
 }
@@ -45,6 +54,10 @@ a {
 a:hover {
   text-decoration: underline;
   opacity: 0.7;
+}
+hr {
+  margin: 6rem auto;
+  max-width: var(--width-text-area);
 }
 main {
   margin: var(--spacing-section-vertical) auto;
@@ -110,6 +123,9 @@ img {
   max-width: var(--width-text-area);
   margin: auto;
 }
+.links-container:first-child {
+  margin-top: 3rem;
+}
 .list-posts ul {
   padding: 0;
 }
@@ -117,7 +133,32 @@ img {
   list-style-type: none; 
   margin-bottom: 3rem;
 }
+.list-posts a {
+  display: block;
+  font-weight: normal;
+  padding: 3rem;
+  background-color: var(--color-cards-bg);
+  box-shadow: 3px 3px 10px var(--color-cards-shadow);
+}
+.list-posts a:hover {
+  text-decoration: none;
+}
+.list-posts h1,
+.list-posts h2,
+.list-posts h3,
+.list-posts h4,
+.list-posts h5,
+.list-posts h6 {
+  margin: 0;
+}
+.list-posts p {
+  margin-bottom: 0;
+}
 .post-date {
   text-align: center;
   display: block;
+}
+.list-posts ul,
+.list-posts li {
+  max-width: var(--width-text-area);
 }

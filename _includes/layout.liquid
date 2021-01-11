@@ -9,11 +9,11 @@
 
     <main>
       {{ content }}
-      <div class="links-container">
-        {%- if page.url != "/" -%}
-          <a href="/">>> Back to home</a>
-        {%- endif -%}
-      </div>
+      {%- if page.url != "/" -%}
+        <div class="links-container">
+            <a href="/">>> Back to home</a>
+        </div>
+      {%- endif -%}
     </main>
 
     {% include footer %}
