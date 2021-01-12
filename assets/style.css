@@ -1,9 +1,11 @@
 :root {
   --background-color-primary: #eee;
   --background-color-secondary: #ddd;
+  --background-color-code: #333;
   --color-cards-bg: #fff;
   --color-cards-shadow: #ddd;
-  --text-color-primary: #222;
+  --color-text-primary: #222;
+  --color-text-secondary: #eee;
   --spacing-section-vertical: 5rem;
   --width-text-area: 700px;
   --width-text-area-narrow: 600px;
@@ -12,13 +14,13 @@
 body {
   background-color: var(--background-color-primary);
   margin: 0;
-  color: --text-color-primary;
-  font-size: calc(12px + 0.75vw);
+  color: --color-text-primary;
+  font-size: calc(12px + 0.65vw);
 	font-family: "Open Sans", sans-serif; 
   min-height: 100vh;
   text-align: justify;
 }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, pre {
   margin-left: auto;
   margin-right: auto;
   max-width: var(--width-text-area);
@@ -55,6 +57,26 @@ a:hover {
   text-decoration: underline;
   opacity: 0.7;
 }
+pre {
+  color: var(--color-text-secondary);
+  line-height: 2rem;
+  background-color: var(--background-color-code);
+  padding: 1rem;
+  border-radius: 3px;
+  box-sizing: border-box;
+  overflow-x: scroll;
+}
+code {
+  color: var(--color-text-primary);
+  background-color: var(--background-color-secondary);
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
+}
+pre code {
+  color: inherit;
+  background-color: inherit;
+  padding: 0;
+}
 hr {
   margin: 6rem auto;
   max-width: var(--width-text-area);
@@ -86,7 +108,7 @@ img {
 }
 #footer-social-icons-container a {
   margin-right: 10px;
-  color: var(--text-color-primary);
+  color: var(--color-text-primary);
 }
 #footer-social-icons-container a:last-child {
   margin-right: 0;
@@ -113,7 +135,7 @@ img {
   margin-right: 0;
 }
 #nav-container a {
-  color: var(--text-color-primary);
+  color: var(--color-text-primary);
   text-transform: lowercase;
 }
 #post-content {
