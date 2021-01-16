@@ -109,9 +109,13 @@ img {
 #footer-social-icons-container a {
   margin-right: 10px;
   color: var(--color-text-primary);
+  font-size: 2rem;
 }
 #footer-social-icons-container a:last-child {
   margin-right: 0;
+}
+#footer-social-icons-container a:hover {
+  text-decoration: none;
 }
 #header-title {
   font-family: Pacifico;
