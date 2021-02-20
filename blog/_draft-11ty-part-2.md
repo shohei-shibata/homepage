@@ -1,7 +1,8 @@
 ---
-date: 2021-01-15
 title: Building a Blog with 11ty - Part 2
-description: Let's build on our 11ty website further, learning how to apply layouts, and structure the pages in your website.
+date: 2021-01-15 00:00:00 Z
+description: Let's build on our 11ty website further, learning how to apply layouts,
+  and structure the pages in your website.
 ---
 
 ## Site Structure
