@@ -2,6 +2,7 @@
   --background-color-primary: #eee;
   --background-color-secondary: #ddd;
   --background-color-code: #333;
+	--color-border: #aaa;
   --color-cards-bg: #fff;
   --color-cards-shadow: #ddd;
   --color-text-primary: #222;
@@ -15,7 +16,7 @@ body {
   background-color: var(--background-color-primary);
   margin: 0;
   color: --color-text-primary;
-  font-size: calc(12px + 0.65vw);
+  font-size: calc(12px + 0.5vw);
 	font-family: "Open Sans", sans-serif; 
   min-height: 100vh;
   text-align: justify;
@@ -87,9 +88,13 @@ main {
   max-width: var(--width-main-content);
 }
 nav {
-  background-color: var(--background-color-secondary);
+  background-color: var(--background-color-primary);
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 0.5px solid var(--color-border);
 }
 section {
   margin: var(--spacing-section-vertical) auto;
@@ -125,10 +130,11 @@ img {
   color: #000;
 }
 #header-title h1 {
-  margin-bottom: 1rem;
+  margin: 0;
 }
 #nav-container ul {
   padding: 0;
+	margin: 0;
 }
 #nav-container li {
   list-style-type: none;
