@@ -81,6 +81,7 @@ pre code {
 hr {
   margin: 6rem auto;
   max-width: var(--width-text-area);
+	color: var(--color-border);
 }
 main {
   margin: var(--spacing-section-vertical) auto;
