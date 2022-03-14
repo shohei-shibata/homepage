@@ -22,9 +22,9 @@ As you can see, music is what gave me a sense of belonging in a completely new s
 
 But Jazz, in particular, is home for me. I am open to exploring all kinds of music, but I always come back to it. 
 
-Music is an art form, and it is always about exploring. But while a lot of music out there is trying to expand outward, by looking for new sounds, Jazz explores inward. It seeks what the heart, the soul, is saying. While I feel like money and fame can take over the other, more lucrative genres of music, there is generally no big money to be made in Jazz, and so the musicians are truly in it for the exploration. 
+Music is an art form, and it is always about exploring. But while a lot of music out there is trying to expand outward, by looking for new sounds, Jazz explores inward. It seeks what the heart, the soul, is saying. 
 
-Each musician is trying to express how they are feeling at that moment, and each other musician is listening, and adding to it their own feelings. And I really just love the feeling when I am fully devoting my senses to all that is happening. 
+In a Jazz setting, each musician is exploring and expressing what they feel. Every other musician is listening, and adding to it their own feelings. When I am fully devoting all my senses to hear what each person is saying and what we are saying collectively as a result... it's just a wonderful feeling.
 
 It is a lot like having a conversation. Except there is never an argument. It's more like a conversation with a good friend you've known for years. Someone who really gets what you are saying.
 
