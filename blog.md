@@ -1,6 +1,6 @@
 ---
-title: Blog
 layout: layout.liquid
+title: Blog
 ---
 
 # Blog Posts

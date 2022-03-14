@@ -1,7 +1,7 @@
 ---
+layout: layout.liquid
 title: Contact
 description: This is the contact page
-layout: layout.liquid
 ---
 
 # Contact Me

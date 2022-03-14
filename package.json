@@ -4,11 +4,11 @@
   "description": "Shohei's Homepage",
   "main": ".eleventy.js",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^1.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "eleventy build",
+    "build": "eleventy --output",
     "dev": "eleventy --serve"
   },
   "repository": {
