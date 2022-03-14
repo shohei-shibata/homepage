@@ -30,4 +30,8 @@ It is a lot like having a conversation. Except there is never an argument. It's 
 
 That, may be what makes a Jazz community so amazing to be a part of. Truly, no matter what your background - rich, poor, and people of all races - are equally appreciated and supported.
 
-And Chick Corea... 
+And Chick Corea... I don't know that anyone has or will ever enjoy making music as much as he did. Every note that I have ever heard him play was filled with so much joy, and I cannot help but to just soak it in and smile. I imagine that every single time he sat down to play, his number one, and maybe the only one goal, was to have fun with the musicians and the audience. Had he not been so skilled and famous, I think he would have still made music all his life, and perhaps had just as much fun. 
+
+That is really inspiring for me, a non-professional musician, to continue enjoying to practice and have fun making music with whomever I have the opportunity to play. If I am not focused on having fun, and making sure that those around me are enjoying themselves, there really isn't a reason for me to be there playing.
+
+Although this article probably just sort of meanders without a particular goal, this, is what comes to my mind when I think of Jazz.

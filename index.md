@@ -1,7 +1,7 @@
 ---
+layout: layout.liquid
 title: Home
 description: Shohei Shibata's Personal Homepage
-layout: layout.liquid
 ---
 
 # Latest Posts
