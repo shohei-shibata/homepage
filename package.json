@@ -1,24 +1,30 @@
 {
-  "name": "shohei-shibata.github.io",
+  "name": "shohei-shibata",
   "version": "1.0.0",
-  "description": "Shohei's Homepage",
-  "main": ".eleventy.js",
-  "dependencies": {
-    "@11ty/eleventy": "^1.0.0"
-  },
+  "private": true,
+  "description": "shohei-shibata",
+  "author": "Shohei",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "eleventy --output",
-    "dev": "eleventy --serve"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shohei-shibata/shohei-shibata.github.io.git"
-  },
-  "author": "Shohei Shibata",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shohei-shibata/shohei-shibata.github.io/issues"
-  },
-  "homepage": "https://github.com/shohei-shibata/shohei-shibata.github.io#readme"
+  "dependencies": {
+    "@mdx-js/react": "^2.3.0",
+    "gatsby": "^5.7.0",
+    "gatsby-plugin-image": "^3.7.0",
+    "gatsby-plugin-manifest": "^5.7.0",
+    "gatsby-plugin-mdx": "^5.7.0",
+    "gatsby-plugin-sharp": "^5.7.0",
+    "gatsby-plugin-sitemap": "^6.7.0",
+    "gatsby-source-filesystem": "^5.7.0",
+    "gatsby-transformer-sharp": "^5.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }

@@ -1,0 +1,29 @@
+.footer {
+  padding: 5px 0;
+}
+.footer a {
+  color: #000;
+}
+.footer-links {
+  margin: 10px 0 20px 0;
+}
+.footer-links a {
+  text-decoration: none;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.credits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  font-size: 1.5em;
+}
+.social-icons a:hover {
+  color: #888;
+}

@@ -1,0 +1,22 @@
+.contact-form {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px 30px;
+  margin: 40px 0;
+  border-radius: 5px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+.contact-form textarea {
+  resize: none;
+  overflow: scroll;
+}
+.contact-form [type="submit"] {
+  width: 100%;
+}
+.contact-form h3 {
+  text-align: center;
+}
