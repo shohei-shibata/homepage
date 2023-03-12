@@ -1,0 +1,51 @@
+.container {
+  margin: auto;
+  max-width: 800px;
+  font-family: sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  gap: 10px;
+}
+
+.nav li {
+  list-style-type: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav li a {
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.nav li a:hover {
+  background-color: #efefef;
+}
+
+.logo {
+  font-family: "Pacifico", sans-serif;
+}
+
+.main {
+  min-height: 80vh;
+}
+
+.page-title-heading {
+  text-align: center;
+}
+.page-title-hr {
+  margin-bottom: 40px;
+  width: 300px;
+  opacity: 0.2;
+}

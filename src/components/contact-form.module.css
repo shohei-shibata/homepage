@@ -1,0 +1,19 @@
+.contact-form {
+  margin: 40px 0;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+.contact-form textarea {
+  resize: none;
+  overflow: scroll;
+}
+.contact-form [type="submit"] {
+  width: 100%;
+}
+.contact-form h3 {
+  text-align: center;
+}
