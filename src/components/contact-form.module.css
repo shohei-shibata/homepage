@@ -1,8 +1,5 @@
 .contact-form {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 20px 30px;
   margin: 40px 0;
-  border-radius: 5px;
 }
 .contact-form input,
 .contact-form textarea {
