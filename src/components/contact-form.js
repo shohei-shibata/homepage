@@ -1,36 +1,84 @@
 import * as React from "react"
+import { navigate } from 'gatsby-link'
 import { contactForm } from "./contact-form.module.css"
 
-const ContactForm = () => (
-  <div className={contactForm}>
-    <h3>Contact Form</h3>
-    <form id="contact-form" method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" data-netlify-recaptcha="true">
-      <input type="hidden" name="bot-field" />
-      <input type="hidden" name="form-name" value="contact" />
-      <div id="contact-form-name-container">
-        <label htmlFor="contact-form-name-field">Your Name</label>
-        <br/>
-        <input type="text" id="contact-form-name-field" name="name" required />
-      </div>
-      <div id="contact-form-email-container">
-        <label htmlFor="contact-form-email-field">Your Email</label>
-        <br/>
-        <input type="email" id="contact-form-email-field" name="email" required />
-      </div>
-      <div id="contact-form-message-container">
-        <label htmlFor="contact-form-message-field">Message</label>
-        <br/>
-        <textarea 
-          type="textarea" 
-          id="contact-form-message-field" 
-          name="message" 
-          rows="5"
-          required />
-      </div>
-			<div data-netlify-recaptcha="true"></div>
-      <input type="submit" id="contact-form-submit-btn" className="btn" value="Submit"/>
-    </form>
-  </div>
-)
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
+
+const ContactForm = () => {
+  const [state, setState] = React.useState({})
+
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const form = e.target
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute('action')))
+      .catch((error) => alert(error))
+  }
+  
+  return (
+    <div className={contactForm}>
+      <form
+          name="contact"
+          method="post"
+          action="/thanks/"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
+        >
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your name:
+              <br />
+              <input type="text" name="name" onChange={handleChange} required />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your email:
+              <br />
+              <input type="email" name="email" onChange={handleChange} required />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message:
+              <br />
+              <textarea 
+                name="message" 
+                onChange={handleChange} 
+                rows="5"
+                required
+              />
+            </label>
+          </p>
+          <p>
+            <button type="submit" className="btn">Send</button>
+          </p>
+        </form>
+    </div>
+  )
+}
 
 export default ContactForm
