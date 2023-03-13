@@ -10,6 +10,7 @@ function encode(data) {
 
 const ContactForm = () => {
   const [state, setState] = React.useState({})
+  const [btnText, setBtnText] = React.useState("Send")
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
@@ -17,6 +18,9 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    const submitButton = document.getElementById("form-submit-button")
+    submitButton.setAttribute("disabled", "")
+    setBtnText("Sending...")
     const form = e.target
     fetch('/', {
       method: 'POST',
@@ -74,7 +78,13 @@ const ContactForm = () => {
             </label>
           </p>
           <p>
-            <button type="submit" className="btn">Send</button>
+            <button 
+              type="submit" 
+              className="btn"
+              id="form-submit-button"
+            >
+              {btnText}
+            </button>
           </p>
         </form>
     </div>
