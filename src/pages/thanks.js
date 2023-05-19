@@ -1,12 +1,13 @@
 import * as React from "react"
-import Layout from "../components/layout"
 import Seo from '../components/seo'
+import PageTitle from "../components/page-title"
 
 const ThanksPage = () => {
   return (
-    <Layout pageTitle="Thanks!">
+    <>
+      <PageTitle pageTitle="Thanks!"/>
       <p>The form submission was successful. I will get back to you as soon as I can.</p>
-    </Layout>
+    </>
   )
 }
 
