@@ -33,7 +33,7 @@ module.exports = {
     options: {
       typeName: 'Post',
       fieldName: 'post',
-      url: 'https://graphql.us.fauna.com/graphql',
+      url: process.env.FAUNADB_ENDPOINT,
       headers: {
         // Learn about environment variables: https://gatsby.dev/env-vars
         Authorization: `Bearer ${process.env.FAUNADB_SECRET}`,
