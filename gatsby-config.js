@@ -1,6 +1,9 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
     title: `Shohei Shibata`,
@@ -25,5 +28,17 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
-  }]
+  },{
+    resolve: 'gatsby-source-graphql',
+    options: {
+      typeName: 'Post',
+      fieldName: 'post',
+      url: 'https://graphql.us.fauna.com/graphql',
+      headers: {
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        Authorization: `Bearer ${process.env.FAUNADB_SECRET}`,
+      },
+    }
+  }
+]
 };
