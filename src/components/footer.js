@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className={footer}>        
       <div className={footerLinks}>
         { path !== "/" ? (
-          <Link to="/" className={footerLinks}>Back to Home</Link>
+          <Link to="/" className={footerLinks}>🡨 Back to Home</Link>
         ) : null}
       </div>
       <div className={credits}>
