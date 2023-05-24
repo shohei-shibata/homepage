@@ -15,17 +15,18 @@ const Footer = () => {
       <div className={credits}>
         <div>© Shohei Shibata 2023</div>
         <div className={socialIcons}>
-          <a aria-label="github" href="https://github.com/shohei-shibata" class="footer-social-logo">
-            <i class="fa-brands fa-github"></i>
+          <a aria-label="github" href="https://github.com/shohei-shibata" className="footer-social-logo">
+            <i className="fa-brands fa-github"></i>
           </a>
-          <a aria-label="linkedin" href="https://www.linkedin.com/in/shohei-shibata-53867a41/" class="footer-social-logo">
-            <i class="fa-brands fa-linkedin-in"></i>
+          <a aria-label="linkedin" href="https://www.linkedin.com/in/shohei-shibata-53867a41/" className="footer-social-logo">
+            <i className="fa-brands fa-linkedin-in"></i>
           </a>
-          <a aria-label="buymeacoffee" href="https://www.buymeacoffee.com/shohei_shibata" class="footer-social-logo">
-            <i class="fa-solid fa-mug-hot"></i>
+          <a aria-label="buymeacoffee" href="https://www.buymeacoffee.com/shohei_shibata" className="footer-social-logo">
+            <i className="fa-solid fa-mug-hot"></i>
           </a>
         </div>
       </div>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico&display=swap" rel="stylesheet"></link>
     </footer>
   )
 }

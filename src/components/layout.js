@@ -2,12 +2,11 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import Footer from './footer'
 import Box from './box'
-import { globalHistory } from "@reach/router"
+//import { globalHistory } from "@reach/router"
 import { container, nav, logo } from './layout.module.css'
 import './btn.css'
 
 const Layout = ({ children }) => {
-  const path = globalHistory.location.pathname
   return (
     <div className={container}>
       <nav className={nav}>
@@ -19,14 +18,9 @@ const Layout = ({ children }) => {
         </ul>
       </nav>
       <main>
-        { path !== "/" ? 
         <Box>
           {children}
         </Box>
-        : 
-        <>
-          {children}
-        </> }
       </main>
       <Footer/>
     </div>

@@ -10,7 +10,7 @@ const IndexPage = ({data}) => {
       <p>My new website is still a work in progress... Please check back soon for more content!</p>
       <ul>
         {posts.map(post => (
-          <li>
+          <li key={`${post.slug}`}>
             <Link to={`/post/${post.slug}`}>
               {post.title}
             </Link>

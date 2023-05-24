@@ -7,7 +7,6 @@ import * as DOMPurify from 'dompurify';
 const PostSingle = ({ pageContext }) => {
   const { title, body } = pageContext
   const html = DOMPurify.sanitize(marked.parse(body))
-  console.log("HTML", html)
   return (
     <>
       <PageTitle pageTitle={title}></PageTitle>
