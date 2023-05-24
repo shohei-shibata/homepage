@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         <h1 className={logo}><Link to="/">Shohei Shibata</Link></h1>
         <ul>
           <li><Link to="/about">About</Link></li>
-          <li><Link to="/posts">Posts</Link></li>
+          <li><Link to="/post">Posts</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>

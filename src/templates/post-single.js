@@ -10,7 +10,6 @@ const PostSingle = ({ pageContext }) => {
   return (
     <>
       <PageTitle pageTitle={title}></PageTitle>
-      {/* TODO: Parse body as Markdown */}
       <div dangerouslySetInnerHTML={{__html: html}}></div>
     </>
   )

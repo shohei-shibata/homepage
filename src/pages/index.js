@@ -3,19 +3,19 @@ import Seo from '../components/seo'
 import { graphql, Link } from 'gatsby'
 
 const IndexPage = ({data}) => {
-  const posts = data.post.allPosts.data
+  const posts = data?.post.allPosts.data
   return (
     <>
       <h1>Under Construction</h1>
       <p>My new website is still a work in progress... Please check back soon for more content!</p>
       <ul>
-        {posts.map(post => (
+        {posts ? posts.map(post => (
           <li key={`${post.slug}`}>
             <Link to={`/post/${post.slug}`}>
               {post.title}
             </Link>
           </li>
-        ))}
+        )) : null }
       </ul>
     </>
   )

@@ -6,7 +6,7 @@ import PageTitle from "../components/page-title"
 const AboutPage = () => {
   return (
     <>
-      <PageTitle pageTitle="About"/>
+      <PageTitle>About</PageTitle>
       <h3>Hi👋</h3>
       <p>Welcome to my homepage.</p>
       <p>I am a web developer based in Dayton, Ohio USA. I basically use this website as a sandbox for me to create whatever I felt like making. Hope you'll find something interesting!</p>

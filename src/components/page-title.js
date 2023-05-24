@@ -1,9 +1,9 @@
 import * as React from "react"
 import { pageTitleHeading, pageTitleHr } from './layout.module.css'
 
-const PageTitle = ({pageTitle}) => (
+const PageTitle = ({children}) => (
   <>
-    <h1 className={pageTitleHeading}>{pageTitle}</h1>
+    <h1 className={pageTitleHeading}>{children}</h1>
     <hr className={pageTitleHr} />
   </>
 )

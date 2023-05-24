@@ -1,20 +1,20 @@
 import * as React from "react"
-import Seo from '../components/seo'
+import Seo from '../../components/seo'
 import { graphql, Link } from 'gatsby'
 
 const PostsPage = ({data}) => {
-  const posts = data.post.allPosts.data
+  const posts = data?.post.allPosts.data
   return (
     <>
       <h1>Posts</h1>
       <ul>
-        {posts.map(post => (
-          <li>
+        {posts ? posts.map(post => (
+          <li key={post.slug}>
             <Link to={`/post/${post.slug}`}>
               {post.title}
             </Link>
           </li>
-        ))}
+        )) : null }
       </ul>
     </>
   )
