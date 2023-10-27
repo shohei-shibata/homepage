@@ -3,10 +3,11 @@ import { Link } from 'gatsby'
 import Footer from './footer'
 import Box from './box'
 import { globalHistory } from "@reach/router"
-import { container, nav, logo, main, pageTitleHeading, pageTitleHr } from './layout.module.css'
+import { container, nav, logo, main } from './layout.module.css'
+import "../styles/global.css"
 import './btn.css'
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ children }) => {
   const path = globalHistory.location.pathname
   return (
     <div className={container}>
@@ -18,16 +19,9 @@ const Layout = ({ pageTitle, children }) => {
         </ul>
       </nav>
       <main className={main}>
-        { path !== "/" ? 
         <Box>
-          <h1 className={pageTitleHeading}>{pageTitle}</h1>
-          <hr className={pageTitleHr} />
           {children}
         </Box>
-        : 
-        <>
-          {children}
-        </> }
       </main>
       <Footer/>
     </div>
