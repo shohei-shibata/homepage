@@ -11,7 +11,22 @@ module.exports = {
     options: {
       "icon": "src/images/icon.png"
     }
-  }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  }, 
+  {
+    resolve: `gatsby-plugin-mdx`,
+    options: {
+      gatsbyRemarkPlugins: [
+        {
+          resolve: 'gatsby-remark-images',
+          options: {
+            maxWidth: 500,
+            showCaptions: true,
+            withWebp: true,
+          },
+        }
+      ]
+    }
+  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
@@ -25,5 +40,19 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
-  }]
+  },{
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `posts`,
+      path: `./src/posts`,
+    },
+  },{
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "content",
+      "path": "./src/content/",
+      "ignore": [`**/_*`]
+    },
+    __key: "content"
+  },]
 };

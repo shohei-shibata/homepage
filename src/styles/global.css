@@ -6,3 +6,15 @@
   width: 300px;
   opacity: 0.2;
 }
+.section-divider {
+  margin: 40px auto;
+  width: 80%;
+  opacity: 0.2;
+}
+.link-navigation {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.link-navigation:hover {
+  text-decoration: underline;
+}
