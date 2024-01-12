@@ -4,33 +4,38 @@
   font-family: sans-serif;
 }
 
-.nav {
+.nav-desktop {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav ul {
+.nav-desktop ul {
   display: flex;
   gap: 10px;
 }
 
-.nav li {
+.nav-desktop li {
   list-style-type: none;
 }
 
-.nav a {
+.nav-desktop a {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color-primary);
 }
 
-.nav li a {
+.nav-desktop li a {
   padding: 5px;
   border-radius: 3px;
 }
 
-.nav li a:hover {
+.nav-desktop li a:hover,
+.activeLink {
   background-color: #efefef;
+}
+
+.activeLink {
+  cursor: default;
 }
 
 .logo {
@@ -44,4 +49,13 @@
   margin-bottom: 40px;
   width: 300px;
   opacity: 0.2;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-desktop {
+    justify-content: center;
+  }
+  .nav-desktop ul {
+    display: none;
+  }
 }
