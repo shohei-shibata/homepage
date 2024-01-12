@@ -15,6 +15,7 @@ const Layout = ({ children }) => {
         <h1 className={logo}><Link to="/">Shohei Shibata</Link></h1>
         <ul>
           <li><Link to="/">Home</Link></li>
+          <li><Link to="/work-with-me">Work With Me</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
