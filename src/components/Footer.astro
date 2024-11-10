@@ -1,0 +1,58 @@
+<footer class="footer">
+  <nav class="footer-links">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/work-with-me">Work With Me</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="credits">
+    <div>© Shohei Shibata 2023</div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    padding: 5px 0;
+    margin-top: var(--space-2xl);
+  }
+  .footer a {
+    color: #000;
+  }
+  .footer-links {
+    margin: 0 0 var(--space-2xl) 0;
+  }
+  .footer-links ul {
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-2xl);
+  }
+  .footer-links li {
+    list-style-type: none;
+  }
+  .footer-links a {
+    text-decoration: none;
+    color: var(--color-text-secondary);
+  }
+  .footer-links a:hover,
+  .activeLink {
+    text-decoration: underline;
+    color: var(--color-text-secondary);
+  }
+  .credits {
+    text-align: center;
+    color: var(--color-text-secondary);
+  }
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+  .social-icons a:hover {
+    color: #888;
+  }
+</style>

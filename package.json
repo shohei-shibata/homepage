@@ -1,32 +1,17 @@
 {
-  "name": "shohei-shibata",
-  "version": "1.0.0",
-  "private": true,
-  "description": "shohei-shibata",
-  "author": "Shohei",
-  "keywords": [
-    "gatsby"
-  ],
+  "name": "shohei-shibata-home",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@mdx-js/react": "^2.3.0",
-    "gatsby": "^5.7.0",
-    "gatsby-plugin-image": "^3.7.0",
-    "gatsby-plugin-manifest": "^5.7.0",
-    "gatsby-plugin-mdx": "^5.12.3",
-    "gatsby-plugin-sharp": "^5.7.0",
-    "gatsby-plugin-sitemap": "^6.7.0",
-    "gatsby-remark-images": "^7.13.0",
-    "gatsby-source-filesystem": "^5.12.1",
-    "gatsby-transformer-remark": "^6.13.0",
-    "gatsby-transformer-sharp": "^5.7.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "astro": "^4.16.10",
+    "@astrojs/check": "^0.9.4",
+    "typescript": "^5.6.3"
   }
 }

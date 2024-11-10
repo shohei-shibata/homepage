@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const siteTitle = import.meta.env.PUBLIC_SITE_TITLE || 'Site Title';
+---
+
+<Layout title="Home">
+  <h1>Welcome to {siteTitle}</h1>
+</Layout>
+
+<style>
+</style>
