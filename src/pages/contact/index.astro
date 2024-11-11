@@ -1,10 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout title="Contact">
   <h1>Contact</h1>
-  <form name="contact" method="POST" data-netlify>
+  <form name="contact" method="POST" action="/contact/thanks" data-netlify>
     <div class="input-row">
       <label for="name">Name</label>
       <input 
