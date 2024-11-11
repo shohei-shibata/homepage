@@ -8,6 +8,7 @@ import Layout from '../../layouts/Layout.astro';
     <div class="input-row">
       <label for="name">Name</label>
       <input 
+        class="input-text-field"
         type="text" 
         name="name" 
         placeholder="Your name"
@@ -20,6 +21,7 @@ import Layout from '../../layouts/Layout.astro';
         Email
       </label>
       <input 
+        class="input-text-field"
         type="email" 
         name="email" 
         placeholder="Email address"
@@ -55,5 +57,18 @@ import Layout from '../../layouts/Layout.astro';
   }
   input[type="submit"] {
     margin: 3rem auto 0 auto;
+  }
+  .input-text-field {
+    border-width: 0 0 1px 0;
+    border-color: var(--grey-20);
+  }
+  .input-text-field,
+  textarea {
+    font-size: var(--text-md);
+    font-family: unset;
+    resize: vertical;
+  }
+  textarea {
+    border: 1px solid var(--grey-20);
   }
 </style>
