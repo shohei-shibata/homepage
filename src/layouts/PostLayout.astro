@@ -1,0 +1,11 @@
+---
+import Layout from './Layout.astro';
+
+const { entry } = Astro.props;
+const { title } = entry.data
+---
+<Layout title="Blog">
+  <h1>{title}</h1>
+  <slot />
+  <a href="/posts">All Posts</a>
+</Layout>

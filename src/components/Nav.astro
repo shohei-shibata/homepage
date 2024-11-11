@@ -1,0 +1,41 @@
+<nav class="nav-desktop">
+  <h1 class="logo"><a href="/">Shohei Shibata</a></h1>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/posts">Blog</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
+
+<style>
+  .nav-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-desktop ul {
+    display: flex;
+    gap: 10px;
+  }
+  .nav-desktop li {
+    list-style-type: none;
+  }
+  .nav-desktop a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+  }
+  .nav-desktop li a {
+    padding: 5px;
+    border-radius: 3px;
+  }
+  .nav-desktop li a:hover,
+  .activeLink {
+    background-color: #efefef;
+  }
+  .activeLink {
+    cursor: default;
+  }
+  .logo {
+    font-family: "Pacifico", sans-serif;
+  }
+</style>
