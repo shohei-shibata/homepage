@@ -46,6 +46,8 @@ const siteTitle = import.meta.env.PUBLIC_SITE_TITLE;
     --width-text-area: 700px;
     --width-text-area-narrow: 600px;
     --width-main-content: 900px;
+    --width-mobile-transition: 700px;
+    --mobile-nav-height: 75px;
       
     /* colors */
     --black-fade-5: rgba(0, 0, 0, 0.05);
@@ -95,9 +97,12 @@ const siteTitle = import.meta.env.PUBLIC_SITE_TITLE;
     --text-xl: 20px;
     --text-2xl: 24px;
     --text-3xl: 32px;
+
+    /* shadow */
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   .box {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: var(--box-shadow);
     padding: 20px 30px;
     margin: 0;
     border-radius: 5px;
@@ -217,11 +222,9 @@ const siteTitle = import.meta.env.PUBLIC_SITE_TITLE;
   }
 
   @media screen and (max-width: 768px) {
-    .nav-desktop {
-      justify-content: center;
-    }
-    .nav-desktop ul {
-      display: none;
+    body {
+      padding-bottom: var(--mobile-nav-height);
+      margin-bottom: 0;
     }
   }
 </style>

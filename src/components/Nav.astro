@@ -1,34 +1,58 @@
-<nav class="nav-desktop">
+---
+import { Icon } from "astro-icon/components";
+---
+<nav class="nav-main">
   <h1 class="logo"><a href="/">Shohei Shibata</a></h1>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/posts">Blog</a></li>
-    <li><a href="/contact">Contact</a></li>
+  <ul class="nav-links">
+    <li>
+      <a href="/">
+        <span class="nav-link-text">
+          Home
+        </span>
+        <Icon class="nav-icon" name="home"/>
+      </a>
+    </li>
+    <li>
+      <a href="/posts">
+        <span class="nav-link-text">
+          Blog
+        </span>
+        <Icon class="nav-icon" name="blog"/>
+      </a>
+    </li>
+    <li>
+      <a href="/contact">
+        <span class="nav-link-text">
+          Contact
+        </span>
+        <Icon class="nav-icon" name="contact"/>
+      </a>
+    </li>
   </ul>
 </nav>
 
 <style>
-  .nav-desktop {
+  .nav-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .nav-desktop ul {
+  .nav-main ul {
     display: flex;
     gap: 10px;
   }
-  .nav-desktop li {
+  .nav-main li {
     list-style-type: none;
   }
-  .nav-desktop a {
+  .nav-main a {
     text-decoration: none;
     color: var(--color-text-primary);
   }
-  .nav-desktop li a {
+  .nav-main li a {
     padding: 5px;
     border-radius: 3px;
   }
-  .nav-desktop li a:hover,
+  .nav-main li a:hover,
   .activeLink {
     background-color: #efefef;
   }
@@ -37,5 +61,29 @@
   }
   .logo {
     font-family: "Pacifico", sans-serif;
+  }
+  @media screen and (max-width: 768px) {
+    .nav-main {
+      justify-content: center;
+    }
+    .nav-links {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      padding: 0;
+      justify-content: space-evenly;
+      align-items: center;
+      height: var(--mobile-nav-height);
+      background-color: var(--grey-90);
+    }
+    .nav-link-text {
+      display: none;
+    }
+    .nav-icon {
+      color: var(--grey-20);
+      font-size: var(--text-3xl);
+    }
   }
 </style>

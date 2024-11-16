@@ -4,6 +4,8 @@ import Layout from '../../layouts/Layout.astro';
 
 <Layout title="Contact">
   <h1>Contact</h1>
+  <p>Whether you're interested in working with me, or just have a comment, feel free to submit the form below to contact me.</p>
+  <p>I'll get back to you as soon as I can!</p>
   <form name="contact" method="POST" action="/contact/thanks" data-netlify>
     <div class="input-row">
       <label for="name">Name</label>
@@ -48,7 +50,7 @@ import Layout from '../../layouts/Layout.astro';
     flex-direction: column;
     align-items: stretch;
     max-width: var(--form-max-width);
-    margin: 0 auto;
+    margin: var(--space-2xl) auto;
   }
   .input-row {
     display: grid;
@@ -56,7 +58,7 @@ import Layout from '../../layouts/Layout.astro';
     margin: 5px 0;
   }
   input[type="submit"] {
-    margin: 3rem auto 0 auto;
+    margin: var(--space-2xl) auto 0 auto;
   }
   .input-text-field {
     border-width: 0 0 1px 0;
