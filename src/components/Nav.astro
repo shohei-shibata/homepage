@@ -3,13 +3,12 @@ import { Icon } from "astro-icon/components";
 ---
 <nav class="nav-main">
   <h1 class="logo"><a href="/">Shohei Shibata</a></h1>
-  <ul class="nav-links">
+  <ul class="nav-links-desktop">
     <li>
       <a href="/">
         <span class="nav-link-text">
           Home
         </span>
-        <Icon class="nav-icon" name="home"/>
       </a>
     </li>
     <li>
@@ -17,7 +16,6 @@ import { Icon } from "astro-icon/components";
         <span class="nav-link-text">
           Blog
         </span>
-        <Icon class="nav-icon" name="blog"/>
       </a>
     </li>
     <li>
@@ -25,6 +23,22 @@ import { Icon } from "astro-icon/components";
         <span class="nav-link-text">
           Contact
         </span>
+      </a>
+    </li>
+  </ul>
+  <ul class="nav-links-mobile">
+    <li>
+      <a href="/">
+        <Icon class="nav-icon" name="home"/>
+      </a>
+    </li>
+    <li>
+      <a href="/posts">
+        <Icon class="nav-icon" name="blog"/>
+      </a>
+    </li>
+    <li>
+      <a href="/contact">
         <Icon class="nav-icon" name="contact"/>
       </a>
     </li>
@@ -37,7 +51,7 @@ import { Icon } from "astro-icon/components";
     justify-content: space-between;
     align-items: center;
   }
-  .nav-main ul {
+  .nav-links-desktop {
     display: flex;
     gap: 10px;
   }
@@ -48,16 +62,19 @@ import { Icon } from "astro-icon/components";
     text-decoration: none;
     color: var(--color-text-primary);
   }
-  .nav-main li a {
+  .nav-links-desktop li a {
     padding: 5px;
     border-radius: 3px;
   }
-  .nav-main li a:hover,
+  .nav-links-desktop li a:hover,
   .activeLink {
     background-color: #efefef;
   }
   .activeLink {
     cursor: default;
+  }
+  .nav-links-mobile {
+    display: none;
   }
   .logo {
     font-family: "Pacifico", sans-serif;
@@ -66,7 +83,8 @@ import { Icon } from "astro-icon/components";
     .nav-main {
       justify-content: center;
     }
-    .nav-links {
+    .nav-links-mobile {
+      display: flex;
       position: fixed;
       bottom: 0;
       left: 0;
@@ -78,7 +96,7 @@ import { Icon } from "astro-icon/components";
       height: var(--mobile-nav-height);
       background-color: var(--grey-90);
     }
-    .nav-link-text {
+    .nav-links-desktop {
       display: none;
     }
     .nav-icon {
