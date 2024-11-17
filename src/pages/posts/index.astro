@@ -3,18 +3,46 @@ import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
 const allBlogPosts = await getCollection('blog');
+console.log(allBlogPosts[0])
+
+function readableDate(dateString: string | null) {
+  let d = dateString ? new Date(dateString) : new Date();
+  return d.toLocaleDateString();
+}
 ---
 
 <Layout title="Blog">
   <h1>Blog</h1>
-  <ul>
+  <ul class="post-list">
   {allBlogPosts.map(post => (
-    <li>
-      <a href={`/posts/${post.slug}`}>{post.data.title}</a>
+    <li class="post-list-item">
+      <a href={`/posts/${post.slug}`}>
+        <span class="post-date">{readableDate(post.data.date)}</span>
+        <span class="post-title">{post.data.title}</span>
+      </a>
     </li>
   ))}
   </ul>
 </Layout>
 
 <style>
+  .post-list {
+    padding: 0;
+    margin: var(--space-2xl) 0;
+  }
+  .post-list-item {
+    list-style-type: none;
+  }
+  .post-list-item a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    margin: var(--space-xl) 0;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  .post-list-item a:hover {
+    background-color: #efefef;
+  }
 </style>

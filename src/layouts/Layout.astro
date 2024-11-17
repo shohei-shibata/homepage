@@ -171,41 +171,24 @@ const siteTitle = import.meta.env.PUBLIC_SITE_TITLE;
   .links-container:first-child {
     margin-top: 3rem;
   }
-  .list-posts ul {
-    padding: 0;
-  }
-  .list-posts li {
-    list-style-type: none;
-    margin-bottom: 3rem;
-  }
-  .list-posts a {
-    display: block;
-    font-weight: normal;
-    padding: 3rem;
-    background-color: var(--color-cards-bg);
-    box-shadow: 3px 3px 10px var(--color-cards-shadow);
-  }
-  .list-posts a:hover {
+  .link {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 3px;
     text-decoration: none;
+    color: var(--color-text-primary);
   }
-  .list-posts h1,
-  .list-posts h2,
-  .list-posts h3,
-  .list-posts h4,
-  .list-posts h5,
-  .list-posts h6 {
-    margin: 0;
+  .link:hover,
+  .link[aria-current="page"]{
+    background-color: #efefef;
   }
-  .list-posts p {
-    margin-bottom: 0;
+  .link-underline {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-weight: var(--semibold);
   }
-  .post-date {
-    text-align: center;
-    display: block;
-  }
-  .list-posts ul,
-  .list-posts li {
-    max-width: var(--width-text-area);
+  .link-underline:hover {
+    text-decoration: underline;
   }
   .container {
     margin: auto;
