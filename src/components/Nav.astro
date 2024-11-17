@@ -1,41 +1,107 @@
-<nav class="nav-desktop">
+---
+import { Icon } from "astro-icon/components";
+---
+<nav class="nav-main">
   <h1 class="logo"><a href="/">Shohei Shibata</a></h1>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/posts">Blog</a></li>
-    <li><a href="/contact">Contact</a></li>
+  <ul class="nav-links-desktop">
+    <li>
+      <a href="/">
+        <span class="nav-link-text">
+          Home
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="/posts">
+        <span class="nav-link-text">
+          Blog
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="/contact">
+        <span class="nav-link-text">
+          Contact
+        </span>
+      </a>
+    </li>
+  </ul>
+  <ul class="nav-links-mobile">
+    <li>
+      <a href="/">
+        <Icon class="nav-icon" name="home"/>
+      </a>
+    </li>
+    <li>
+      <a href="/posts">
+        <Icon class="nav-icon" name="blog"/>
+      </a>
+    </li>
+    <li>
+      <a href="/contact">
+        <Icon class="nav-icon" name="contact"/>
+      </a>
+    </li>
   </ul>
 </nav>
 
 <style>
-  .nav-desktop {
+  .nav-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .nav-desktop ul {
+  .nav-links-desktop {
     display: flex;
     gap: 10px;
   }
-  .nav-desktop li {
+  .nav-main li {
     list-style-type: none;
   }
-  .nav-desktop a {
+  .nav-main a {
     text-decoration: none;
     color: var(--color-text-primary);
   }
-  .nav-desktop li a {
+  .nav-links-desktop li a {
     padding: 5px;
     border-radius: 3px;
   }
-  .nav-desktop li a:hover,
+  .nav-links-desktop li a:hover,
   .activeLink {
     background-color: #efefef;
   }
   .activeLink {
     cursor: default;
   }
+  .nav-links-mobile {
+    display: none;
+  }
   .logo {
     font-family: "Pacifico", sans-serif;
+  }
+  @media screen and (max-width: 768px) {
+    .nav-main {
+      justify-content: center;
+    }
+    .nav-links-mobile {
+      display: flex;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      width: 100%;
+      padding: 0;
+      justify-content: space-evenly;
+      align-items: center;
+      height: var(--mobile-nav-height);
+      background-color: var(--grey-90);
+    }
+    .nav-links-desktop {
+      display: none;
+    }
+    .nav-icon {
+      color: var(--grey-20);
+      font-size: var(--text-3xl);
+    }
   }
 </style>
