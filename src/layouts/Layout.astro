@@ -1,6 +1,7 @@
 ---
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
+import { slide, ViewTransitions } from "astro:transitions";
 
 interface Props {
   title: string;
@@ -17,48 +18,83 @@ const siteTitle = import.meta.env.PUBLIC_SITE_TITLE;
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico&amp;display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico&display=swap"
+      rel="stylesheet"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{siteTitle} | {title}</title>
+    <ViewTransitions />
   </head>
   <body>
     <div class="container">
-      <Nav />
+      <Nav/>
       <main class="box">
         <slot />
       </main>
-      <Footer />
+      <Footer/>
     </div>
   </body>
 </html>
 
+<script>
+  function applyTheme() {
+    const bodyElement = document.querySelector("body");
+    const storedTheme = localStorage.getItem("theme") || "light";
+    storedTheme === "dark"
+      ? bodyElement?.classList.add("dark")
+      : bodyElement?.classList.remove("dark");
+  }
+  document.addEventListener("astro:after-swap", applyTheme);
+  document.addEventListener("astro:page-load", (e) => {
+    applyTheme();
+    const bodyElement = document.querySelector("body");
+    const triggers = document.getElementsByClassName("theme-trigger");
+    for (const trigger of triggers) {
+      trigger.addEventListener("click", (e) => {
+        bodyElement?.classList.toggle("dark");
+        if (bodyElement?.classList.contains("dark")) {
+          localStorage.setItem("theme", "dark");
+        } else {
+          localStorage.setItem("theme", "light");
+        }
+      });
+    }
+  });
+</script>
+
 <style is:global>
-  :root {
-    --background-color-primary: #eee;
-    --background-color-secondary: #ddd;
-    --background-color-code: #333;
-    --color-border: #aaa;
-    --color-cards-bg: #fff;
-    --color-cards-shadow: #ddd;
-    --color-text-primary: #222;
-    --color-text-secondary: #555;
+  body {
+    /* colors */
+    --black-fade-5: rgba(0, 0, 0, 0.05);
+    --black-fade-40: rgba(0, 0, 0, 0.4);
+    --grey-90: #232129;
+    --grey-80: #322f3a;
+    --grey-50: #555;
+    --grey-20: #ddd;
+    --green-80: #088413;
+    --green-50-rgb: 55, 182, 53;
+    --white: #ffffff;
+    --yellow: #dcab4e;
+
+    /* background colors */
+    --background-color-primary: var(--white);
+    --background-color-mobile-nav: var(--grey-90);
+    --link-hover: var(--grey-20);
+
+    /* text colors */
+    --color-text-primary: var(--grey-90);
+    --color-text-secondary: var(--grey-50);
+
+    /* shadow */
+    --box-shadow: rgba(149, 157, 165, .5) 0px 8px 24px;
+
     --spacing-section-vertical: 5rem;
     --width-text-area: 700px;
     --width-text-area-narrow: 600px;
     --width-main-content: 900px;
     --width-mobile-transition: 700px;
     --mobile-nav-height: 75px;
-      
-    /* colors */
-    --black-fade-5: rgba(0, 0, 0, 0.05);
-    --black-fade-40: rgba(0, 0, 0, 0.4);
-    --grey-90: #232129;
-    --grey-50: #555;
-    --grey-20: #ddd;  
-    --green-80: #088413;
-    --green-50-rgb: 55, 182, 53;
-    --white: #ffffff;
-    --yellow: #dcab4e;
 
     /* radii */
     --radius-sm: 4px;
@@ -97,13 +133,55 @@ const siteTitle = import.meta.env.PUBLIC_SITE_TITLE;
     --text-xl: 20px;
     --text-2xl: 24px;
     --text-3xl: 32px;
+  }
+  body.dark {
+    /* background colors */
+    --background-color-primary: var(--grey-90);
+    --background-color-mobile-nav: var(--grey-90);
+    --link-hover: var(--grey-80);
+
+    /* text colors */
+    --color-border: #aaa;
+    --color-cards-bg: #fff;
+    --color-cards-shadow: #ddd;
+    --color-text-primary: var(--white);
+    --color-text-secondary: var(--grey-50);
 
     /* shadow */
-    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --box-shadow: rgba(3, 3, 3, 0.352) 0px 8px 24px;
+  }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--background-color-primary);
+    color: var(--color-text-primary);
+    transition: background-color 0.2s;
+  }
+  main {
+    min-height: 50vh;
+  }
+  p {
+    line-height: var(--text-2xl);
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  button {
+    border: none;
+    background-color: transparent;
+  }
+  button:hover {
+    cursor: pointer;
   }
   .box {
     box-shadow: var(--box-shadow);
-    padding: 20px 30px;
+    padding: var(--space-xl) var(--space-3xl);
     margin: 0;
     border-radius: 5px;
   }
@@ -112,9 +190,13 @@ const siteTitle = import.meta.env.PUBLIC_SITE_TITLE;
     border-radius: var(--radius-sm);
     padding: var(--space-md) var(--space-lg);
     font-size: var(--text-md);
+    background-color: transparent;
+    color: inherit;
+    border: solid 1px var(--color-text-primary);
   }
   .btn:hover {
     cursor: pointer;
+    background-color: var(--link-hover);
   }
   #footer-container {
     margin: auto;
@@ -179,19 +261,21 @@ const siteTitle = import.meta.env.PUBLIC_SITE_TITLE;
     color: var(--color-text-primary);
   }
   .link:hover,
-  .link[aria-current="page"]{
-    background-color: #efefef;
+  .link[aria-current="page"] {
+    background-color: var(--link-hover);
+    text-decoration: none;
   }
-  .link-underline {
+  .link-inline {
     text-decoration: none;
     color: var(--color-text-primary);
     font-weight: var(--semibold);
   }
-  .link-underline:hover {
+  .link-inline:hover {
     text-decoration: underline;
   }
   .container {
     margin: auto;
+    padding: 0 var(--space-lg);
     max-width: 800px;
     font-family: sans-serif;
   }
@@ -208,6 +292,9 @@ const siteTitle = import.meta.env.PUBLIC_SITE_TITLE;
     body {
       padding-bottom: var(--mobile-nav-height);
       margin-bottom: 0;
+    }
+    .box {
+      padding: var(--space-xl) var(--space-lg);
     }
   }
 </style>

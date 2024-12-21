@@ -20,8 +20,6 @@ const links = [
     icon: "contact"
   },
 ]
-
-console.log(pathname)
 ---
 <nav class="nav-main">
   <h1 class="logo"><a href="/">Shohei Shibata</a></h1>
@@ -35,6 +33,9 @@ console.log(pathname)
         </a>
       </li>
     ))}
+    <li>
+      <button class="link theme-trigger"><Icon name="lightbulb" /></button>
+    </li>
   </ul>
   <ul class="nav-links-mobile">
     {links.map(link => (
@@ -44,6 +45,9 @@ console.log(pathname)
         </a>
       </li>
     ))}
+    <li>
+      <button class="theme-trigger"><Icon class="nav-icon" name="lightbulb" /></button>
+    </li>
   </ul>
 </nav>
 
@@ -52,10 +56,17 @@ console.log(pathname)
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 1;
   }
   .nav-links-desktop {
     display: flex;
+    align-items: center;
     gap: 10px;
+  }
+  .nav-links-desktop .theme-trigger {
+    font-size: 1.5rem;
+    display: flex;
   }
   .nav-main li {
     list-style-type: none;
@@ -85,7 +96,7 @@ console.log(pathname)
       justify-content: space-evenly;
       align-items: center;
       height: var(--mobile-nav-height);
-      background-color: var(--grey-90);
+      background-color: var(--background-color-mobile-nav);
     }
     .nav-links-mobile a {
       display: inline-block;

@@ -3,7 +3,6 @@ import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
 const allBlogPosts = await getCollection('blog');
-console.log(allBlogPosts[0])
 
 function readableDate(dateString: string | null) {
   let d = dateString ? new Date(dateString) : new Date();
@@ -32,17 +31,22 @@ function readableDate(dateString: string | null) {
   }
   .post-list-item {
     list-style-type: none;
+    margin: var(--space-xl) 0;
   }
   .post-list-item a {
     text-decoration: none;
     color: var(--color-text-primary);
     display: grid;
     grid-template-columns: 150px 1fr;
-    margin: var(--space-xl) 0;
-    padding: 5px;
+    padding: var(--space-2xl) var(--space-xl);
     border-radius: 3px;
   }
   .post-list-item a:hover {
-    background-color: #efefef;
+    background-color: var(--link-hover);
+  }
+  @media screen and (max-width: 768px) {
+    .post-list-item a {
+      padding: var(--space-2xl) var(--space-sm);
+    }
   }
 </style>
