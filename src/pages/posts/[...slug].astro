@@ -1,9 +1,10 @@
 ---
+import type { ContentEntryType } from 'astro';
 import PostLayout from '../../layouts/PostLayout.astro';
-import { getCollection } from 'astro:content';
-// 1. Generate a new path for every collection entry
+import { getCollection, type CollectionEntry } from 'astro:content';
+
 export async function getStaticPaths() {
-  const blogEntries = await getCollection('blog');
+  const blogEntries: CollectionEntry<"blog">[] = await getCollection('blog');
   return blogEntries.map(entry => ({
     params: { slug: entry.slug }, props: { entry },
   }));
