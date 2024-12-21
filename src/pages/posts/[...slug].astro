@@ -1,17 +1,17 @@
 ---
-import type { ContentEntryType } from 'astro';
+import { render } from 'astro:content';
 import PostLayout from '../../layouts/PostLayout.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
 
 export async function getStaticPaths() {
   const blogEntries: CollectionEntry<"blog">[] = await getCollection('blog');
   return blogEntries.map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
+    params: { slug: entry.data.permalink || entry.id }, props: { entry },
   }));
 }
 // 2. For your template, you can get the entry directly from the prop
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
 
 <PostLayout entry={entry}>

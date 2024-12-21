@@ -46,12 +46,12 @@ const siteTitle = import.meta.env.PUBLIC_SITE_TITLE;
       : bodyElement?.classList.remove("dark");
   }
   document.addEventListener("astro:after-swap", applyTheme);
-  document.addEventListener("astro:page-load", (e) => {
+  document.addEventListener("astro:page-load", () => {
     applyTheme();
     const bodyElement = document.querySelector("body");
     const triggers = document.getElementsByClassName("theme-trigger");
     for (const trigger of triggers) {
-      trigger.addEventListener("click", (e) => {
+      trigger.addEventListener("click", () => {
         bodyElement?.classList.toggle("dark");
         if (bodyElement?.classList.contains("dark")) {
           localStorage.setItem("theme", "dark");

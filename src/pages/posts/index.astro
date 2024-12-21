@@ -15,8 +15,8 @@ function readableDate(dateString: string | null) {
   <ul class="post-list">
   {allBlogPosts.map(post => (
     <li class="post-list-item">
-      <a href={`/posts/${post.slug}`}>
-        <span class="post-date">{readableDate(post.data.date)}</span>
+      <a href={`/posts/${post.data.permalink || post.id}`}>
+        <span class="post-date">{readableDate(post.data.date.toISOString())}</span>
         <span class="post-title">{post.data.title}</span>
       </a>
     </li>
