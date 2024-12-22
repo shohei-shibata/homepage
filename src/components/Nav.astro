@@ -34,7 +34,7 @@ const links = [
       </li>
     ))}
     <li>
-      <button class="link theme-trigger"><Icon name="lightbulb" /></button>
+      <button class="link theme-trigger"><Icon name="theme" /></button>
     </li>
   </ul>
   <ul class="nav-links-mobile">
@@ -46,7 +46,7 @@ const links = [
       </li>
     ))}
     <li>
-      <button class="theme-trigger"><Icon class="nav-icon" name="lightbulb" /></button>
+      <button class="theme-trigger"><Icon class="nav-icon" name="theme" /></button>
     </li>
   </ul>
 </nav>
@@ -88,17 +88,19 @@ const links = [
     .nav-links-mobile {
       display: flex;
       position: fixed;
+      gap: var(--space-3xl);
       bottom: 0;
       left: 0;
       margin: 0;
       width: 100%;
       padding: 0;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
       height: var(--mobile-nav-height);
       background-color: var(--background-color-mobile-nav);
     }
-    .nav-links-mobile a {
+    .nav-links-mobile a,
+    .nav-links-mobile button {
       display: inline-block;
     }
     .nav-links-mobile a[aria-current="page"] {
